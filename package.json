@@ -1,0 +1,51 @@
+{
+  "name": "indicate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node .",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "export": "next export",
+    "serve": "serve out -p 3000",
+    "validate": "concurrently \"wait-on http://127.0.0.1:3000 && node cli/validate.js\" \"npm run serve\"",
+    "prestart": "npm run build",
+    "preexport": "npm run build",
+    "postexport": "node cli/postExport.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.4.3",
+    "@material-ui/icons": "^4.4.3",
+    "@material-ui/styles": "^4.4.3",
+    "@svgr/webpack": "^4.2.0",
+    "@zeit/next-sass": "^1.0.1",
+    "caniuse-lite": "^1.0.30000999",
+    "compression": "^1.7.4",
+    "express": "^4.16.4",
+    "fs-extra": "^8.0.1",
+    "material-icons": "^0.3.1",
+    "next": "^8.1.0",
+    "next-page-transitions": "^1.0.0-beta.2",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "serve": "^11.2.0",
+    "sitemap": "^2.2.0"
+  },
+  "devDependencies": {
+    "ffmpeg": "0.0.4",
+    "wait-on": "^3.2.0",
+    "rimraf": "^2.6.3",
+    "concurrently": "^4.1.0",
+    "compress-images": "^1.5.2",
+    "html-validator": "^4.0.2",
+    "mozjpeg": "^6.0.1",
+    "gifsicle": "^4.0.1",
+    "pngquant": "^2.0.1",
+    "pngquant-bin": "^5.0.2",
+    "svgo": "^1.2.2"
+  }
+}

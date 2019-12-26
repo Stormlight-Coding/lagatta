@@ -1,0 +1,47 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/yarn.lock": true,
+        "**/package-lock.json": true
+    },
+    "typescriptHero.imports.organizeOnSave": true,
+    "typescriptHero.imports.organizeSortsByFirstSpecifier": true,
+    "typescriptHero.imports.insertSemicolons": false,
+    "typescriptHero.imports.grouping": [
+        "Plains",
+        "Modules",
+        "Workspace"
+    ],
+    "typescriptHero.imports.ignoredFromRemoval": [
+        "react",
+        "prop-types"
+    ],
+    "breadcrumbs.enabled": true,
+    "eslint.alwaysShowStatus": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.autoSave": "off",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "off",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.lineHeight": 22,
+    "editor.minimap.renderCharacters": false,
+    "editor.renderControlCharacters": true,
+    "editor.codeLens": true,
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+
+}
