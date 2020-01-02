@@ -3,5 +3,115 @@
     "title": "the-cat",
     "description": "the-cat description",
     "keywords": "the-cat keyword"
+  },
+
+  "lagoon_seventy": {
+    "image": { "src": "/static/images/LG_SAIL.jpg", "alt": "" },
+    "title": "LAGOON SEVENTY 7",
+    "body": "More than 23-metre (77 foot) yacht marks an important step for Lagoon towards a world in which elegance and refinement are the watchwords. Lagoon brought together an illustrious team for the design of its flagship: VPLP, Patrick Le Quément and Nauta Design. All have strived to produce a catamaran where harmony reigns between the interior and exterior living spaces, where compromise does not exist, where innovation enhances comfort and life at sea.",
+    "link": { "href": "/", "text": "VISIT LAGOON’S SITE FOR MORE INFO >" }
+  },
+
+  "our_philosophy": {
+    "title": "OUR PHILOSOPHY",
+    "body": " Mission of our boat - ability to disconnect and move at the speed of wind while being served the finest foods meticulously presented. LA GATTA’s water filtration system allows us to minimize plastics; a gray water system allows us to leave as small a footprint as possible; While internet is available, there is the option to shut it off for periods of the day - or for the entire trip.  "
+  },
+
+  "the_crew": {
+    "image": { "src": "/static/images/LG_BEACH.jpg", "alt": "" },
+    "title": "THE CREW",
+    "body": "Our crew is headed by husband and wife team Andy and Sadie. They share over ten years of adventures - chartering both sailing and motor yachts, big and small. Andy is thrilled to be the captain of LA GATTA as he favors sailing catamarans over any other vessel. They are both master PADI instructors. Find out more about their passions and experience clicking below.",
+    "members": [
+      {
+        "name": "ANDY SUTHERLAND",
+        "title": "CAPTAIN",
+        "image": {
+          "src": "/static/images/LG_CAPTAIN_SMALL.jpg",
+          "alt": ""
+        }
+      },
+      {
+        "name": "SADIE SUTHERLAND",
+        "title": "CHEF",
+        "image": { "src": "/static/images/LG_CHEF_SMALL.jpg", "alt": "" }
+      }
+    ]
+  },
+
+  "catamaran_specifications": {
+    "image": { "src": "/static/images/LG_BACK.jpg", "alt": "" },
+    "title": "CATAMARAN SPECIFICATIONS",
+    "specs": [
+      "Length overall: 23.77 m / 78”",
+      "Beam: 11 m / 36’1”",
+      "Draft: 1.90 m / 6’3”",
+      "Mast clearance: 37.10 m / 121’9”",
+      "Light displacement (EEC): 61,663 t / 135967 Lbs",
+      "Sail area: 335 m² / 3609 sq.ft",
+      "Engines: 2 x 230 HP",
+      "Fuel capacity: 2800 l / 740 US gal",
+      "Fresh water capacity: 2 x 800 l / 2 x 211 US gal",
+      "Number of berths: 10 Guests, 4 Crew",
+      "EC certification: A :14 – B :18 – C : 24 – D : 40"
+    ]
+  },
+
+  "gattina": {
+    "image": { "src": "/static/images/LG_GATTINA.jpg", "alt": "" },
+    "title": "GATTINA",
+    "body": "Offering premium quality and effortless comfort, this tender is also a master of practicality. Clever use of space means your eight passengers can stretch out with space for their belongings. Handy for moving a lot of people, but even better for loading it up with fine food for a spot of alfresco dining on a secluded beach. After lunch, drop anchor, unfurl the optional bimini and lower the bathing ladder. Or for those adrenaline seekers, blast away the afternoon waterskiing.",
+    "link": { "href": "/", "text": "" }
+  },
+
+  "fully_equipped": {
+    "title": "FULLY EQUIPPED",
+    "equips": [
+      {
+        "title": "NAVIGATION",
+        "itens": [
+          "Autopilot",
+          "Generator",
+          "Radar",
+          "GPS Plotter",
+          "Inverter",
+          "VHF"
+        ]
+      },
+      {
+        "title": "DECK EQUIPMENT",
+        "itens": ["Swim Deck", "Barbecue", "Bimini", "Sun Awning"]
+      },
+      {
+        "title": "ELETRONICS",
+        "itens": [
+          "Drone DJI Pro",
+          "Outdoor Projector + Dual Image Screen",
+          "iPod Connection",
+          "Wi-Fi",
+          "Dishwasher",
+          "Fans in all Cabins",
+          "Turntable + Salon Sound System",
+          "Maritime Library Kindles",
+          "Madboy 200 Prop Karaoke Machine"
+        ]
+      },
+      {
+        "title": "OTHERS",
+        "itens": [
+          "GATTINA Tender",
+          "Jacuzzi",
+          "Deck Shower",
+          "Water Filtration System",
+          "Air Conditioning",
+          "Freezer",
+          "Eletronics Fridge",
+          "Gas Cooking",
+          "Oven",
+          "Icebox",
+          "4 Eletric Gocucle Bikes",
+          "3 Eletric Scooters"
+        ]
+      }
+    ]
   }
 }

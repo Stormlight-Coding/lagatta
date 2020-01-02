@@ -5,113 +5,63 @@
     "keywords": "home keyword"
   },
 
-  "lagoon_seventy": {
-    "image": { "src": "/static/images/LG_SAIL.jpg", "alt": "" },
-    "title": "LAGOON SEVENTY 7",
-    "body": "More than 23-metre (77 foot) yacht marks an important step for Lagoon towards a world in which elegance and refinement are the watchwords. Lagoon brought together an illustrious team for the design of its flagship: VPLP, Patrick Le Quément and Nauta Design. All have strived to produce a catamaran where harmony reigns between the interior and exterior living spaces, where compromise does not exist, where innovation enhances comfort and life at sea.",
-    "link": { "href": "/", "text": "VISIT LAGOON’S SITE FOR MORE INFO >" }
+  "cover": {
+    "image": { "src": "/static/images/LG_LAND_HERO_U.jpg", "alt": "" },
+    "body": "Come explore the world aboard LA GATTA, a brand new seventy-seven foot luxury catamaran. This elegant Lagoon SEVENTY 7 is the perfect way to share an unforgettable travel experience with the people you love."
   },
 
-  "our_philosophy": {
-    "title": "OUR PHILOSOPHY",
-    "body": " Mission of our boat - ability to disconnect and move at the speed of wind while being served the finest foods meticulously presented. LA GATTA’s water filtration system allows us to minimize plastics; a gray water system allows us to leave as small a footprint as possible; While internet is available, there is the option to shut it off for periods of the day - or for the entire trip.  "
-  },
-
-  "the_crew": {
-    "image": { "src": "/static/images/LG_BEACH.jpg", "alt": "" },
-    "title": "THE CREW",
-    "body": "Our crew is headed by husband and wife team Andy and Sadie. They share over ten years of adventures - chartering both sailing and motor yachts, big and small. Andy is thrilled to be the captain of LA GATTA as he favors sailing catamarans over any other vessel. They are both master PADI instructors. Find out more about their passions and experience clicking below.",
-    "members": [
+  "destinations": {
+    "title": "DESTINATIONS",
+    "body": "Each season, LA GATTA sails to a unique and vibrant destination. From the diverse Windwards to secluded anchorages in the Seychelles, the possibilities are limitless. Follow our itinerary and pick your spot!",
+    "link": { "href": "/destinations", "text": "SEE WHERE WE SAIL >" },
+    "items": [
       {
-        "name": "ANDY SUTHERLAND",
-        "title": "CAPTAIN",
-        "image": {
-          "src": "/static/images/LG_CAPTAIN_SMALL.jpg",
-          "alt": ""
-        }
+        "title": "MONACO GP",
+        "date": "MAY 2020",
+        "image": { "src": "/static/images/LG_D_GREECE.jpg", "alt": "" }
       },
       {
-        "name": "SADIE SUTHERLAND",
-        "title": "CHEF",
-        "image": { "src": "/static/images/LG_CHEF_SMALL.jpg", "alt": "" }
+        "title": "GREEK ISLANDS",
+        "date": "SUMMER 2020",
+        "image": { "src": "/static/images/LG_D_GRANDPRIX.jpg", "alt": "" }
+      },
+      {
+        "title": "CARIBBEAN",
+        "date": "WINTER 2020 - SPRINT 2021",
+        "image": { "src": "/static/images/LG_D_CARRIB_U.jpg", "alt": "" }
       }
     ]
   },
 
-  "catamaran_specifications": {
-    "image": { "src": "/static/images/LG_BACK.jpg", "alt": "" },
-    "title": "CATAMARAN SPECIFICATIONS",
-    "specs": [
-      "Length overall: 23.77 m / 78”",
-      "Beam: 11 m / 36’1”",
-      "Draft: 1.90 m / 6’3”",
-      "Mast clearance: 37.10 m / 121’9”",
-      "Light displacement (EEC): 61,663 t / 135967 Lbs",
-      "Sail area: 335 m² / 3609 sq.ft",
-      "Engines: 2 x 230 HP",
-      "Fuel capacity: 2800 l / 740 US gal",
-      "Fresh water capacity: 2 x 800 l / 2 x 211 US gal",
-      "Number of berths: 10 Guests, 4 Crew",
-      "EC certification: A :14 – B :18 – C : 24 – D : 40"
-    ]
+  "seventy_layout": {
+    "title": "THE SEVENTY 7 LAYOUT",
+    "body": "LA GATTA features four elegantly designed guest cabins. Each of these are fitted with an island bed, desk, ample storage and individual bathroom. The spacious master Panther suite features a hydraulic platform which opens to create a private “beach” giving direct sea access and a special spot to sunbathe. The crew quarters and galley are configured as to facilitate the staff’s work on board. Two bunks in the forepeak are a fun spot for two kids. The Lynx bed can be configured as a queen or two twins.",
+    "link": { "href": "/the-cat", "text": "EXPLORE THE CAT >" },
+    "image": { "src": "/static/images/LAGATTA_PLANS_CABINS.png", "alt": "" }
   },
 
-  "gattina": {
-    "image": { "src": "/static/images/LG_GATTINA.jpg", "alt": "" },
-    "title": "GATTINA",
-    "body": "Offering premium quality and effortless comfort, this tender is also a master of practicality. Clever use of space means your eight passengers can stretch out with space for their belongings. Handy for moving a lot of people, but even better for loading it up with fine food for a spot of alfresco dining on a secluded beach. After lunch, drop anchor, unfurl the optional bimini and lower the bathing ladder. Or for those adrenaline seekers, blast away the afternoon waterskiing.",
-    "link": { "href": "/", "text": "" }
+  "dinning": {
+    "title": "DINNING",
+    "body": "Our chef shops the local markets to prepare beautiful meals cooked to your specifications. Whether it be light restorative afternoon snacks or exquisite dinners al fresco, each dish is prepared with skillfulness and love. Vegetarian and vegan options are robust and flavorful. LA GATTA has a curated wine offering and an artisanal cocktail menu.",
+    "link": { "href": "/dinning", "text": "LEARN MORE >" }
   },
 
-  "fully_equipped": {
-    "title": "FULLY EQUIPPED",
-    "equips": [
-      {
-        "title": "NAVIGATION",
-        "itens": [
-          "Autopilot",
-          "Generator",
-          "Radar",
-          "GPS Plotter",
-          "Inverter",
-          "VHF"
-        ]
-      },
-      {
-        "title": "DECK EQUIPMENT",
-        "itens": ["Swim Deck", "Barbecue", "Bimini", "Sun Awning"]
-      },
-      {
-        "title": "ELETRONICS",
-        "itens": [
-          "Drone DJI Pro",
-          "Outdoor Projector + Dual Image Screen",
-          "iPod Connection",
-          "Wi-Fi",
-          "Dishwasher",
-          "Fans in all Cabins",
-          "Turntable + Salon Sound System",
-          "Maritime Library Kindles",
-          "Madboy 200 Prop Karaoke Machine"
-        ]
-      },
-      {
-        "title": "OTHERS",
-        "itens": [
-          "GATTINA Tender",
-          "Jacuzzi",
-          "Deck Shower",
-          "Water Filtration System",
-          "Air Conditioning",
-          "Freezer",
-          "Eletronics Fridge",
-          "Gas Cooking",
-          "Oven",
-          "Icebox",
-          "4 Eletric Gocucle Bikes",
-          "3 Eletric Scooters"
-        ]
-      }
-    ]
+  "experiences": {
+    "title": "EXPERIENCES",
+    "body": "The activities onboard LA GATTA are plentiful and fun. A Lift E-Foil, kite boarding, paddle boards, towable toys, and snorkel gear will delight and challenge water lovers of all ages. For shipmates who prefer a leisurely day on deck; a record collection, maritime library, and flight of teas (or whiskies) await in the ship’s umbrage. Explore surrounding coves and capture striking footage with our powerful drone. An evening film enjoyed from the flybridge’s Jacuzzi is a perfect way to end the day.",
+    "link": { "href": "/experiences", "text": "SEE ALL EXPERIENCES >" },
+    "image": { "src": "/static/images/LG_VEG_DISH_U.jpg", "alt": "" }
+  },
+
+  "the_cat": {
+    "title": "THE CAT",
+    "body": "The new line of Lagoon SEVENTY 7s is unmatched in spaciousness, stability, and class. The spaces are designed to flow seamlessly providing a variety of spots for both larger gatherings and for more intimate moments. LA GATTA’s elegant salon, the main indoor living space, has a large sofa, a separate forward lounge space with sofas, a dining table that seats eight and a fold down large screen TV discreetly built into the ceiling. The light filled salon features large panoramic windows with electric shades and a variety of light settings to match each mood.",
+    "body2": "LA GATTA features one of Lagoon’s newest innovations, a sophisticated hydraulically controlled platform in the master suite that opens to become a unique private beach with direct access to the sea. Lower the beach for a secluded moment of sunbathing, morning coffee or a private dip in the evening. The front deck includes a lounge area and two large trampolines.The spacious flybridge is an ideal spot for taking in the views and relaxing during sea trips. It provides yet another spacious outdoor lounge space for sunbathing, soaking in the Jacuzzi under the stars, movie watching or dining.",
+    "link": { "href": "/experiences", "text": "LEARN MORE >" },
+    "image": { "src": "/static/images/LG_WINDSURF.jpg", "alt": "" }
+  },
+
+  "cat_front": {
+    "image": { "src": "/static/images/LG_WINDSURF.jpg", "alt": "" }
   }
 }

@@ -66,7 +66,10 @@ const typography = {
   },
   button: {
     textTransform: "capitalize",
-    fontWeight: 600
+    fontWeight: 400, //book
+    letterSpacing: "2px",
+    lineHeight: "35px",
+    fontSize: "16px"
   }
 };
 
@@ -110,7 +113,11 @@ const overrides = {
       paddingRight: "32px",
       paddingLeft: "32px"
     },
-    sizeSmall: {}
+    sizeSmall: {},
+    outlinedPrimary: {
+      borderColor: "#FFFFFF",
+      color: "#FFFFFF"
+    }
   },
   MuiListItem: {
     root: {

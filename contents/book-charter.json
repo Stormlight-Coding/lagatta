@@ -3,5 +3,12 @@
     "title": "book-charter",
     "description": "book-charter description",
     "keywords": "book-charter keyword"
+  },
+
+  "booking_la_gatta": {
+    "image": { "src": "/static/images/LG_FLOAT.jpg", "alt": "" },
+    "title": "BOOKING LA GATTA",
+    "body": "Please contact your favorite charter broker for more information on how to reserve time on LA GATTA.",
+    "button": { "href": "/", "text": "FIND A REPUTABLE BROKER" }
   }
 }

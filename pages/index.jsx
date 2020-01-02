@@ -8,138 +8,133 @@ export default () => (
   <React.Fragment>
     <MetaData meta={content.meta} />
 
-    {/* Lagoon Seventy */}
-    <Section
-      align="center"
-      bg={"primary"}
-      coverImage={content.lagoon_seventy.image.src}
-    >
-      <Typography variant="h2" paragraph>
-        {content.lagoon_seventy.title}
-      </Typography>
+    {/* Cover */}
+    <Section align="center" bg={"primary"} coverImage={content.cover.image.src}>
       <Typography variant="body1" paragraph>
-        {content.lagoon_seventy.body}
-      </Typography>
-      <Typography variant="caption">
-        {content.lagoon_seventy.link.text}
+        {content.cover.body}
       </Typography>
     </Section>
 
-    {/* Our Philosopyhy */}
+    {/* Destinations */}
     <Section align="center" bg={"secondary"}>
       <Typography variant="h2" paragraph>
-        {content.our_philosophy.title}
+        {content.destinations.title}
       </Typography>
       <Typography variant="body1" paragraph>
-        {content.our_philosophy.body}
+        {content.destinations.body}
+      </Typography>
+      <Typography variant="caption">
+        {content.destinations.link.text}
       </Typography>
     </Section>
 
-    {/* The Crew */}
-    <Section
-      align="center"
-      bg={"primary"}
-      coverImage={content.the_crew.image.src}
-    >
-      <Typography variant="h2" paragraph>
-        {content.the_crew.title}
-      </Typography>
-      <Typography variant="body1" paragraph>
-        {content.the_crew.body}
-      </Typography>
-
-      <Grid container spacing={4} alignItems="center" justify="center">
-        {content.the_crew.members.map(m => (
-          <Grid item md={6}>
-            <Box mb={2}>
-              <img
-                src={m.image.src}
-                style={{ borderRadius: "50%", maxWidth: "100%" }}
-              />
+    {/* Destinations Items */}
+    <Box align="center">
+      <Grid container spacing={1}>
+        <Grid item xs>
+          <img
+            src="/static/images/LG_D_GRANDPRIX.jpg"
+            style={{ maxWidth: "100%" }}
+          />
+          <Box p={2} bgcolor="secondary.main">
+            <Typography>MONACO GP</Typography>
+            <Typography>MAY 2020</Typography>
+          </Box>
+        </Grid>
+        <Grid item xs>
+          <img
+            src="/static/images/LG_D_GRANDPRIX.jpg"
+            style={{ maxWidth: "100%" }}
+          />
+          <Box p={2} bgcolor="secondary.main">
+            <Typography>MONACO GP</Typography>
+            <Typography>MAY 2020</Typography>
+          </Box>
+        </Grid>
+        <Grid item xs>
+          <Box>
+            <img
+              src="/static/images/LG_D_GRANDPRIX.jpg"
+              style={{ maxWidth: "100%" }}
+            />
+            <Box p={2} bgcolor="secondary.main">
+              <Typography>MONACO GP</Typography>
+              <Typography>MAY 2020</Typography>
             </Box>
-            <Typography variant="subtitle1">
-              {m.title} - {m.name}
-            </Typography>
-          </Grid>
-        ))}
+          </Box>
+        </Grid>
       </Grid>
+    </Box>
+
+    {/* Seventy Layout */}
+    <Section align="center" bg={"primary"}>
+      <Typography variant="h2" paragraph>
+        {content.seventy_layout.title}
+      </Typography>
+      <Typography variant="body1" paragraph>
+        {content.seventy_layout.body}
+      </Typography>
+      <Typography variant="caption">
+        {content.seventy_layout.link.text}
+      </Typography>
+      <img
+        src={content.seventy_layout.image.src}
+        style={{ maxWidth: "100%" }}
+      />
     </Section>
 
-    {/* Catamaran */}
+    {/* Dinning */}
+    <Section align="center" bg={"secondary"}>
+      <Typography variant="h2" paragraph>
+        {content.dinning.title}
+      </Typography>
+      <Typography variant="body1" paragraph>
+        {content.dinning.body}
+      </Typography>
+      <Typography variant="caption">{content.dinning.link.text}</Typography>
+    </Section>
+
+    {/* Experience */}
     <Section
       align="center"
       bg={"primary"}
-      coverImage={content.catamaran_specifications.image.src}
+      coverImage={content.experiences.image.src}
     >
       <Typography variant="h2" paragraph>
-        {content.catamaran_specifications.title}
+        {content.experiences.title}
       </Typography>
-      <Box align="center" mb={6}>
-        {content.catamaran_specifications.specs.map(s => (
-          <Typography>{s}</Typography>
-        ))}
-      </Box>
+      <Typography variant="body1" paragraph>
+        {content.experiences.body}
+      </Typography>
+      <Typography variant="caption">{content.experiences.link.text}</Typography>
     </Section>
 
-    {/* Gattina */}
+    {/* The Cat */}
     <Section
       align="center"
       bg={"secondary"}
-      coverImage={content.gattina.image.src}
+      coverImage={content.the_cat.image.src}
     >
       <Typography variant="h2" paragraph>
-        {content.gattina.title}
+        {content.the_cat.title}
       </Typography>
       <Typography variant="body1" paragraph>
-        {content.gattina.body}
+        {content.the_cat.body}
       </Typography>
+
+      <Typography variant="body1" paragraph>
+        {content.the_cat.body2}
+      </Typography>
+
+      <Typography variant="caption">{content.the_cat.link.text}</Typography>
     </Section>
 
-    {/* Fully Equiped */}
-    <Section align="center" bg={"primary"}>
-      <Typography variant="h2" paragraph>
-        {content.fully_equipped.title}
-      </Typography>
-      <Grid container>
-        <Grid item xs={12} sm={6} md={4}>
-          <Box align="left" mb={6}>
-            <Typography variant="h3" paragraph>
-              {content.fully_equipped.equips[0].title}
-            </Typography>
-            {content.fully_equipped.equips[0].itens.map(e => (
-              <Typography>{e}</Typography>
-            ))}
-          </Box>
-          <Box align="left" mb={6}>
-            <Typography variant="h3" paragraph>
-              {content.fully_equipped.equips[1].title}
-            </Typography>
-            {content.fully_equipped.equips[1].itens.map(e => (
-              <Typography>{e}</Typography>
-            ))}
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Box align="left" mb={6}>
-            <Typography variant="h3" paragraph>
-              {content.fully_equipped.equips[2].title}
-            </Typography>
-            {content.fully_equipped.equips[2].itens.map(e => (
-              <Typography>{e}</Typography>
-            ))}
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Box align="left" mb={6}>
-            <Typography variant="h3" paragraph>
-              {content.fully_equipped.equips[3].title}
-            </Typography>
-            {content.fully_equipped.equips[3].itens.map(e => (
-              <Typography>{e}</Typography>
-            ))}
-          </Box>
-        </Grid>
-      </Grid>
-    </Section>
+    {/* The Cat Image */}
+    <Section
+      align="center"
+      bg={"primary"}
+      py={0}
+      coverImage={content.cat_front.image.src}
+    />
   </React.Fragment>
 );
