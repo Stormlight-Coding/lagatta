@@ -1,7 +1,7 @@
-import { Box, Container } from '@material-ui/core'
+import Section from '../components/Section'
 
 export default () => (
-  <Container fixed>
-    <Box py={2}>Copyright © 2019 Lagatta US, Inc. All Rights Reserved.</Box>
-  </Container>
+  <Section align="center" bg="secondary" py={1}>
+    Copyright © 2019 Lagatta US, Inc. All Rights Reserved.
+  </Section>
 );

@@ -13,10 +13,10 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
   return (
     <AppBar
       position="sticky"
-      color={"default"}
+      color={"primary"}
+      inve
       style={{
-        zIndex: 999,
-        backgroundColor: "white"
+        zIndex: 999
       }}
     >
       <Toolbar>

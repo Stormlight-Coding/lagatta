@@ -3,18 +3,20 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import React from 'react'
 
+const spacing = 8;
+
 const palette = {
   primary: {
-    main: "#10AFD0",
+    main: "#262E3B",
     contrastText: "#FFFFFF"
   },
   secondary: {
-    main: "#294657",
+    main: "#48505C",
     contrastText: "#FFFFFF"
   },
   text: {
-    primary: "#294657",
-    secondary: "#294657"
+    primary: "#FFFFFF",
+    secondary: "#FFFFFF"
   },
   background: {
     default: "#FFFFFF"
@@ -25,8 +27,20 @@ const typography = {
   fontFamily: "Avenir",
   fontWeight: 200,
   h1: { fontSize: "36px", lineHeight: "44px" },
-  h2: { fontSize: "32px", lineHeight: "40px" },
-  h3: { fontSize: "24px", lineHeight: "32px" },
+  h2: {
+    fontSize: "22px",
+    lineHeight: "30px",
+    letterSpacing: "1.32px",
+    fontWeight: 400, // book
+    paddingBottom: `${spacing * 2}px`
+  },
+  h3: {
+    fontSize: "18px",
+    lineHeight: "25px",
+    letterSpacing: "0.36px",
+    fontWeight: 400, // book
+    paddingBottom: `${spacing}px`
+  },
   h4: {
     fontSize: "14px",
     fontWeight: 600,
@@ -36,9 +50,20 @@ const typography = {
   h5: { fontSize: "16px", fontWeight: 600 },
   subtitle1: {},
   subtitle2: {},
-  body1: { fontSize: "16px", fontWeight: 200 },
+  body1: {
+    fontSize: "16px",
+    lineHeight: "30px",
+    letterSpacing: "0.06px",
+    fontWeight: 400 // book
+  },
   body2: { fontSize: "14px", fontWeight: 200 },
-  captin: {},
+  caption: {
+    textTransform: "uppercase",
+    fontSize: "12px",
+    lineHeight: "22px",
+    letterSpacing: "1.5px",
+    fontWeight: 400 // book
+  },
   button: {
     textTransform: "capitalize",
     fontWeight: 600
@@ -76,7 +101,7 @@ const shadows = [
 const overrides = {
   MuiAppBar: {
     root: {
-      backgroundColor: "transparent"
+      // backgroundColor: "transparent"
     }
   },
   MuiButton: {
@@ -109,7 +134,7 @@ const overrides = {
 };
 
 const theme = createMuiTheme({
-  spacing: 8,
+  spacing,
   palette,
   typography,
   shadows,
