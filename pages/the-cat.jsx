@@ -2,52 +2,19 @@ import { Box, Grid, Typography } from '@material-ui/core'
 
 import MetaData from '../components/MetaData'
 import Section from '../components/Section'
+import SectionCover from '../components/SectionCover'
+import SectionText from '../components/SectionText'
 import content from '../contents/the-cat.json'
 
 export default () => (
   <React.Fragment>
     <MetaData meta={content.meta} />
 
-    {/* Lagoon Seventy */}
-    <Section
-      align="center"
-      bg={"primary"}
-      coverImage={content.lagoon_seventy.image.src}
-    >
-      <Typography variant="h2" paragraph>
-        {content.lagoon_seventy.title}
-      </Typography>
-      <Typography variant="body1" paragraph>
-        {content.lagoon_seventy.body}
-      </Typography>
-      <Typography variant="caption">
-        {content.lagoon_seventy.link.text}
-      </Typography>
-    </Section>
+    <SectionCover bg={"primary"} content={content.lagoon_seventy} />
 
-    {/* Our Philosopyhy */}
-    <Section align="center" bg={"secondary"}>
-      <Typography variant="h2" paragraph>
-        {content.our_philosophy.title}
-      </Typography>
-      <Typography variant="body1" paragraph>
-        {content.our_philosophy.body}
-      </Typography>
-    </Section>
+    <SectionText bg={"secondary"} content={content.our_philosophy} />
 
-    {/* The Crew */}
-    <Section
-      align="center"
-      bg={"primary"}
-      coverImage={content.the_crew.image.src}
-    >
-      <Typography variant="h2" paragraph>
-        {content.the_crew.title}
-      </Typography>
-      <Typography variant="body1" paragraph>
-        {content.the_crew.body}
-      </Typography>
-
+    <SectionCover bg={"primary"} content={content.the_crew}>
       <Grid container spacing={4} alignItems="center" justify="center">
         {content.the_crew.members.map(m => (
           <Grid item md={6}>
@@ -63,39 +30,18 @@ export default () => (
           </Grid>
         ))}
       </Grid>
-    </Section>
+    </SectionCover>
 
-    {/* Catamaran */}
-    <Section
-      align="center"
-      bg={"primary"}
-      coverImage={content.catamaran_specifications.image.src}
-    >
-      <Typography variant="h2" paragraph>
-        {content.catamaran_specifications.title}
-      </Typography>
+    <SectionCover bg={"primary"} content={content.catamaran_specifications}>
       <Box align="center" mb={6}>
         {content.catamaran_specifications.specs.map(s => (
           <Typography>{s}</Typography>
         ))}
       </Box>
-    </Section>
+    </SectionCover>
 
-    {/* Gattina */}
-    <Section
-      align="center"
-      bg={"secondary"}
-      coverImage={content.gattina.image.src}
-    >
-      <Typography variant="h2" paragraph>
-        {content.gattina.title}
-      </Typography>
-      <Typography variant="body1" paragraph>
-        {content.gattina.body}
-      </Typography>
-    </Section>
+    <SectionCover bg={"secondary"} content={content.gattina} />
 
-    {/* Fully Equiped */}
     <Section align="center" bg={"primary"}>
       <Typography variant="h2" paragraph>
         {content.fully_equipped.title}

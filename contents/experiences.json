@@ -3,5 +3,96 @@
     "title": "experiences",
     "description": "experiences description",
     "keywords": "experiences keyword"
+  },
+
+  "cover": {
+    "image": { "src": "/static/images/LG_EXP_HERO.jpg", "alt": "" },
+    "title": "ON THE WATER EXPERIENCES",
+    "body": "Nothing could be more fun than an electric hydrofoil surfboard! Take the Lift eFoil out for a ride, the first one of its kind to hit the market. The eFoil uses an advanced lithium-ion battery to power a silent electric motor that’s mounted on an all-carbon fiber hydrofoil, all controlled with a Bluetooth hand controller. Riders can fly for over an hour at speeds of up to 25 mph.",
+    "link": { "href": "/", "text": "LEARN MORE ABOUT THE EFOIL >" }
+  },
+
+  "kitesurfing": {
+    "image": { "src": "/static/images/LG_KITE.jpg", "alt": "" },
+    "title": "KITESURFING",
+    "body": "Harness the power of the wind. Whether it is perfecting your technique or taking your first lesson, we’ve got a range of kiteboards and kites. Our skilled captain will gladly teach you the surf basics and help you understand how wind and kites work together to generate speed. "
+  },
+
+  "scuba": {
+    "image": { "src": "/static/images/LG_SNORKLE_U.jpg", "alt": "" },
+    "title": "SCUBA, SNORKLE + MORE",
+    "body": "Both the captain and chef are PADI Master Instructors. They can assist you in locating the finest reefs to explore and give you guidance regarding specific marine life to watch for. We have a full gamut of snorkle gear on board. If you prefer to scuba, our crew know the local dive shops where you can kit out the perfect gear.",
+    "body2": "If you are keen on catching your own dinner, there are two Cherokee 100cm sub marine spearguns with weight belts."
+  },
+
+  "paddle": {
+    "image": { "src": "/static/images/LG_SURF.jpg", "alt": "" },
+    "title": "PADDLE BOARD + WINDSURFING",
+    "body": "Find your center and be in the Zen. Stand up paddle boards are a serene way to see the world around you. You might spot manta rays dashing below, glide past an iguana sunbathing onshore, and take in the grandeur of a magnificent volcanic range in the distance. Choose from three premium inflatable boards as well as three inflatable windsurfing sails that easily insert into the boards.    "
+  },
+
+  "toys": {
+    "image": { "src": "/static/images/LG_TUBE.jpg", "alt": "" },
+    "title": "TOWABLE TOYS",
+    "body": "There are three different sizes of wakeboards and a wakeskate. An absolute favorite among younger riders is the two person inflatable towing toy. LA GATTA comes equipped with GATTINA, an eight passenger tender with a max speed of 64kph/40mph. GATTINA has a 220 HP engine, swim platform, shower, fish finder, stereo and its own full radar navigation system. Take GATTINA to a deserted island for lunch, out for an afternoon of fishing - or pull a happy wakeboarder all afternoon.    "
+  },
+
+  "land": {
+    "image": { "src": "/static/images/LG_GOCYCLE.jpg", "alt": "" },
+    "title": "ON LAND",
+    "body": "Compact, light yet rugged, Gocycle electric bikes are ideal for exploring on land. Apowerful Lithium ion battery provides up to 50 miles (80 km) range on a 4-7 hour charge time. LA GATTA has four Gocycles on board along with three electric scooter. "
+  },
+
+  "onboard": {
+    "image": { "src": "/static/images/LG_READING.jpg", "alt": "" },
+    "title": "ONBOARD EXPERIENCES",
+    "body": "For shipmates that want to leisure on deck, a curated record collection, maritime library, and coloring books await in the ship’s umbrage. They’ll find Italian poker and backgamon sets as well as an acoustic guitar to strum. Fun nights can be had belting out power ballads with the salon’s kareoke system. The flybridge features a movie theatre and Jacuzzi. Both can be enjoyed simutaneously under the stars, glass of champagne in hand. "
+  },
+
+  "drone": {
+    "image": { "src": "/static/images/LG_DRONE.jpg", "alt": "" },
+    "title": "DRONE",
+    "body": "Explore surrounding coves and capture striking footage with our powerful drone. The Mavic 2 Pro offers iconic Hasselblad image quality and 31 minutes of flight time. It is truly a game changer."
+  },
+
+  "fishing": {
+    "image": { "src": "/static/images/LG_FISHING_S.jpg", "alt": "" },
+    "title": "FISHING UNDER SAIL",
+    "body": "One of the first things to do on an off-shore passage once the sails are up is to cast a line in the sea. Premium fishing kits with rods quickly mount to the back of LA GATTA. With a little luck and technique, you and your fellow passenger will enjoy wild, line- caught fish prepared to your liking by the chef. "
+  },
+
+  "maritime": {
+    "image": { "src": "/static/images/LG_BOOKS_U.jpg", "alt": "" },
+    "title": "MARITIME LIBRARY",
+    "body": "Our digital library has a wide range of engaging titles to choose from. This collection has been carefully curated to reflect our love of the sea. Read of great nautical adventures while forging your own. Treasure Island, Kon Tiki, Life of Pi, and The Shipping News just to name a few."
+  },
+
+  "record": {
+    "image": { "src": "/static/images/LG_RECORD_U.jpg", "alt": "" },
+    "title": "RECORD COLLECTION",
+    "body": "Peruse the selection of over 80 vinyl albums, take in the cover art, pick a favorite song, and sink into a comfortable spot. LA GATTA’s custom fitted turntable is seamlessly integrated into the yacht’s sound system."
+  },
+
+  "fitness": {
+    "image": { "src": "/static/images/LG_ZEN.jpg", "alt": "" },
+    "title": "FITNESS + WELLNESS",
+    "body": "No need to break your workout routine while on LA GATTA. We have two sets of TRX Straps that clip to the mast and a set of versatile and easy to use PowerBlock dumbbells. Also onboard are two sets of bands, skipping ropes, two inflatable swiss balls, and four yoga mats + straps."
+  },
+
+  "sunset": {
+    "image": { "src": "/static/images/LG_SUNSET.jpg", "alt": "" }
+  },
+
+  "jacuzzi": {
+    "image": { "src": "/static/images/LG_JACUZZI.jpg", "alt": "" },
+    "title": "JACUZZI",
+    "body": "Imagine yourself luxuriating in the hot tub, watching a spectacular sunset with your favorite drink in hand.",
+    "body2": "LA GATTA is the only SEVENTY 7 with an onboard Jacuzzi. Situated on the flybridge with panoramic views, it is the go-to party space! "
+  },
+
+  "cinema": {
+    "image": { "src": "/static/images/LG_FILM.jpg", "alt": "" },
+    "title": "OUTDOOR CINEMA",
+    "body": "There’s no better way to end an action filled day in the sun than with a relaxing movie night under the stars. The flybridge is outfitted with mounted projector and a high tech dual image screen that can be seen from both sides. One can even watch from the Jacuzzi."
   }
 }

@@ -3,5 +3,59 @@
     "title": "layout",
     "description": "layout description",
     "keywords": "layout keyword"
+  },
+
+  "cover": {
+    "image": { "src": "/static/images/LG_LAYOUT_HERO.jpg", "alt": "" }
+  },
+
+  "spacious_design": {
+    "title": "SPACIOUS DESIGN",
+    "body": "Lagoon’s ambition was to equip the SEVENTY 7 with the DNA of a superyacht in a design that visually shows the quest for excellence. This idea was prime in designing all the areas of the boat so that each line is integrated into the whole without dissonance. From the flybridge to the skirts and from the bow towards the stern; spaces are plentiful and all are connected simultaneously."
+  },
+
+  "cabins": {
+    "title": "CABINS",
+    "body": "LA GATTA features four elegantly designed guest cabins. Each of these are fitted with an island bed, desk, ample storage and individual bathroom. The spacious master Panther suite features a hydraulic platform which opens to create a private “beach” giving direct sea access and a special spot to sunbathe. The crew quarters and galley are configured as to facilitate the staff’s work on board. Two bunks in the forepeak are a fun spot for two kids. The Lynx bed can be configured as a queen or two twins."
+  },
+
+  "panther_cabin": {
+    "title": "PANTHER CABIN",
+    "body": "Island bed, library, desk, sofa, walk-in closet, bathroom with sea view. Private beach platform.",
+    "image": { "src": "/static/images/photos/LG_L_PANT_01.jpg", "alt": "" },
+    "image_side": {
+      "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+      "alt": ""
+    }
+  },
+
+  "main_deck": {
+    "title": "MAIN DECK",
+    "body": "The main bridge is defined with a living space of 80 m² where the outside and inside are merged. The salon is filled with light and has panoramic views. It extends to the aft and forward cockpit with several living spaces. From back to front, all spaces become one. The front deck has a lounge space with two sofas and two large trampolines for sunbathing."
+  },
+
+  "cockpit": {
+    "title": "AFT COCKPIT",
+    "body": "Day bed and dining table facing each other.",
+    "image": { "src": "/static/images/photos/LG_L_AFT_01.jpg", "alt": "" },
+    "image_side": {
+      "src": "/static/images/LAGATTA_PLANS_SALON.png",
+      "alt": ""
+    }
+  },
+
+  "living_space": {
+    "title": "FLYBRIDGE LIVING SPACE",
+    "body": "The spacious flybridge gives impressive additional space. Its breathtaking viewpoint is ideal for eating and relaxing during sea trips. LA GATTA is one of the only SEVENTY 7s with a Jacuzzi. The flybridge is also outfitted with a mounted projector and a high tech dual image screen that can be seen from both sides."
+  },
+
+  "jacuzzi": {
+    "title": "JACUZZI",
+    "body": "The only SEVENTY 7 with a hot tub on the flybridge.",
+    "image": { "src": "/static/images/photos/LG_L_JACUZZI.jpg", "alt": "" },
+    "image_side": {
+      "src": "/static/images/LAGATTA_PLANS_FLYBRIDGE.png",
+      "alt": ""
+    }
   }
 }
