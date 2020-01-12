@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from '@material-ui/core'
+import { Box, Container, Typography } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 
 export default ({ content, bg, ...props }) => {
@@ -7,6 +7,7 @@ export default ({ content, bg, ...props }) => {
     backgroundColor: theme.palette[bg].main,
     color: theme.palette[bg].contrastText
   };
+
   return (
     <Box style={customStyle}>
       <Box py={8} align="center" {...props}>
@@ -27,13 +28,7 @@ export default ({ content, bg, ...props }) => {
                 {body}
               </Typography>
             ))}
-          {content.link && (
-            <Typography variant="caption">{content.link.text}</Typography>
-          )}
 
-          {content.button && (
-            <Button variant="outlined">{content.button.text}</Button>
-          )}
           {content.image && (
             <img src={content.image.src} style={{ width: "100%" }} />
           )}

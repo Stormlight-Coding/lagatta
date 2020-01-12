@@ -1,11 +1,20 @@
-import { Box, Button, Grid, Typography } from '@material-ui/core'
+import { Box, Grid, Typography } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 
-export default ({ content, bg, reverse, ...props }) => {
+export default ({ content, bg, reverse, children, ...props }) => {
   const theme = useTheme();
   const customStyle = {
     backgroundColor: theme.palette[bg].main,
     color: theme.palette[bg].contrastText
+  };
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
   return (
     <Box style={customStyle}>
@@ -28,13 +37,7 @@ export default ({ content, bg, reverse, ...props }) => {
                   {body}
                 </Typography>
               ))}
-            {content.link && (
-              <Typography variant="caption">{content.link.text}</Typography>
-            )}
-
-            {content.button && (
-              <Button variant="outlined">{content.button.text}</Button>
-            )}
+            {children}
           </Box>
         </Grid>
         <Grid item xs={6}>

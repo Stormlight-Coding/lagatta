@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from '@material-ui/core'
+import { Box, Container, Typography } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 
 export default ({ content, bg, children, ...props }) => {
@@ -30,13 +30,6 @@ export default ({ content, bg, children, ...props }) => {
                 {body}
               </Typography>
             ))}
-          {content.link && (
-            <Typography variant="caption">{content.link.text}</Typography>
-          )}
-
-          {content.button && (
-            <Button variant="outlined">{content.button.text}</Button>
-          )}
 
           {children}
         </Container>

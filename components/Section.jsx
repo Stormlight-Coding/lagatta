@@ -7,6 +7,7 @@ export default ({ bg, children, container = true, ...props }) => {
     backgroundColor: theme.palette[bg].main,
     color: theme.palette[bg].contrastText
   };
+
   return (
     <Box style={customStyle}>
       {children && (

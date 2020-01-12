@@ -1,4 +1,6 @@
 import MetaData from '../components/MetaData'
+import ModalBooks from '../components/ModalBooks'
+import ModalRecords from '../components/ModalRecords'
 import SectionCover from '../components/SectionCover'
 import SectionHalf from '../components/SectionHalf'
 import content from '../contents/experiences.json'
@@ -19,8 +21,12 @@ export default () => (
 
     <SectionHalf bg={"primary"} content={content.drone} />
     <SectionHalf bg={"primary"} content={content.fishing} reverse />
-    <SectionHalf bg={"primary"} content={content.maritime} />
-    <SectionHalf bg={"primary"} content={content.record} reverse />
+    <SectionHalf bg={"primary"} content={content.maritime}>
+      <ModalBooks content={content.maritime} />
+    </SectionHalf>
+    <SectionHalf bg={"primary"} content={content.record} reverse>
+      <ModalRecords content={content.record} />
+    </SectionHalf>
     <SectionHalf bg={"primary"} content={content.fitness} />
 
     <SectionCover bg={"secondary"} py={0} content={content.sunset} />
