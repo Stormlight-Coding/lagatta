@@ -17,15 +17,19 @@
 
   "sunrise": {
     "title": "SUNRISE",
-    "body": "Start each day with a delicious cup of coffee or tea complimented by fresh juices, assorted local pastries, eggs any style, and yogurts. Some perennial favorites include sliced market fruits, salmon eggs Benedict, avocado toasts, and crêpes suzette. Breakfast can be enjoyed anywhere, including on the aft deck or in your cabin.    ",
-    "body2": "Our chef bakes every day – maybe muffins for breakfast, a special rustic loaf for dinner – or a decadent dessert of your desiring.",
+    "bodies": [
+      "Start each day with a delicious cup of coffee or tea complimented by fresh juices, assorted local pastries, eggs any style, and yogurts. Some perennial favorites include sliced market fruits, salmon eggs Benedict, avocado toasts, and crêpes suzette. Breakfast can be enjoyed anywhere, including on the aft deck or in your cabin.",
+      "Our chef bakes every day – maybe muffins for breakfast, a special rustic loaf for dinner – or a decadent dessert of your desiring."
+    ],
     "image": { "src": "/static/images/LG_COFFEE.jpg", "alt": "" }
   },
 
   "midday": {
     "title": "MIDDAY",
-    "body": "Guests often lunch alfresco. The chef sources local fish, meat and seasonal vegetables to create meals rich in flavor while still being healthy and light. Some of her favorites are crab tacos, seared steak and papaya salad, grilled veggies with lamb skewers and homemade pita bread. Uncork a lovely fruity, bright rose from the cellar and luxuriate over a memorable meal",
-    "body2": "Our chef is happy to pack a picnic lunch if you prefer to take GATTINA onto a secluded beach one afternoon.",
+    "bodies": [
+      "Guests often lunch alfresco. The chef sources local fish, meat and seasonal vegetables to create meals rich in flavor while still being healthy and light. Some of her favorites are crab tacos, seared steak and papaya salad, grilled veggies with lamb skewers and homemade pita bread. Uncork a lovely fruity, bright rose from the cellar and luxuriate over a memorable meal",
+      "Our chef is happy to pack a picnic lunch if you prefer to take GATTINA onto a secluded beach one afternoon."
+    ],
     "image": { "src": "/static/images/LG_TACOS_S.jpg", "alt": "" }
   },
 
@@ -35,8 +39,10 @@
 
   "sunset": {
     "title": "SUNSET",
-    "body": "Dinner can be as extravagant or simple as you’d like. Pair seafood with a beautiful white from our extensive onboard wine cellar. Relax after dinner with a port, homemade lemon vodka, or sample a flight of legendary whiskies.",
-    "body2": "Our chef is happy to pack a picnic lunch if you prefer to take GATTINA onto a secluded beach one afternoon.",
+    "bodies": [
+      "Dinner can be as extravagant or simple as you’d like. Pair seafood with a beautiful white from our extensive onboard wine cellar. Relax after dinner with a port, homemade lemon vodka, or sample a flight of legendary whiskies.",
+      "Our chef is happy to pack a picnic lunch if you prefer to take GATTINA onto a secluded beach one afternoon."
+    ],
     "image": { "src": "/static/images/LG_FISH.jpg", "alt": "" }
   },
 

@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from '@material-ui/core'
 
+import GridCrew from '../components/GridCrew'
 import MetaData from '../components/MetaData'
 import Section from '../components/Section'
 import SectionCover from '../components/SectionCover'
@@ -15,21 +16,7 @@ export default () => (
     <SectionText bg={"secondary"} content={content.our_philosophy} />
 
     <SectionCover bg={"primary"} content={content.the_crew}>
-      <Grid container spacing={4} alignItems="center" justify="center">
-        {content.the_crew.members.map(m => (
-          <Grid item md={6}>
-            <Box mb={2}>
-              <img
-                src={m.image.src}
-                style={{ borderRadius: "50%", maxWidth: "100%" }}
-              />
-            </Box>
-            <Typography variant="subtitle1">
-              {m.title} - {m.name}
-            </Typography>
-          </Grid>
-        ))}
-      </Grid>
+      <GridCrew members={content.the_crew.members} />
     </SectionCover>
 
     <SectionCover bg={"primary"} content={content.catamaran_specifications}>

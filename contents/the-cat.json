@@ -28,12 +28,35 @@
         "image": {
           "src": "/static/images/LG_CAPTAIN_SMALL.jpg",
           "alt": ""
+        },
+        "modal": {
+          "title": "ANDY SUTHERLAND",
+          "bodies": [
+            "I met Sadie, my wife, twenty years ago in Edinburgh, Scotland where we both were pursuing corporate careers. Whilst on our first diving and sailing holiday together, we discovered a shared passion for the sea - and decided to “hang a left” and make the sea our life. We have now shared over ten years of adventures - chartering both sailing and motor yachts, big and small. We have found sailing big catamarans to be our sweet spot.  I’m thrilled to be the captain of La Gatta, an impeccably designed new Lagoon Seventy Seven due to launch November, 2019.",
+            "I hold a Yachtmaster Ocean captain’s license which allows me to command both private and commercial yachts under 200 tons anywhere in the world. Our yachting careers have so far included two Pacific crossings, four Panama Canal transits plus many thousands of happy miles of cruising and chartering in the Caribbean, Central America, the Galapagos Islands, French Polynesia and the Balearics. I am also a PADI Dive Instructor, keen underwater photographer, drone pilot and improving kite surfer. I enjoy being both on the water and under it - and together with my wife Sadie always welcome new opportunities, adventures and horizons"
+          ],
+          "image": {
+            "src": "/static/images/LG_CAPTAIN.jpg",
+            "alt": ""
+          }
         }
       },
       {
         "name": "SADIE SUTHERLAND",
         "title": "CHEF",
-        "image": { "src": "/static/images/LG_CHEF_SMALL.jpg", "alt": "" }
+        "image": { "src": "/static/images/LG_CHEF_SMALL.jpg", "alt": "" },
+        "modal": {
+          "title": "SADIE SUTHERLAND",
+          "bodies": [
+            "My greatest joy is creating magical moments for guests with delicious, carefully prepared and beautifully presented food. My cooking is focused on locally sourced, organic products. The past ten years of working as chef aboard a variety of yachts has given me an education in (and deep appreciation of) a variety of local cuisines, ranging from the Med and Caribbean to the Middle East and South Pacific. I truly love to cook - and bake pretty much every day at sea. I am always looking for new ways to be creative with whatever fresh local ingredients are available. Recently I completed a course in Molecular Gastronomy which I’ve had fun experimenting with.",
+            "I am happy to cater to the needs and desires of each charter guest. I have had experience in cooking for many dietary requirements (often within the same charter). With advance notice I’m able to accommodate most requests, even in very remote environments.",
+            "I am a Master PADI diving instructor and love every activity one can do on the sea."
+          ],
+          "image": {
+            "src": "/static/images/LG_CHEF.jpg",
+            "alt": ""
+          }
+        }
       }
     ]
   },

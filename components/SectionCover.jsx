@@ -24,11 +24,12 @@ export default ({ content, bg, children, ...props }) => {
               {content.body}
             </Typography>
           )}
-          {content.body2 && (
-            <Typography variant="body1" paragraph>
-              {content.body2}
-            </Typography>
-          )}
+          {content.bodies &&
+            content.bodies.map(body => (
+              <Typography variant="body1" paragraph>
+                {body}
+              </Typography>
+            ))}
           {content.link && (
             <Typography variant="caption">{content.link.text}</Typography>
           )}

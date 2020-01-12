@@ -21,8 +21,10 @@
   "scuba": {
     "image": { "src": "/static/images/LG_SNORKLE_U.jpg", "alt": "" },
     "title": "SCUBA, SNORKLE + MORE",
-    "body": "Both the captain and chef are PADI Master Instructors. They can assist you in locating the finest reefs to explore and give you guidance regarding specific marine life to watch for. We have a full gamut of snorkle gear on board. If you prefer to scuba, our crew know the local dive shops where you can kit out the perfect gear.",
-    "body2": "If you are keen on catching your own dinner, there are two Cherokee 100cm sub marine spearguns with weight belts."
+    "bodies": [
+      "Both the captain and chef are PADI Master Instructors. They can assist you in locating the finest reefs to explore and give you guidance regarding specific marine life to watch for. We have a full gamut of snorkle gear on board. If you prefer to scuba, our crew know the local dive shops where you can kit out the perfect gear.",
+      "If you are keen on catching your own dinner, there are two Cherokee 100cm sub marine spearguns with weight belts."
+    ]
   },
 
   "paddle": {
@@ -86,8 +88,10 @@
   "jacuzzi": {
     "image": { "src": "/static/images/LG_JACUZZI.jpg", "alt": "" },
     "title": "JACUZZI",
-    "body": "Imagine yourself luxuriating in the hot tub, watching a spectacular sunset with your favorite drink in hand.",
-    "body2": "LA GATTA is the only SEVENTY 7 with an onboard Jacuzzi. Situated on the flybridge with panoramic views, it is the go-to party space! "
+    "bodies": [
+      "Imagine yourself luxuriating in the hot tub, watching a spectacular sunset with your favorite drink in hand.",
+      "LA GATTA is the only SEVENTY 7 with an onboard Jacuzzi. Situated on the flybridge with panoramic views, it is the go-to party space!"
+    ]
   },
 
   "cinema": {
