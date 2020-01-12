@@ -27,17 +27,19 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
             alignItems="center"
             justify="space-between"
           >
-            <Grid item>
-              <Link href="/">
-                <img src={"/static/images/logo.svg"} alt="logo" height="20" />
-              </Link>
-            </Grid>
-            <Hidden xsDown implementation="css">
+            <Hidden mdUp implementation="css">
               <Grid item>
-                <TopMenu />
+                <Link href="/">
+                  <img src={"/static/images/logo.svg"} alt="logo" height="20" />
+                </Link>
               </Grid>
             </Hidden>
-            <Hidden smUp implementation="css">
+            <Grid item xs>
+              <Hidden smDown implementation="css">
+                <TopMenu />
+              </Hidden>
+            </Grid>
+            <Hidden mdUp implementation="css">
               <Grid item>
                 <IconButton
                   edge="start"

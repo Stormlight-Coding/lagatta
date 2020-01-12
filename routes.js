@@ -1,21 +1,39 @@
 module.exports = {
-  "/": { page: "/", changefreq: "daily", name: "Lagatta" },
+  "/": { page: "/", changefreq: "daily", name: "Lagatta", position: "center" },
   "/destinations": {
     page: "/destinations",
     changefreq: "daily",
-    name: "Destinations"
+    name: "Destinations",
+    position: "left"
   },
-  "/layout": { page: "/layout", changefreq: "daily", name: "Layout" },
-  "/dinning": { page: "/dinning", changefreq: "daily", name: "Dinning" },
+  "/layout": {
+    page: "/layout",
+    changefreq: "daily",
+    name: "Layout",
+    position: "left"
+  },
+  "/dinning": {
+    page: "/dinning",
+    changefreq: "daily",
+    name: "Dinning",
+    position: "left"
+  },
   "/experiences": {
     page: "/experiences",
     changefreq: "daily",
-    name: "Experiences"
+    name: "Experiences",
+    position: "right"
   },
-  "/the-cat": { page: "/the-cat", changefreq: "daily", name: "The Cat" },
+  "/the-cat": {
+    page: "/the-cat",
+    changefreq: "daily",
+    name: "The Cat",
+    position: "right"
+  },
   "/book-charter": {
     page: "/book-charter",
     changefreq: "daily",
-    name: "Book Charter"
+    name: "Book Charter",
+    position: "right"
   }
 };
