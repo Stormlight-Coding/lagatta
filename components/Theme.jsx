@@ -3,7 +3,7 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import React from 'react'
 
-const spacing = 8;
+const spacing = factor => [0, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72][factor];
 
 const palette = {
   primary: {

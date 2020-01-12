@@ -20,7 +20,7 @@ export default () => (
     <SectionHalf bg={"primary"} content={content.drone} />
     <SectionHalf bg={"primary"} content={content.fishing} reverse />
     <SectionHalf bg={"primary"} content={content.maritime} />
-    <SectionHalf bg={"primary"} content={content.record} revese />
+    <SectionHalf bg={"primary"} content={content.record} reverse />
     <SectionHalf bg={"primary"} content={content.fitness} />
 
     <SectionCover bg={"secondary"} py={0} content={content.sunset} />

@@ -23,7 +23,7 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
         <Container fixed>
           <Grid
             container
-            spacing={2}
+            spacing={3}
             alignItems="center"
             justify="space-between"
           >
