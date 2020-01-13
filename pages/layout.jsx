@@ -23,7 +23,7 @@ export default () => (
         <Box align="center">
           <img
             src={content.panther_cabin.image_side.src}
-            style={{ maxWidth: "480px", width: "100%" }}
+            style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
           />
         </Box>
       }
@@ -46,7 +46,7 @@ export default () => (
         <Box align="center">
           <img
             src={content.cockpit.image_side.src}
-            style={{ maxWidth: "480px", width: "100%" }}
+            style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
           />
         </Box>
       }
@@ -69,7 +69,7 @@ export default () => (
         <Box align="center">
           <img
             src={content.jacuzzi.image_side.src}
-            style={{ maxWidth: "480px", width: "100%" }}
+            style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
           />
         </Box>
       }
