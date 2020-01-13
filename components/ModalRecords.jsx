@@ -64,7 +64,7 @@ export default function CustomizedDialogs({ content }) {
                     </Grid>
                     <Grid item xs={6}>
                       <Typography
-                        style={{ textTransform: "uppercase" }}
+                        style={{ fontWeight: 600, textTransform: "uppercase" }}
                         align="left"
                         variant="body1"
                       >

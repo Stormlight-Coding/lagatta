@@ -25,7 +25,7 @@ export default function CustomizedDialogs({ open, handleClose, member }) {
             <img src={member.image.src} style={{ maxWidth: "100%" }} />
           </Grid>
           <Grid item xs={7}>
-            <Box px={7} py={6} color="white">
+            <Box px={7} pt={6} pb={4} color="white">
               <IconButton
                 color="inherit"
                 aria-label="close"
@@ -45,13 +45,29 @@ export default function CustomizedDialogs({ open, handleClose, member }) {
                 </Typography>
               )}
               {member.body && (
-                <Typography variant="body2" paragraph>
+                <Typography
+                  variant="body2"
+                  paragraph
+                  style={{
+                    fontWeight: 200,
+                    fontSize: "16px",
+                    lineHeight: "30px"
+                  }}
+                >
                   {member.body}
                 </Typography>
               )}
               {member.bodies &&
                 member.bodies.map(body => (
-                  <Typography variant="body2" paragraph>
+                  <Typography
+                    variant="body2"
+                    paragraph
+                    style={{
+                      fontWeight: 200,
+                      fontSize: "16px",
+                      lineHeight: "30px"
+                    }}
+                  >
                     {body}
                   </Typography>
                 ))}

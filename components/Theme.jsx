@@ -26,14 +26,14 @@ const palette = {
 };
 
 const typography = {
-  // fontFamily: "Gotham",
+  fontFamily: "Gotham",
   fontWeight: 200,
-  h1: { fontSize: "36px", lineHeight: "44px" },
+  h1: { fontSize: "36px", lineHeight: "44px", fontWeight: 600 },
   h2: {
     fontSize: "22px",
     lineHeight: "30px",
     letterSpacing: "1.32px",
-    fontWeight: 400, // book
+    fontWeight: 600, // medium
     paddingBottom: `${spacing * 2}px`
   },
   h3: {
@@ -56,7 +56,7 @@ const typography = {
     fontSize: "16px",
     lineHeight: "30px",
     letterSpacing: "0.06px",
-    fontWeight: 400 // book
+    fontWeight: 200 // light
   },
   body2: { fontSize: "14px", fontWeight: 200 },
   caption: {
@@ -64,7 +64,7 @@ const typography = {
     fontSize: "12px",
     lineHeight: "22px",
     letterSpacing: "1.5px",
-    fontWeight: 400 // book
+    fontWeight: 200 // light
   },
   button: {
     textTransform: "capitalize",
@@ -129,7 +129,7 @@ const overrides = {
   MuiListItem: {
     root: {
       fontSize: "16px",
-      // fontFamily: "Gotham",
+      fontFamily: "Gotham",
 
       backgroundColor: "transparent !important",
       "&$selected": {

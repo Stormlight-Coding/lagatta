@@ -9,7 +9,7 @@ const Links = ({ route, router }) => (
     <NextLink passHref href={route}>
       <Link
         style={{
-          fontWeight: router.route == route ? "bold" : "",
+          fontWeight: router.route == route ? 800 : 600,
           textTransform: "uppercase",
           letterSpacing: "1.5px",
           fontSize: "12px",

@@ -58,17 +58,17 @@ export default function CustomizedDialogs({ content }) {
                 content.books.map(book => (
                   <React.Fragment>
                     <Grid item xs={6}>
-                      <Typography align="right" variant="body1">
-                        {book.author}
+                      <Typography
+                        align="right"
+                        variant="body1"
+                        style={{ fontWeight: 600, textTransform: "uppercase" }}
+                      >
+                        {book.title}
                       </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                      <Typography
-                        style={{ textTransform: "uppercase" }}
-                        align="left"
-                        variant="body1"
-                      >
-                        {book.title}
+                      <Typography align="left" variant="body1">
+                        {book.author}
                       </Typography>
                     </Grid>
                   </React.Fragment>
