@@ -1,7 +1,6 @@
-import { Box, Button, Grid } from '@material-ui/core'
+import { Box, Button } from '@material-ui/core'
 import Dialog from '@material-ui/core/Dialog'
 import IconButton from '@material-ui/core/IconButton'
-import Typography from '@material-ui/core/Typography'
 import CloseIcon from '@material-ui/icons/Close'
 import React from 'react'
 
@@ -17,9 +16,9 @@ export default function CustomizedDialogs({ content }) {
   };
 
   return (
-    <React.Fragment>
+    <Box>
       <Button onClick={handleClickOpen} variant="text">
-        {content.button.text}
+        {"COCKTAILS >"}
       </Button>
 
       <Dialog
@@ -28,7 +27,7 @@ export default function CustomizedDialogs({ content }) {
             backgroundColor: "transparent"
           }
         }}
-        maxWidth={"md"}
+        maxWidth={"lg"}
         scroll="body"
         onClose={handleClose}
         open={open}
@@ -48,35 +47,24 @@ export default function CustomizedDialogs({ content }) {
               <CloseIcon />
             </IconButton>
 
-            {content.songs_title && (
-              <Typography variant="h2" style={{ marginBottom: "60px" }}>
-                {content.songs_title}
-              </Typography>
-            )}
-            <Grid container spacing={3}>
-              {content.songs &&
-                content.songs.map(song => (
-                  <React.Fragment>
-                    <Grid item xs={6}>
-                      <Typography align="right" variant="body1">
-                        {song.author}
-                      </Typography>
-                    </Grid>
-                    <Grid item xs={6}>
-                      <Typography
-                        style={{ textTransform: "uppercase" }}
-                        align="left"
-                        variant="body1"
-                      >
-                        {song.title}
-                      </Typography>
-                    </Grid>
-                  </React.Fragment>
-                ))}
-            </Grid>
+            <Box mb={6}>
+              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_1.png" />
+            </Box>
+            <Box mb={6}>
+              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_2.png" />
+            </Box>
+            <Box mb={6}>
+              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_3.png" />
+            </Box>
+            <Box mb={6}>
+              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_4.png" />
+            </Box>
+            <Box mb={6}>
+              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_5.png" />
+            </Box>
           </Box>
         </Box>
       </Dialog>
-    </React.Fragment>
+    </Box>
   );
 }

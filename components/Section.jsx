@@ -11,7 +11,7 @@ export default ({ bg, children, container = true, ...props }) => {
   return (
     <Box style={customStyle}>
       {children && (
-        <Box py={8} {...props}>
+        <Box py={6} {...props}>
           {container ? (
             <Container fixed maxWidth={false}>
               {children}

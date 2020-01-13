@@ -1,11 +1,23 @@
 import { Box, Grid, Typography } from '@material-ui/core'
 
 export default ({ item }) => (
-  <Grid item xs sm={6} md={4}>
-    <img src={item.image.src} style={{ maxWidth: "100%" }} />
-    <Box p={2} bgcolor="secondary.main">
-      <Typography>{item.title}</Typography>
-      <Typography>{item.date}</Typography>
+  <Grid item xs={12} sm={4} md={4}>
+    <img src={item.image.src} style={{ width: "100%" }} />
+    <Box pt={3} pb={4} bgcolor="secondary.main">
+      <Typography
+        variant="caption"
+        style={{ fontWeight: "400" }}
+        display="block"
+      >
+        {item.title}
+      </Typography>
+      <Typography
+        variant="caption"
+        style={{ fontWeight: "200" }}
+        display="block"
+      >
+        {item.date}
+      </Typography>
     </Box>
   </Grid>
 );

@@ -19,13 +19,13 @@ export default function CustomizedDialogs({ open, handleClose, member }) {
       onClose={handleClose}
       open={open}
     >
-      <Box bgcolor="secondary.main" style={{ position: "relative" }}>
+      <Box bgcolor="primary.main" style={{ position: "relative" }}>
         <Grid container>
-          <Grid item xs={4}>
+          <Grid item xs={5}>
             <img src={member.image.src} style={{ maxWidth: "100%" }} />
           </Grid>
-          <Grid item xs={8}>
-            <Box p={8} color="white">
+          <Grid item xs={7}>
+            <Box px={7} py={6} color="white">
               <IconButton
                 color="inherit"
                 aria-label="close"

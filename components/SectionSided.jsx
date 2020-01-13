@@ -25,11 +25,11 @@ export default ({
             {boxLeft}
           </Grid>
         )}
-        <Grid item xs>
+        <Grid item xs={8}>
           {headerImage && <img src={headerImage} style={{ width: "100%" }} />}
 
           {children && (
-            <Box py={8} {...props}>
+            <Box py={5} px={7} {...props}>
               {container ? (
                 <Container fixed maxWidth={false}>
                   {children}

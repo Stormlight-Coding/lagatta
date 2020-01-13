@@ -3,7 +3,9 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import React from 'react'
 
-const spacing = factor => [0, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72][factor];
+const spacing = factor => [0, 3, 8, 15, 20, 30, 85, 90][factor];
+
+const breakpoints = { xs: 0, sm: 600, md: 960, lg: 1280, xl: 1440 };
 
 const palette = {
   primary: {
@@ -24,7 +26,7 @@ const palette = {
 };
 
 const typography = {
-  fontFamily: "Avenir",
+  // fontFamily: "Gotham",
   fontWeight: 200,
   h1: { fontSize: "36px", lineHeight: "44px" },
   h2: {
@@ -107,6 +109,11 @@ const overrides = {
       // backgroundColor: "transparent"
     }
   },
+  MuiTypography: {
+    paragraph: {
+      marginBottom: "35px"
+    }
+  },
   MuiButton: {
     root: {},
     sizeLarge: {
@@ -122,7 +129,7 @@ const overrides = {
   MuiListItem: {
     root: {
       fontSize: "16px",
-      fontFamily: "Avenir",
+      // fontFamily: "Gotham",
 
       backgroundColor: "transparent !important",
       "&$selected": {
@@ -145,6 +152,7 @@ const theme = createMuiTheme({
   palette,
   typography,
   shadows,
+  breakpoints,
   overrides
 });
 

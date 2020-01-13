@@ -34,7 +34,7 @@ export default function CustomizedDialogs({ content }) {
         open={open}
       >
         <Box bgcolor="primary.main" style={{ position: "relative" }}>
-          <Box p={8} color="white" align="center">
+          <Box py={7} px={7} color="white" align="center">
             <IconButton
               color="inherit"
               aria-label="close"
@@ -49,11 +49,11 @@ export default function CustomizedDialogs({ content }) {
             </IconButton>
 
             {content.books_title && (
-              <Typography variant="h2" paragraph>
+              <Typography variant="h2" style={{ marginBottom: "60px" }}>
                 {content.books_title}
               </Typography>
             )}
-            <Grid container spacing="3">
+            <Grid container spacing={3}>
               {content.books &&
                 content.books.map(book => (
                   <React.Fragment>

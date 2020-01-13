@@ -11,27 +11,39 @@ export default () => (
 
     <SectionCover bg={"secondary"} content={content.cover} />
 
-    <SectionHalf bg={"primary"} content={content.kitesurfing} />
-    <SectionHalf bg={"primary"} content={content.scuba} reverse />
-    <SectionHalf bg={"primary"} content={content.paddle} />
-    <SectionHalf bg={"primary"} content={content.toys} reverse />
-    <SectionHalf bg={"primary"} content={content.land} />
+    <SectionHalf bg={"primary"} content={content.kitesurfing} reverse />
+    <SectionHalf bg={"primary"} content={content.scuba} />
+    <SectionHalf bg={"primary"} content={content.paddle} reverse />
+    <SectionHalf bg={"primary"} content={content.toys} />
+    <SectionHalf bg={"primary"} content={content.land} reverse />
 
-    <SectionCover bg={"secondary"} content={content.onboard} />
+    <SectionCover
+      hideSection={{ smDown: true }}
+      bg={"secondary"}
+      content={content.onboard}
+    />
 
-    <SectionHalf bg={"primary"} content={content.drone} />
-    <SectionHalf bg={"primary"} content={content.fishing} reverse />
-    <SectionHalf bg={"primary"} content={content.maritime}>
+    <SectionHalf bg={"primary"} content={content.drone} reverse />
+    <SectionHalf bg={"primary"} content={content.fishing} />
+
+    <SectionHalf bg={"primary"} content={content.maritime} reverse>
       <ModalBooks content={content.maritime} />
     </SectionHalf>
-    <SectionHalf bg={"primary"} content={content.record} reverse>
+
+    <SectionHalf bg={"primary"} content={content.record}>
       <ModalRecords content={content.record} />
     </SectionHalf>
-    <SectionHalf bg={"primary"} content={content.fitness} />
 
-    <SectionCover bg={"secondary"} py={0} content={content.sunset} />
+    <SectionHalf bg={"primary"} content={content.fitness} reverse />
 
-    <SectionHalf bg={"primary"} content={content.jacuzzi} />
-    <SectionHalf bg={"primary"} content={content.cinema} reverse />
+    <SectionCover
+      hideSection={{ smDown: true }}
+      bg={"secondary"}
+      py={0}
+      content={content.sunset}
+    />
+
+    <SectionHalf bg={"primary"} content={content.jacuzzi} reverse />
+    <SectionHalf bg={"primary"} content={content.cinema} />
   </React.Fragment>
 );

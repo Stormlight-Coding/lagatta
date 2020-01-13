@@ -16,63 +16,69 @@ export default () => (
 
     {/* panther_cabin */}
     <SectionSided
-      align="center"
+      align="left"
       bg={"primary"}
+      bgcolor="#1E3A57"
       boxLeft={
-        <Box>
-          <img src={content.panther_cabin.image_side.src} width={"100%"} />
+        <Box align="center">
+          <img
+            src={content.panther_cabin.image_side.src}
+            style={{ maxWidth: "480px", width: "100%" }}
+          />
         </Box>
       }
       footerImage={content.panther_cabin.image.src}
     >
-      <Typography variant="h2" paragraph>
+      <Typography variant="h2" style={{ marginBottom: "15px" }}>
         {content.panther_cabin.title}
       </Typography>
-      <Typography variant="body1" paragraph>
-        {content.panther_cabin.body}
-      </Typography>
+      <Typography variant="body1">{content.panther_cabin.body}</Typography>
     </SectionSided>
 
     <SectionText bg={"secondary"} content={content.main_deck} />
 
     {/* aft cockpit */}
     <SectionSided
-      align="center"
+      align="left"
       bg={"primary"}
+      bgcolor={"#2E7379"}
       boxRight={
-        <Box>
-          <img src={content.cockpit.image_side.src} width={"100%"} />
+        <Box align="center">
+          <img
+            src={content.cockpit.image_side.src}
+            style={{ maxWidth: "480px", width: "100%" }}
+          />
         </Box>
       }
       footerImage={content.cockpit.image.src}
     >
-      <Typography variant="h2" paragraph>
+      <Typography variant="h2" style={{ marginBottom: "15px" }}>
         {content.cockpit.title}
       </Typography>
-      <Typography variant="body1" paragraph>
-        {content.cockpit.body}
-      </Typography>
+      <Typography variant="body1">{content.cockpit.body}</Typography>
     </SectionSided>
 
     <SectionText bg={"secondary"} content={content.living_space} />
 
     {/* jacuzzi */}
     <SectionSided
-      align="center"
+      align="left"
       bg={"primary"}
+      bgcolor="#0B446B"
       boxLeft={
-        <Box>
-          <img src={content.jacuzzi.image_side.src} width={"100%"} />
+        <Box align="center">
+          <img
+            src={content.jacuzzi.image_side.src}
+            style={{ maxWidth: "480px", width: "100%" }}
+          />
         </Box>
       }
       footerImage={content.jacuzzi.image.src}
     >
-      <Typography variant="h2" paragraph>
+      <Typography variant="h2" style={{ marginBottom: "15px" }}>
         {content.jacuzzi.title}
       </Typography>
-      <Typography variant="body1" paragraph>
-        {content.jacuzzi.body}
-      </Typography>
+      <Typography variant="body1">{content.jacuzzi.body}</Typography>
     </SectionSided>
   </React.Fragment>
 );

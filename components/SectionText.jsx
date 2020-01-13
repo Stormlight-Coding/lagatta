@@ -1,5 +1,7 @@
-import { Box, Container, Typography } from '@material-ui/core'
+import { Box, Button, Container, Typography } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
+
+import Link from './Link'
 
 export default ({ content, bg, ...props }) => {
   const theme = useTheme();
@@ -10,7 +12,7 @@ export default ({ content, bg, ...props }) => {
 
   return (
     <Box style={customStyle}>
-      <Box py={8} align="center" {...props}>
+      <Box py={6} align="center" {...props}>
         <Container fixed maxWidth={false}>
           {content.title && (
             <Typography variant="h2" paragraph>
@@ -29,8 +31,18 @@ export default ({ content, bg, ...props }) => {
               </Typography>
             ))}
 
+          {content.link && (
+            <Box>
+              <Link href={content.link.href}>
+                <Button variant="text">{content.link.text}</Button>
+              </Link>
+            </Box>
+          )}
+
           {content.image && (
-            <img src={content.image.src} style={{ width: "100%" }} />
+            <Box align="center">
+              <img src={content.image.src} style={{ maxWidth: "732px" }} />
+            </Box>
           )}
         </Container>
       </Box>

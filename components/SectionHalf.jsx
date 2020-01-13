@@ -1,26 +1,21 @@
-import { Box, Grid, Typography } from '@material-ui/core'
+import { Box, Button, Grid, Hidden, Typography, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 
-export default ({ content, bg, reverse, children, ...props }) => {
+import Link from './Link'
+
+export default ({ content, bg, reverse, children, hideImage, ...props }) => {
   const theme = useTheme();
   const customStyle = {
     backgroundColor: theme.palette[bg].main,
     color: theme.palette[bg].contrastText
   };
-  const [open, setOpen] = React.useState(false);
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
   return (
     <Box style={customStyle}>
-      <Grid container direction={reverse ? "row" : "row-reverse"}>
-        <Grid item xs={6}>
-          <Box p={8} align="left" {...props}>
+      <Grid container direction={reverse && matches ? "row-reverse" : "row"}>
+        <Grid item xs={12} sm={6}>
+          <Box pt={6} pb={4} px={7} align="left" {...props}>
             {content.title && (
               <Typography variant="h2" paragraph>
                 {content.title}
@@ -37,13 +32,25 @@ export default ({ content, bg, reverse, children, ...props }) => {
                   {body}
                 </Typography>
               ))}
+
+            {content.link && (
+              <Box>
+                <Link href={content.link.href}>
+                  <Button variant="text">{content.link.text}</Button>
+                </Link>
+              </Box>
+            )}
+
             {children}
           </Box>
         </Grid>
-        <Grid item xs={6}>
-          {content.image && (
-            <img src={content.image.src} style={{ width: "100%" }} />
-          )}
+
+        <Grid item xs={12} sm={6}>
+          <Hidden {...hideImage}>
+            {content.image && (
+              <img src={content.image.src} style={{ width: "100%" }} />
+            )}
+          </Hidden>
         </Grid>
       </Grid>
     </Box>

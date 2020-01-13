@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "the-cat",
+    "title": "The Cat",
     "description": "the-cat description",
     "keywords": "the-cat keyword"
   },
@@ -133,6 +133,19 @@
           "Icebox",
           "4 Eletric Gocucle Bikes",
           "3 Eletric Scooters"
+        ]
+      },
+      {
+        "title": "WATER TOYS",
+        "itens": [
+          "Lift eFoil",
+          "Stand Up Paddle Boards",
+          "Windsurfing Sails",
+          "Snorkel Equipment",
+          "Wakeboards",
+          "Two Person Inflatable Towing Toy",
+          "Off-Shore Fishing Equipment",
+          "Cherokee 100cm Spearguns"
         ]
       }
     ]

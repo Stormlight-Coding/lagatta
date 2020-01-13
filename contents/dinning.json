@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "dinning",
+    "title": "Dinning",
     "description": "dinning description",
     "keywords": "dinning keyword"
   },
@@ -40,8 +40,7 @@
   "sunset": {
     "title": "SUNSET",
     "bodies": [
-      "Dinner can be as extravagant or simple as you’d like. Pair seafood with a beautiful white from our extensive onboard wine cellar. Relax after dinner with a port, homemade lemon vodka, or sample a flight of legendary whiskies.",
-      "Our chef is happy to pack a picnic lunch if you prefer to take GATTINA onto a secluded beach one afternoon."
+      "Dinner can be as extravagant or simple as you’d like. Pair seafood with a beautiful white from our extensive onboard wine cellar. Relax after dinner with a port, homemade lemon vodka, or sample a flight of legendary whiskies."
     ],
     "image": { "src": "/static/images/LG_FISH.jpg", "alt": "" }
   },

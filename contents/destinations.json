@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "destinations",
+    "title": "Destinations",
     "description": "destinations description",
     "keywords": "destinations keyword"
   },
@@ -8,70 +8,84 @@
   "cover": {
     "image": { "src": "/static/images/LG_DEST_HERO_U.jpg", "alt": "" },
     "title": "DESTINATIONS",
-    "body": "Each season, LA GATTA sails to a unique and vibrant destination. Once there, the captain can help create a custom itinerary reflecting the activities and local points of interests you and your fellow travelers are passionate about. From the diverse Windwards to secluded anchorages in the Seychelles, the possibilities are limitless. Follow our itinerary and pick your spot!",
-    "link": { "href": "/", "text": "VISIT LAGOON’S SITE FOR MORE INFO >" }
+    "body": "Each season, LA GATTA sails to a unique and vibrant destination. Once there, the captain can help create a custom itinerary reflecting the activities and local points of interests you and your fellow travelers are passionate about. From the diverse Windwards to secluded anchorages in the Seychelles, the possibilities are limitless. Follow our itinerary and pick your spot!"
   },
 
   "items": [
     {
-      "title": "MONACO GP",
+      "title": "PALMA INTERNATIONAL BOAT SHOW",
+      "date": "APRIL 2020",
+      "image": { "src": "/static/images/LG_D_PALMA.jpg", "alt": "" }
+    },
+    {
+      "title": "CANNES FILM FESTIVAL",
       "date": "MAY 2020",
-      "image": { "src": "/static/images/LG_D_GREECE_U.jpg", "alt": "" }
-    },
-    {
-      "title": "GREEK ISLANDS",
-      "date": "SUMMER 2020",
-      "image": { "src": "/static/images/LG_D_GRANDPRIX.jpg", "alt": "" }
-    },
-    {
-      "title": "CARIBBEAN",
-      "date": "WINTER 2020 - SPRINT 2021",
-      "image": { "src": "/static/images/LG_D_CARRIB_U.jpg", "alt": "" }
+      "image": { "src": "/static/images/LG_D_CANNES.jpg", "alt": "" }
     },
     {
       "title": "MONACO GP",
       "date": "MAY 2020",
-      "image": { "src": "/static/images/LG_D_GREECE_U.jpg", "alt": "" }
+      "image": { "src": "/static/images/LG_D_GRANDPRIX.jpg", "alt": "" }
     },
     {
       "title": "GREEK ISLANDS",
       "date": "SUMMER 2020",
-      "image": { "src": "/static/images/LG_D_GRANDPRIX.jpg", "alt": "" }
-    },
-    {
-      "title": "CARIBBEAN",
-      "date": "WINTER 2020 - SPRINT 2021",
-      "image": { "src": "/static/images/LG_D_CARRIB_U.jpg", "alt": "" }
-    },
-    {
-      "title": "MONACO GP",
-      "date": "MAY 2020",
       "image": { "src": "/static/images/LG_D_GREECE_U.jpg", "alt": "" }
     },
     {
-      "title": "GREEK ISLANDS",
-      "date": "SUMMER 2020",
-      "image": { "src": "/static/images/LG_D_GRANDPRIX.jpg", "alt": "" }
-    },
-    {
-      "title": "CARIBBEAN",
-      "date": "WINTER 2020 - SPRINT 2021",
+      "title": "CARRIBEAN",
+      "date": "WINTER 2020 - SPRING 2021",
       "image": { "src": "/static/images/LG_D_CARRIB_U.jpg", "alt": "" }
     },
     {
-      "title": "MONACO GP",
-      "date": "MAY 2020",
-      "image": { "src": "/static/images/LG_D_GREECE_U.jpg", "alt": "" }
+      "title": "CROATIA",
+      "date": "SUMMER 2021",
+      "image": { "src": "/static/images/LG_D_CROATIA_U.jpg", "alt": "" }
     },
     {
-      "title": "GREEK ISLANDS",
-      "date": "SUMMER 2020",
-      "image": { "src": "/static/images/LG_D_GRANDPRIX.jpg", "alt": "" }
+      "title": "THE GRENADINES",
+      "date": "WINTER 2021 - SPRING 2022 CARIBBEAN",
+      "image": { "src": "/static/images/LG_D_GRENA.jpg", "alt": "" }
     },
     {
-      "title": "CARIBBEAN",
-      "date": "WINTER 2020 - SPRINT 2021",
-      "image": { "src": "/static/images/LG_D_CARRIB_U.jpg", "alt": "" }
+      "title": "PANAMA CANAL",
+      "date": "MAY 2022",
+      "image": { "src": "/static/images/LG_D_PANAMA_U.jpg", "alt": "" }
+    },
+    {
+      "title": "GALAPAGOS",
+      "date": "SUMMER 2022 PACIFIC SAILING",
+      "image": { "src": "/static/images/LG_D_GALAPAGOS.jpg", "alt": "" }
+    },
+    {
+      "title": "EASTER ISLAND",
+      "date": "SUMMER 2022 PACIFIC SAILING",
+      "image": { "src": "/static/images/LG_D_EASTER_U.jpg", "alt": "" }
+    },
+    {
+      "title": "MARQUESAS",
+      "date": "SUMMER 2022 PACIFIC SAILING",
+      "image": { "src": "/static/images/LG_D_MARQUE.jpg", "alt": "" }
+    },
+    {
+      "title": "TAHITI",
+      "date": "SUMMER 2022 PACIFIC SAILING",
+      "image": { "src": "/static/images/LG_D_TAHITI_U.jpg", "alt": "" }
+    },
+    {
+      "title": "GREAT BARRIER REEF",
+      "date": "FALL 2022 AUSTRALIA",
+      "image": { "src": "/static/images/LG_D_BARRIER.jpg", "alt": "" }
+    },
+    {
+      "title": "SOUTH PACIFIC",
+      "date": "WINTER 2022 - SPRING 2023",
+      "image": { "src": "/static/images/LG_D_SOUTHPAC.jpg", "alt": "" }
+    },
+    {
+      "title": "NEW CALEDONIA",
+      "date": "WINTER 2022 - SPRINT 2023",
+      "image": { "src": "/static/images/LG_D_CALEDONIA.jpg", "alt": "" }
     }
   ]
 }

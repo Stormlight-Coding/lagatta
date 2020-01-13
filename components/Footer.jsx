@@ -1,7 +1,19 @@
-import Section from '../components/Section'
+import { Box } from '@material-ui/core'
+import { withRouter } from 'next/router'
 
-export default () => (
-  <Section align="center" bg="secondary" py={1}>
+const getFooterColor = (router, theme, trigger) => {
+  if (router.route === "/") return "secondary.main";
+  if (router.route === "/destinations") return "primary.main";
+  if (router.route === "/layout") return "secondary.main";
+  if (router.route === "/experiences") return "secondary.main";
+  if (router.route === "/book-charter") return "secondary.main";
+  if (router.route === "/the-cat") return "secondary.main";
+  if (router.route === "/dinning") return "secondary.main";
+  return "primary";
+};
+
+export default withRouter(({ router }) => (
+  <Box align="center" bgcolor={getFooterColor(router)} py={3}>
     Copyright © 2019 Lagatta US, Inc. All Rights Reserved.
-  </Section>
-);
+  </Box>
+));
