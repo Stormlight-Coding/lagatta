@@ -41,7 +41,10 @@ export default ({ content, bg, ...props }) => {
 
           {content.image && (
             <Box align="center">
-              <img src={content.image.src} style={{ maxWidth: "732px" }} />
+              <img
+                src={content.image.src}
+                style={{ maxWidth: "732px", width: "100%" }}
+              />
             </Box>
           )}
         </Container>

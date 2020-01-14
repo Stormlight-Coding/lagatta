@@ -2,7 +2,7 @@ import { Box, Typography } from '@material-ui/core'
 
 import MetaData from '../components/MetaData'
 import SectionCover from '../components/SectionCover'
-import SectionSided from '../components/SectionSided'
+import SectionGallery from '../components/SectionGallery'
 import SectionText from '../components/SectionText'
 import content from '../contents/layout.json'
 
@@ -15,7 +15,7 @@ export default () => (
     <SectionText bg={"secondary"} content={content.cabins} />
 
     {/* panther_cabin */}
-    <SectionSided
+    <SectionGallery
       align="left"
       bg={"primary"}
       bgcolor="#1E3A57"
@@ -33,12 +33,12 @@ export default () => (
         {content.panther_cabin.title}
       </Typography>
       <Typography variant="body1">{content.panther_cabin.body}</Typography>
-    </SectionSided>
+    </SectionGallery>
 
     <SectionText bg={"secondary"} content={content.main_deck} />
 
     {/* aft cockpit */}
-    <SectionSided
+    <SectionGallery
       align="left"
       bg={"primary"}
       bgcolor={"#2E7379"}
@@ -56,12 +56,12 @@ export default () => (
         {content.cockpit.title}
       </Typography>
       <Typography variant="body1">{content.cockpit.body}</Typography>
-    </SectionSided>
+    </SectionGallery>
 
     <SectionText bg={"secondary"} content={content.living_space} />
 
     {/* jacuzzi */}
-    <SectionSided
+    <SectionGallery
       align="left"
       bg={"primary"}
       bgcolor="#0B446B"
@@ -79,6 +79,6 @@ export default () => (
         {content.jacuzzi.title}
       </Typography>
       <Typography variant="body1">{content.jacuzzi.body}</Typography>
-    </SectionSided>
+    </SectionGallery>
   </React.Fragment>
 );

@@ -12,9 +12,19 @@ export default ({ content, bg, children, hideSection, ...props }) => {
   return (
     <Hidden {...hideSection}>
       <Box style={customStyle}>
-        {content.image && (
-          <img src={content.image.src} style={{ width: "100%" }} />
-        )}
+        <Box style={{ position: "relative" }}>
+          {content.image && (
+            <img src={content.image.src} style={{ width: "100%" }} />
+          )}
+          {content.message && (
+            <Box
+              align="center"
+              style={{ position: "absolute", width: "100%", bottom: "50px" }}
+            >
+              <img src={content.message.src} style={{ width: "70%" }} />
+            </Box>
+          )}
+        </Box>
         <Box py={6} align="center" {...props}>
           <Container fixed maxWidth={false}>
             {content.title && (
