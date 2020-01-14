@@ -32,8 +32,8 @@ export default withRouter(({ children, router }) => (
       ))}
 
     <Grid item>
-      <Link href="/">
-        <img src={"/static/images/logo.svg"} alt="logo" height="20" />
+      <Link href="/" style={{ verticalAlign: "center", lineHeight: "20px" }}>
+        <img src={"/static/images/logo.svg"} alt="logo" height="18px" />
       </Link>
     </Grid>
 
