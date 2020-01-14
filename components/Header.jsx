@@ -1,6 +1,7 @@
 import { AppBar, Container, Grid, Hidden, IconButton, Link, Toolbar } from '@material-ui/core'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
 import MenuIcon from '@material-ui/icons/Menu'
+import NextLink from 'next/Link'
 import { withRouter } from 'next/router'
 
 import TopMenu from './TopMenu'
@@ -27,19 +28,7 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
             alignItems="center"
             justify="space-between"
           >
-            <Hidden mdUp implementation="css">
-              <Grid item>
-                <Link href="/">
-                  <img src={"/static/images/logo.svg"} alt="logo" height="20" />
-                </Link>
-              </Grid>
-            </Hidden>
-            <Grid item xs>
-              <Hidden smDown implementation="css">
-                <TopMenu />
-              </Hidden>
-            </Grid>
-            <Hidden mdUp implementation="css">
+            <Hidden mdUp implementation="js">
               <Grid item>
                 <IconButton
                   edge="start"
@@ -49,6 +38,32 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
                 >
                   <MenuIcon />
                 </IconButton>
+              </Grid>
+              <Grid item>
+                <Link href="/">
+                  <img src={"/static/images/logo.svg"} alt="logo" height="16" />
+                </Link>
+              </Grid>
+              <Grid item>
+                <NextLink passHref href={"/book-charter"}>
+                  <Link
+                    style={{
+                      fontWeight: router.route === "/book-charter" ? 800 : 200,
+                      textTransform: "uppercase",
+                      letterSpacing: "1.5px",
+                      fontSize: "14px",
+                      lineHeight: "20px"
+                    }}
+                    color="inherit"
+                  >
+                    BOOK
+                  </Link>
+                </NextLink>
+              </Grid>
+            </Hidden>
+            <Hidden smDown implementation="js">
+              <Grid item xs>
+                <TopMenu />
               </Grid>
             </Hidden>
           </Grid>

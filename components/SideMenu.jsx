@@ -5,18 +5,19 @@ import NextLink from 'next/Link'
 import { withRouter } from 'next/router'
 
 import routes from '../routes'
+import Footer from './Footer'
 
 const useStyles = makeStyles(theme => {
   return {
     drawer: {
-      width: "80%",
-      maxWidth: "320px",
+      width: "100%",
+      // maxWidth: "420px",
       flexShrink: 0
     },
     drawerPaper: {
-      width: "80%",
-      maxWidth: "320px",
-      backgroundColor: "#F8F8F8"
+      width: "100%",
+      // maxWidth: "420px",
+      backgroundColor: theme.palette.primary.main
     }
   };
 });
@@ -36,13 +37,16 @@ export default withRouter(({ setMenu, menu, router, setSupport }) => {
         keepMounted: true
       }}
     >
-      <Box p={2} style={{ backgroundColor: "#FFFFFF" }}>
-        <Grid container alignItems="center">
+      <Box p={4}>
+        <Grid container alignItems="center" justify="center">
           <Grid item xs={true}>
-            <img src="/static/images/logo-black.svg" alt="" height="20" />
+            <Box align="center">
+              <img src="/static/images/logo.svg" alt="" height="16" />
+            </Box>
           </Grid>
           <Grid item>
             <IconButton
+              color="inherit"
               style={{ padding: "4px" }}
               onClick={() => setSupport(false)}
             >
@@ -53,22 +57,43 @@ export default withRouter(({ setMenu, menu, router, setSupport }) => {
       </Box>
       <Box mb={2}>
         <List>
-          {Object.keys(routes).map(route => (
-            <NextLink passHref href={route}>
-              <ListItem
-                onClick={() => setMenu(false)}
-                button
-                key={route}
-                selected={router.route == route}
-              >
-                <ListItemText disableTypography>
-                  {routes[route].name}
-                </ListItemText>
-              </ListItem>
-            </NextLink>
-          ))}
+          {Object.keys(routes)
+            .filter(r => routes[r].page !== "/")
+            .map(route => (
+              <NextLink passHref href={route}>
+                <ListItem
+                  onClick={() => setMenu(false)}
+                  button
+                  key={route}
+                  selected={router.route == route}
+                >
+                  <ListItemText
+                    disableTypography
+                    style={{
+                      textTransform: "uppercase",
+                      textAlign: "center",
+                      fontSize: "20px",
+                      padding: "6px 0"
+                    }}
+                  >
+                    {routes[route].name}
+                  </ListItemText>
+                </ListItem>
+              </NextLink>
+            ))}
         </List>
       </Box>
+      <Footer
+        px={0}
+        style={{
+          borderTop: "1px solid white",
+          position: "absolute",
+          bottom: 0,
+          textAlign: "center",
+          left: 0,
+          width: "100%"
+        }}
+      />
     </Drawer>
   );
 });
