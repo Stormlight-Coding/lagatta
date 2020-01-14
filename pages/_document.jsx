@@ -39,6 +39,7 @@ class MyDocument extends Document {
             content="/static/browserconfig.xml"
           />
           <meta name="theme-color" content="#ffffff" />
+          <link rel="stylesheet" href="/static/styles/carousel.min.css" />
         </Head>
         <body>
           <Main />

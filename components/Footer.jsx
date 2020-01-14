@@ -12,8 +12,8 @@ const getFooterColor = (router, theme, trigger) => {
   return "primary";
 };
 
-export default withRouter(({ router }) => (
-  <Box align="center" bgcolor={getFooterColor(router)} py={3}>
+export default withRouter(({ router, ...props }) => (
+  <Box align="center" bgcolor={getFooterColor(router)} py={3} {...props}>
     Copyright © 2019 Lagatta US, Inc. All Rights Reserved.
   </Box>
 ));

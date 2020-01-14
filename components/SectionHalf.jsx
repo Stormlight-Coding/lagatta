@@ -9,13 +9,23 @@ export default ({ content, bg, reverse, children, hideImage, ...props }) => {
     backgroundColor: theme.palette[bg].main,
     color: theme.palette[bg].contrastText
   };
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const smUp = useMediaQuery(theme.breakpoints.up("sm"));
+  const lgDown = useMediaQuery(theme.breakpoints.between("md", "lg"));
 
   return (
     <Box style={customStyle}>
-      <Grid container direction={reverse && matches ? "row-reverse" : "row"}>
-        <Grid item xs={12} sm={6}>
-          <Box pt={6} pb={4} px={7} align="left" {...props}>
+      <Grid
+        container
+        direction={reverse && smUp ? "row-reverse" : "row"}
+        alignItems="center"
+      >
+        <Grid item xs={12} sm={12} md={6}>
+          <Box
+            pt={lgDown ? 5 : 6}
+            pb={lgDown ? 5 : 6}
+            px={lgDown ? 5 : 7}
+            {...props}
+          >
             {content.title && (
               <Typography variant="h2" paragraph>
                 {content.title}
@@ -45,7 +55,7 @@ export default ({ content, bg, reverse, children, hideImage, ...props }) => {
           </Box>
         </Grid>
 
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={12} md={6}>
           <Hidden {...hideImage}>
             {content.image && (
               <img src={content.image.src} style={{ width: "100%" }} />

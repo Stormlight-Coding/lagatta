@@ -7,7 +7,8 @@
 
   "cover": {
     "image": { "src": "/static/images/LG_LAND_HERO_U.jpg", "alt": "" },
-    "body": "Come explore the world aboard LA GATTA, a brand new seventy-seven foot luxury catamaran. This elegant Lagoon SEVENTY 7 is the perfect way to share an unforgettable travel experience with the people you love."
+    "body": "Come explore the world aboard LA GATTA, a brand new seventy-seven foot luxury catamaran. This elegant Lagoon SEVENTY 7 is the perfect way to share an unforgettable travel experience with the people you love.",
+    "message": { "src": "/static/images/Disconnect.svg" }
   },
 
   "destinations": {
@@ -60,7 +61,8 @@
       "LA GATTA features one of Lagoon’s newest innovations, a sophisticated hydraulically controlled platform in the master suite that opens to become a unique private beach with direct access to the sea. Lower the beach for a secluded moment of sunbathing, morning coffee or a private dip in the evening. The front deck includes a lounge area and two large trampolines.The spacious flybridge is an ideal spot for taking in the views and relaxing during sea trips. It provides yet another spacious outdoor lounge space for sunbathing, soaking in the Jacuzzi under the stars, movie watching or dining."
     ],
     "link": { "href": "/the-cat", "text": "LEARN MORE >" },
-    "image": { "src": "/static/images/LG_WINDSURF.jpg", "alt": "" }
+    "image": { "src": "/static/images/LG_WINDSURF.jpg", "alt": "" },
+    "message": { "src": "/static/images/Play.svg" }
   },
 
   "cat_front": {

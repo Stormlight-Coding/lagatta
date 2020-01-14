@@ -156,8 +156,24 @@ const theme = createMuiTheme({
   overrides
 });
 
+const { breakpoints: breakpointsCalculated } = theme;
+
+const responsiveTheme = {
+  ...theme,
+  overrides: {
+    MuiTypography: {
+      body1: {
+        [breakpointsCalculated.only("md")]: {
+          fontSize: "14px",
+          lineHeight: "24px"
+        }
+      }
+    }
+  }
+};
+
 const Theme = ({ children }) => {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  return <ThemeProvider theme={responsiveTheme}>{children}</ThemeProvider>;
 };
 
 export default Theme;

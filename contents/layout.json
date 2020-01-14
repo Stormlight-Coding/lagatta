@@ -22,7 +22,12 @@
   "panther_cabin": {
     "title": "PANTHER CABIN",
     "body": "Island bed, library, desk, sofa, walk-in closet, bathroom with sea view. Private beach platform.",
-    "image": { "src": "/static/images/photos/LG_L_PANT_01.jpg", "alt": "" },
+    "images": [
+      { "src": "/static/images/photos/LG_L_PANT_01.jpg", "alt": "" },
+      { "src": "/static/images/photos/LG_L_PANT_02.jpg", "alt": "" },
+      { "src": "/static/images/photos/LG_L_PANT_03.jpg", "alt": "" },
+      { "src": "/static/images/photos/LG_L_PANT_04.jpg", "alt": "" }
+    ],
     "image_side": {
       "src": "/static/images/LAGATTA_PLANS_CABINS.png",
       "alt": ""
@@ -37,7 +42,13 @@
   "cockpit": {
     "title": "AFT COCKPIT",
     "body": "Day bed and dining table facing each other.",
-    "image": { "src": "/static/images/photos/LG_L_AFT_01.jpg", "alt": "" },
+    "images": [
+      { "src": "/static/images/photos/LG_L_AFT_01.jpg", "alt": "" },
+      { "src": "/static/images/photos/LG_L_AFT_02.jpg", "alt": "" },
+      { "src": "/static/images/photos/LG_L_AFT_03.jpg", "alt": "" },
+      { "src": "/static/images/photos/LG_L_AFT_04.jpg", "alt": "" },
+      { "src": "/static/images/photos/LG_L_AFT_05.jpg", "alt": "" }
+    ],
     "image_side": {
       "src": "/static/images/LAGATTA_PLANS_SALON.png",
       "alt": ""
@@ -52,7 +63,7 @@
   "jacuzzi": {
     "title": "JACUZZI",
     "body": "The only SEVENTY 7 with a hot tub on the flybridge.",
-    "image": { "src": "/static/images/photos/LG_L_JACUZZI.jpg", "alt": "" },
+    "images": [{ "src": "/static/images/photos/LG_L_JACUZZI.jpg", "alt": "" }],
     "image_side": {
       "src": "/static/images/LAGATTA_PLANS_FLYBRIDGE.png",
       "alt": ""
