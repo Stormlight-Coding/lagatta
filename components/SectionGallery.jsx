@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Hidden } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
+import { Carousel } from 'react-responsive-carousel'
 
 export default ({
   bg,
@@ -9,6 +10,7 @@ export default ({
   container = true,
   boxLeft = false,
   boxRight = false,
+  images = [],
   ...props
 }) => {
   const theme = useTheme();
@@ -18,7 +20,7 @@ export default ({
   };
 
   return (
-    <Box style={customStyle}>
+    <Box style={customStyle} className="siema">
       <Grid container>
         {boxLeft && (
           <Grid item xs={12} md={4}>
@@ -41,7 +43,21 @@ export default ({
               </Box>
             )}
 
-            {footerImage && <img src={footerImage} style={{ width: "100%" }} />}
+            {images.length > 0 && (
+              <Box>
+                <Carousel
+                  showThumbs={false}
+                  showArrows={true}
+                  autoPlay
+                  stopOnHover
+                  infiniteLoop
+                >
+                  {images.map(i => (
+                    <img src={i.src} style={{ width: "100%" }} />
+                  ))}
+                </Carousel>
+              </Box>
+            )}
           </Grid>
         </Hidden>
         {boxRight && (

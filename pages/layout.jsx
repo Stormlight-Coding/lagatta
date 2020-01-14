@@ -27,7 +27,7 @@ export default () => (
           />
         </Box>
       }
-      footerImage={content.panther_cabin.image.src}
+      images={content.panther_cabin.images}
     >
       <Typography variant="h2" style={{ marginBottom: "15px" }}>
         {content.panther_cabin.title}
@@ -50,7 +50,7 @@ export default () => (
           />
         </Box>
       }
-      footerImage={content.cockpit.image.src}
+      images={content.cockpit.images}
     >
       <Typography variant="h2" style={{ marginBottom: "15px" }}>
         {content.cockpit.title}
@@ -73,7 +73,7 @@ export default () => (
           />
         </Box>
       }
-      footerImage={content.jacuzzi.image.src}
+      images={content.jacuzzi.images}
     >
       <Typography variant="h2" style={{ marginBottom: "15px" }}>
         {content.jacuzzi.title}
