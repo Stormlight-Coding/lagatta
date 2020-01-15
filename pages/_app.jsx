@@ -30,6 +30,8 @@ class MyApp extends App {
     if (jssStyles) {
       jssStyles.parentNode.removeChild(jssStyles);
     }
+
+    ImageMap("img[usemap]");
   }
 
   setMenu(menu) {

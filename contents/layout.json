@@ -20,10 +20,51 @@
   },
 
   "cabins_galleries": {
-    "image_map": { "src": "/static/images/LAGATTA_PLANS_CABINS.png" },
+    "image_map": {
+      "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+      "name": "cabins-map",
+      "areas": [
+        {
+          "name": "crew",
+          "shape": "poly",
+          "coords": "719,1827,843,907,917,557,995,378,1090,572,1175,926,1433,2018,1168,2021,829,2011,701,2004"
+        },
+        {
+          "name": "galley",
+          "shape": "poly",
+          "coords": "645,2714,913,2728,991,3159,1415,3148,1419,2060,1143,2049,942,2035,691,2042,666,2332"
+        },
+        {
+          "name": "ocelot",
+          "shape": "poly",
+          "coords": "1433,3784,624,3784,641,2763,875,2742,970,3191,1440,3194,1422,3647"
+        },
+        {
+          "name": "lynx",
+          "shape": "poly",
+          "coords": "627,3830,1429,3813,1422,4735,641,4739"
+        },
+        {
+          "name": "forepeak",
+          "shape": "poly",
+          "coords": "3062,753,3164,1523,2620,1530,2712,816,2885,346"
+        },
+        {
+          "name": "panther",
+          "shape": "poly",
+          "coords": "2617,1555,2567,1830,2461,1892,2465,2217,2472,3051,2475,3546,3277,3553,3263,2894,3613,2848,3588,2435,3263,2445,3143,1544"
+        },
+        {
+          "name": "puma",
+          "shape": "poly",
+          "coords": "2472,3583,3277,3594,3246,4749,2489,4753"
+        }
+      ]
+    },
     "items": [
       {
         "color": "#1E3A57",
+        "name": "panther",
         "title": "PANTHER CABIN",
         "images": [
           {
@@ -60,6 +101,7 @@
       {
         "color": "#7898AD",
         "title": "PUMA CABIN",
+        "name": "puma",
         "images": [
           {
             "src": "/static/images/photos/LG_L_PUMA_01.jpg",
@@ -93,6 +135,7 @@
       },
 
       {
+        "name": "galley",
         "color": "#597B87",
         "title": "GALLEY CABIN",
         "images": [
@@ -128,6 +171,7 @@
       },
 
       {
+        "name": "ocelot",
         "color": "#55A5CF",
         "title": "OCELOT CABIN",
         "images": [
@@ -157,6 +201,7 @@
       },
 
       {
+        "name": "lynx",
         "color": "#597B87",
         "title": "LYNX CABIN",
         "images": [
@@ -180,6 +225,7 @@
       },
 
       {
+        "name": "forepeak",
         "color": "#3A678F",
         "title": "FOREPEAK BUNKS CABIN",
         "images": [
@@ -211,12 +257,36 @@
 
   "salons_galleries": {
     "image_map": {
+      "name": "salons-map",
       "src": "/static/images/LAGATTA_PLANS_SALON.png",
-      "alt": ""
+      "alt": "",
+      "areas": [
+        {
+          "name": "aftcockpit",
+          "shape": "poly",
+          "coords": "1048,4233,2952,4244,2977,4908,2719,5247,1284,5240,1019,4887"
+        },
+        {
+          "name": "salon",
+          "shape": "poly",
+          "coords": "1320,2353,1044,2555,1037,4191,2984,4205,2970,2555,2687,2350"
+        },
+        {
+          "name": "swimdeck",
+          "shape": "poly",
+          "coords": "1306,5293,2698,5297,2740,5661,1263,5664"
+        },
+        {
+          "name": "forward",
+          "shape": "poly",
+          "coords": "1302,1795,2719,1788,2680,2297,1327,2322"
+        }
+      ]
     },
     "items": [
       {
         "color": "#2E7379",
+        "name": "aftcockpit",
         "title": "AFT COCKPIT",
         "images": [
           {
@@ -252,6 +322,8 @@
 
       {
         "color": "#339699",
+        "name": "salon",
+
         "title": "SALON",
         "images": [
           {
@@ -288,6 +360,8 @@
       {
         "color": "#646F5E",
         "title": "SWIM DECK",
+        "name": "swimdeck",
+
         "images": [
           {
             "src": "/static/images/photos/LG_L_SWIM_01.jpg",
@@ -322,6 +396,7 @@
 
       {
         "color": "#646F5E",
+        "name": "forward",
         "title": "FORWARD COCKPIT",
         "images": [
           {
@@ -364,13 +439,23 @@
 
   "flybridge_galleries": {
     "image_map": {
+      "name": "flybridge-map",
+
       "src": "/static/images/LAGATTA_PLANS_FLYBRIDGE.png",
-      "alt": ""
+      "alt": "",
+      "areas": [
+        {
+          "name": "jacuzzi",
+          "shape": "poly",
+          "coords": ""
+        }
+      ]
     },
     "items": [
       {
         "color": "#0B446B",
         "title": "JACUZZI",
+        "name": "jacuzzi",
         "images": [
           {
             "src": "/static/images/photos/LG_L_JACUZZI.jpg",
