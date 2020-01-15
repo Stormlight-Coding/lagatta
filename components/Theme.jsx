@@ -166,6 +166,25 @@ const responsiveTheme = {
         [breakpointsCalculated.only("md")]: {
           fontSize: "14px",
           lineHeight: "24px"
+        },
+        [breakpointsCalculated.down("sm")]: {
+          fontSize: "11px",
+          lineHeight: "19px"
+        }
+      },
+      h2: {
+        [breakpointsCalculated.down("sm")]: {
+          fontSize: "15px",
+          lineHeight: "19px"
+        }
+      }
+    },
+    MuiButton: {
+      text: {
+        [breakpointsCalculated.down("sm")]: {
+          fontSize: "10px",
+          lineHeight: "22px",
+          fontWeight: 600
         }
       }
     }
