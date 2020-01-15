@@ -67,7 +67,9 @@ export default ({ content, bg, reverse, children, hideImage, ...props }) => {
             {content.link && (
               <Box>
                 <Link href={content.link.href}>
-                  <Button variant="text">{content.link.text}</Button>
+                  <Button size="small" variant="text">
+                    {content.link.text}
+                  </Button>
                 </Link>
               </Box>
             )}

@@ -13,7 +13,7 @@ export default ({ content, bg, ...props }) => {
   return (
     <Box style={customStyle}>
       <Box py={6} align="center" {...props}>
-        <Container fixed maxWidth={false}>
+        <Container fixed maxWidth={"lg"}>
           {content.title && (
             <Typography variant="h2" paragraph>
               {content.title}
@@ -34,7 +34,9 @@ export default ({ content, bg, ...props }) => {
           {content.link && (
             <Box>
               <Link href={content.link.href}>
-                <Button variant="text">{content.link.text}</Button>
+                <Button size="small" variant="text">
+                  {content.link.text}
+                </Button>
               </Link>
             </Box>
           )}

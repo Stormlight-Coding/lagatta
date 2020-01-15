@@ -1,11 +1,30 @@
-import { Box, Grid } from '@material-ui/core'
+import { Box, Grid, makeStyles } from '@material-ui/core'
 import Dialog from '@material-ui/core/Dialog'
 import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
 import CloseIcon from '@material-ui/icons/Close'
 import React from 'react'
 
+const useStyles = makeStyles(theme => ({
+  root: {
+    [theme.breakpoints.up("md")]: {
+      paddingLeft: theme.spacing(7),
+      paddingRight: theme.spacing(7),
+      paddingTop: theme.spacing(6),
+      paddingBottom: theme.spacing(4)
+    },
+
+    [theme.breakpoints.down("sm")]: {
+      paddingLeft: theme.spacing(4),
+      paddingRight: theme.spacing(4),
+      paddingTop: theme.spacing(4),
+      paddingBottom: theme.spacing(4)
+    }
+  }
+}));
+
 export default function CustomizedDialogs({ open, handleClose, member }) {
+  const classes = useStyles();
   return (
     <Dialog
       PaperProps={{
@@ -21,11 +40,11 @@ export default function CustomizedDialogs({ open, handleClose, member }) {
     >
       <Box bgcolor="primary.main" style={{ position: "relative" }}>
         <Grid container>
-          <Grid item xs={5}>
+          <Grid item xs={12} md={5}>
             <img src={member.image.src} style={{ maxWidth: "100%" }} />
           </Grid>
-          <Grid item xs={7}>
-            <Box px={7} pt={6} pb={4} color="white">
+          <Grid item xs={12} md={7}>
+            <Box className={classes} color="white">
               <IconButton
                 color="inherit"
                 aria-label="close"
