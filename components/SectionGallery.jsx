@@ -107,7 +107,7 @@ export default ({
               <img
                 src={areamap.src}
                 usemap={`#${areamap.name}`}
-                style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
+                style={{ maxWidth: "480px", maxHeight: "720px", width: "95%" }}
               />
               {areamap && (
                 <map name={areamap.name}>
