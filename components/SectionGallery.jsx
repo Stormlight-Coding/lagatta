@@ -72,6 +72,9 @@ export default ({
                 autoPlay
                 stopOnHover
                 infiniteLoop
+                labels={{
+                  leftArrow: "here"
+                }}
               >
                 {gallery.images.map(i => (
                   <Box>

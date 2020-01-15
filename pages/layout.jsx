@@ -28,7 +28,7 @@ export default () => (
       align="left"
       bg={"primary"}
       bgcolor={"#2E7379"}
-      left
+      right
       areamap={content.salons_galleries.image_map}
       galleries={content.salons_galleries.items}
     />
