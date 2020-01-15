@@ -19,7 +19,8 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.only("sm")]: {
       padding: `${theme.spacing(5)}px 8px !important`,
       maxWidth: "600px",
-      margin: "0 auto"
+      margin: "0 auto",
+      textAlign: "center"
     },
 
     [theme.breakpoints.only("xs")]: {
