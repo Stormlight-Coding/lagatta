@@ -1,4 +1,4 @@
-import { Box, Typography } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 
 import MetaData from '../components/MetaData'
 import SectionCover from '../components/SectionCover'
@@ -14,26 +14,20 @@ export default () => (
     <SectionText bg={"primary"} content={content.spacious_design} />
     <SectionText bg={"secondary"} content={content.cabins} />
 
-    {/* panther_cabin */}
     <SectionGallery
       align="left"
       bg={"primary"}
-      bgcolor="#1E3A57"
+      bgcolor={"#2E7379"}
       boxLeft={
         <Box align="center">
           <img
-            src={content.panther_cabin.image_side.src}
+            src={content.cabins_galleries.image_map.src}
             style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
           />
         </Box>
       }
-      images={content.panther_cabin.images}
-    >
-      <Typography variant="h2" style={{ marginBottom: "15px" }}>
-        {content.panther_cabin.title}
-      </Typography>
-      <Typography variant="body1">{content.panther_cabin.body}</Typography>
-    </SectionGallery>
+      galleries={content.cabins_galleries.items}
+    />
 
     <SectionText bg={"secondary"} content={content.main_deck} />
 
@@ -42,21 +36,16 @@ export default () => (
       align="left"
       bg={"primary"}
       bgcolor={"#2E7379"}
-      boxRight={
+      boxLeft={
         <Box align="center">
           <img
-            src={content.cockpit.image_side.src}
+            src={content.salons_galleries.image_map.src}
             style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
           />
         </Box>
       }
-      images={content.cockpit.images}
-    >
-      <Typography variant="h2" style={{ marginBottom: "15px" }}>
-        {content.cockpit.title}
-      </Typography>
-      <Typography variant="body1">{content.cockpit.body}</Typography>
-    </SectionGallery>
+      galleries={content.salons_galleries.items}
+    />
 
     <SectionText bg={"secondary"} content={content.living_space} />
 
@@ -64,21 +53,16 @@ export default () => (
     <SectionGallery
       align="left"
       bg={"primary"}
-      bgcolor="#0B446B"
+      bgcolor={"#2E7379"}
       boxLeft={
         <Box align="center">
           <img
-            src={content.jacuzzi.image_side.src}
+            src={content.flybridge_galleries.image_map.src}
             style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
           />
         </Box>
       }
-      images={content.jacuzzi.images}
-    >
-      <Typography variant="h2" style={{ marginBottom: "15px" }}>
-        {content.jacuzzi.title}
-      </Typography>
-      <Typography variant="body1">{content.jacuzzi.body}</Typography>
-    </SectionGallery>
+      galleries={content.flybridge_galleries.items}
+    />
   </React.Fragment>
 );
