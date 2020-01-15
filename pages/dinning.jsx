@@ -9,10 +9,10 @@ export default () => (
   <React.Fragment>
     <MetaData meta={content.meta} />
 
-    <SectionCover bg={"primary"} content={content.cover} />
+    <SectionCover bg={"secondary"} content={content.cover} />
     <SectionCover bg={"primary"} py={0} content={content.breakfast} />
-    <SectionHalf bg={"primary"} content={content.sunrise} reverse />
-    <SectionHalf bg={"primary"} content={content.midday} />
+    <SectionHalf bg={"primary"} content={content.sunrise} />
+    <SectionHalf bg={"primary"} content={content.midday} reverse />
 
     <SectionCover
       hideSection={{ smDown: true }}
@@ -25,7 +25,6 @@ export default () => (
       hideImage={{ smDown: true }}
       bg={"primary"}
       content={content.sunset}
-      reverse
     >
       <ModalCocktails />
       <ModalWines />

@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core'
+import { Box, Button } from '@material-ui/core'
 
 import MetaData from '../components/MetaData'
 import SectionCover from '../components/SectionCover'
@@ -8,9 +8,11 @@ export default () => (
   <React.Fragment>
     <MetaData meta={content.meta} />
     <SectionCover bg={"primary"} content={content.booking_la_gatta}>
-      <Button variant="outlined" size="large">
-        {content.booking_la_gatta.button.text}
-      </Button>
+      <Box mt={"85px"}>
+        <Button variant="outlined" size="large">
+          {content.booking_la_gatta.button.text}
+        </Button>
+      </Box>
     </SectionCover>
   </React.Fragment>
 );

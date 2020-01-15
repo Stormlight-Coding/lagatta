@@ -19,19 +19,189 @@
     "body": "LA GATTA features four elegantly designed guest cabins. Each of these are fitted with an island bed, desk, ample storage and individual bathroom. The spacious master Panther suite features a hydraulic platform which opens to create a private “beach” giving direct sea access and a special spot to sunbathe. The crew quarters and galley are configured as to facilitate the staff’s work on board. Two bunks in the forepeak are a fun spot for two kids. The Lynx bed can be configured as a queen or two twins."
   },
 
-  "panther_cabin": {
-    "title": "PANTHER CABIN",
-    "body": "Island bed, library, desk, sofa, walk-in closet, bathroom with sea view. Private beach platform.",
-    "images": [
-      { "src": "/static/images/photos/LG_L_PANT_01.jpg", "alt": "" },
-      { "src": "/static/images/photos/LG_L_PANT_02.jpg", "alt": "" },
-      { "src": "/static/images/photos/LG_L_PANT_03.jpg", "alt": "" },
-      { "src": "/static/images/photos/LG_L_PANT_04.jpg", "alt": "" }
-    ],
-    "image_side": {
-      "src": "/static/images/LAGATTA_PLANS_CABINS.png",
-      "alt": ""
-    }
+  "cabins_galleries": {
+    "image_map": { "src": "/static/images/LAGATTA_PLANS_CABINS.png" },
+    "items": [
+      {
+        "color": "#1E3A57",
+        "title": "PANTHER CABIN",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_PANT_01.jpg",
+            "alt": "",
+            "body": "King size bed, library, desk, sofa, walk-in closet, bathroom with sea view. Private beach platform.",
+            "title": "PANTHER"
+          },
+          {
+            "src": "/static/images/photos/LG_L_PANT_02.jpg",
+            "alt": "",
+            "body": "A beach just for yourself.",
+            "title": "PANTHER"
+          },
+          {
+            "src": "/static/images/photos/LG_L_PANT_03.jpg",
+            "alt": "",
+            "body": "Large walk in closet.",
+            "title": "PANTHER"
+          },
+          {
+            "src": "/static/images/photos/LG_L_PANT_04.jpg",
+            "alt": "",
+            "body": "Double wash basin, marble and storage space offer all the necessary comfort.",
+            "title": "PANTHER"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "alt": ""
+        }
+      },
+
+      {
+        "color": "#7898AD",
+        "title": "PUMA CABIN",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_PUMA_01.jpg",
+            "alt": "",
+            "body": "Island bed with the sea view are found in each guest cabin.",
+            "title": "PUMA"
+          },
+          {
+            "src": "/static/images/photos/LG_L_PUMA_02.jpg",
+            "alt": "",
+            "body": "Desk and many storage compartments.",
+            "title": "PUMA"
+          },
+          {
+            "src": "/static/images/photos/LG_L_PUMA_03.jpg",
+            "alt": "",
+            "body": "Its own en suite bathroom.",
+            "title": "PUMA"
+          },
+          {
+            "src": "/static/images/photos/LG_L_PUMA_04.jpg",
+            "alt": "",
+            "body": "This is a VIP area of more than 16 m² will entirely fulfill the role of owner’s cabin.",
+            "title": "PUMA"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "alt": ""
+        }
+      },
+
+      {
+        "color": "#597B87",
+        "title": "GALLEY CABIN",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_GALLEY_01.jpg",
+            "alt": "",
+            "body": "Large kitchen with professional equipments.",
+            "title": "GALLEY"
+          },
+          {
+            "src": "/static/images/photos/LG_L_GALLEY_02.jpg",
+            "alt": "",
+            "body": " The compartmentalized and easy-to-access storage and the wide choice of optional electrical.",
+            "title": "GALLEY"
+          },
+          {
+            "src": "/static/images/photos/LG_L_GALLEY_03.jpg",
+            "alt": "",
+            "body": "The dining area, integrated into the kitchen, consists of a table and two benches vis-à-vis.",
+            "title": "GALLEY"
+          },
+          {
+            "src": "/static/images/photos/LG_L_GALLEY_04.jpg",
+            "alt": "",
+            "body": "MIELE® electric oven and hob.",
+            "title": "GALLEY"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "alt": ""
+        }
+      },
+
+      {
+        "color": "#55A5CF",
+        "title": "OCELOT CABIN",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_OCELOT_01.jpg",
+            "alt": "",
+            "body": "Matress made of high resistant honeycomb foam. Airspace 3D technology.",
+            "title": "OCELOT"
+          },
+          {
+            "src": "/static/images/photos/LG_L_OCELOT_02.jpg",
+            "alt": "",
+            "body": "Two bedside tables with a coy tray and two drawers below.",
+            "title": "OCELOT"
+          },
+          {
+            "src": "/static/images/photos/LG_L_OCELOT_03.jpg",
+            "alt": "",
+            "body": "Blackout roller courtins.",
+            "title": "OCELOT"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "alt": ""
+        }
+      },
+
+      {
+        "color": "#597B87",
+        "title": "LYNX CABIN",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_LYNX_01.jpg",
+            "alt": "",
+            "body": "Access to the galley and flybridge integrated in the layout.",
+            "title": "LYNX"
+          },
+          {
+            "src": "/static/images/photos/LG_L_LYNX_02.jpg",
+            "alt": "",
+            "body": "One drawer under each bed for storage, one hanging locker one storage locker and one storage locker.",
+            "title": "LYNX"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "alt": ""
+        }
+      },
+
+      {
+        "color": "#3A678F",
+        "title": "FOREPEAK BUNKS CABIN",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_BUNK_01.jpg",
+            "alt": "",
+            "body": "Bunk bed with shower room and  and private bathroom.",
+            "title": "FOREPEAK BUNKS"
+          },
+          {
+            "src": "/static/images/photos/LG_L_BUNK_02.jpg",
+            "alt": "",
+            "body": "Two drawers under the bed for storage and side window with opening hull port.",
+            "title": "FOREPEAK BUNKS"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "alt": ""
+        }
+      }
+    ]
   },
 
   "main_deck": {
@@ -39,20 +209,152 @@
     "body": "The main bridge is defined with a living space of 80 m² where the outside and inside are merged. The salon is filled with light and has panoramic views. It extends to the aft and forward cockpit with several living spaces. From back to front, all spaces become one. The front deck has a lounge space with two sofas and two large trampolines for sunbathing."
   },
 
-  "cockpit": {
-    "title": "AFT COCKPIT",
-    "body": "Day bed and dining table facing each other.",
-    "images": [
-      { "src": "/static/images/photos/LG_L_AFT_01.jpg", "alt": "" },
-      { "src": "/static/images/photos/LG_L_AFT_02.jpg", "alt": "" },
-      { "src": "/static/images/photos/LG_L_AFT_03.jpg", "alt": "" },
-      { "src": "/static/images/photos/LG_L_AFT_04.jpg", "alt": "" },
-      { "src": "/static/images/photos/LG_L_AFT_05.jpg", "alt": "" }
-    ],
-    "image_side": {
+  "salons_galleries": {
+    "image_map": {
       "src": "/static/images/LAGATTA_PLANS_SALON.png",
       "alt": ""
-    }
+    },
+    "items": [
+      {
+        "color": "#2E7379",
+        "title": "AFT COCKPIT",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_AFT_01.jpg",
+            "alt": "",
+            "body": "Day bed and dining table facing each other.",
+            "title": "AFT COCKPIT"
+          },
+          {
+            "src": "/static/images/photos/LG_L_AFT_02.jpg",
+            "alt": "",
+            "body": "Dive into a book while keep in an eye on your paddle boarding or kite surfing companions.",
+            "title": "AFT COCKPIT"
+          },
+          {
+            "src": "/static/images/photos/LG_L_AFT_03.jpg",
+            "alt": "",
+            "body": "Day beds, sofas and two adjustable loungers, surround the dining table.",
+            "title": "AFT COCKPIT"
+          },
+          {
+            "src": "/static/images/photos/LG_L_AFT_05.jpg",
+            "alt": "",
+            "body": "Troll for dinner on the back of the boat as you head to your next destination.  ",
+            "title": "AFT COCKPIT"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_SALON.png",
+          "alt": ""
+        }
+      },
+
+      {
+        "color": "#339699",
+        "title": "SALON",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_SALON_01.jpg",
+            "alt": "",
+            "body": "A large screen TV folds down out of the ceiling for an indoor movie night.",
+            "title": "SALON"
+          },
+          {
+            "src": "/static/images/photos/LG_L_SALON_02.jpg",
+            "alt": "",
+            "body": "The spacious salon, with it’s oak floors and sumptuous fabrics is bathed in light.",
+            "title": "SALON"
+          },
+          {
+            "src": "/static/images/photos/LG_L_SALON_03.jpg",
+            "alt": "",
+            "body": "The dinning table is flanked by sofas for an elegant yet relaxed dining experience. ",
+            "title": "SALON"
+          },
+          {
+            "src": "/static/images/photos/LG_L_SALON_04.jpg",
+            "alt": "",
+            "body": "Move the party to the adjacent sofa for after dinner drinks and get a record going  on the turntable.",
+            "title": "SALON"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_SALON.png",
+          "alt": ""
+        }
+      },
+
+      {
+        "color": "#646F5E",
+        "title": "SWIM DECK",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_SWIM_01.jpg",
+            "alt": "",
+            "body": "A versatile platform: beach club, relaxation area and tender lift all at in one.",
+            "title": "SWIM DECK"
+          },
+          {
+            "src": "/static/images/photos/LG_L_SWIM_02.jpg",
+            "alt": "",
+            "body": "An exterior area of nearly 2,152 sq. ft.",
+            "title": "SWIM DECK"
+          },
+          {
+            "src": "/static/images/photos/LG_L_SWIM_03.jpg",
+            "alt": "",
+            "body": "Accessible stowage areas beneath the seats and the deck.",
+            "title": "SWIM DECK"
+          },
+          {
+            "src": "/static/images/photos/LG_L_SWIM_04.jpg",
+            "alt": "",
+            "body": "The levitated steps, a signature feature of the boat, invite you to continue on the wide side decks.",
+            "title": "SWIM DECK"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_SALON.png",
+          "alt": ""
+        }
+      },
+
+      {
+        "color": "#646F5E",
+        "title": "FORWARD COCKPIT",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_FORWARD_01.jpg",
+            "alt": "",
+            "body": "Access door between the living room and the forward cockpit: outside and inside become one.",
+            "title": "FORWARD COCKPIT"
+          },
+          {
+            "src": "/static/images/photos/LG_L_FORWARD_02.jpg",
+            "alt": "",
+            "body": "The forward cockpit layout allows to enjoy the yacht in all privacy with sofas and day beds.",
+            "title": "FORWARD COCKPIT"
+          },
+          {
+            "src": "/static/images/photos/LG_L_FORWARD_03.jpg",
+            "alt": "",
+            "body": "Lunch table, seats and fluid movements.",
+            "title": "FORWARD COCKPIT"
+          },
+          {
+            "src": "/static/images/photos/LG_L_FORWARD_04.jpg",
+            "alt": "",
+            "body": "Lunch table, seats and fluid movements.",
+            "title": "FORWARD COCKPIT"
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_SALON.png",
+          "alt": ""
+        }
+      }
+    ]
   },
 
   "living_space": {
@@ -60,13 +362,42 @@
     "body": "The spacious flybridge gives impressive additional space. Its breathtaking viewpoint is ideal for eating and relaxing during sea trips. LA GATTA is one of the only SEVENTY 7s with a Jacuzzi. The flybridge is also outfitted with a mounted projector and a high tech dual image screen that can be seen from both sides."
   },
 
-  "jacuzzi": {
-    "title": "JACUZZI",
-    "body": "The only SEVENTY 7 with a hot tub on the flybridge.",
-    "images": [{ "src": "/static/images/photos/LG_L_JACUZZI.jpg", "alt": "" }],
-    "image_side": {
+  "flybridge_galleries": {
+    "image_map": {
       "src": "/static/images/LAGATTA_PLANS_FLYBRIDGE.png",
       "alt": ""
-    }
+    },
+    "items": [
+      {
+        "color": "#0B446B",
+        "title": "JACUZZI",
+        "images": [
+          {
+            "src": "/static/images/photos/LG_L_JACUZZI.jpg",
+            "alt": "",
+            "body": "The only SEVENTY 7 with a hot tub on the flybridge.",
+            "title": "JACUZZI"
+          },
+          {
+            "src": "/static/images/photos/LG_L_FLYBRIDGE_01.jpg",
+            "alt": "",
+            "body": "The space is divided into two: navigation at the front and relaxation areas at the back.",
+            "title": "FLYBRIDGE"
+          },
+          {
+            "src": "/static/images/photos/LG_L_FLYBRIDGE_02.jpg",
+            "alt": "",
+            "body": "The two helm stations allow an optimal view during maneuvering.",
+            "title": "FLYBRIDGE"
+          },
+          {
+            "src": "/static/images/photos/LG_L_FLYBRIDGE_03.jpg",
+            "alt": "",
+            "body": "Plancha cabinet with ample storage and bar cabinet with sink, fridge and ice-maker.",
+            "title": "FLYBRIDGE LIVING SPACE"
+          }
+        ]
+      }
+    ]
   }
 }

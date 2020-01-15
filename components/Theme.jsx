@@ -33,15 +33,15 @@ const typography = {
     fontSize: "22px",
     lineHeight: "30px",
     letterSpacing: "1.32px",
-    fontWeight: 600, // medium
-    paddingBottom: `${spacing * 2}px`
+    fontWeight: 600 // medium
+    // paddingBottom: "35px"
   },
   h3: {
     fontSize: "18px",
-    lineHeight: "25px",
+    lineHeight: "21px",
     letterSpacing: "0.36px",
-    fontWeight: 400, // book
-    paddingBottom: `${spacing}px`
+    fontWeight: 600 // medium
+    // paddingBottom: "17px"
   },
   h4: {
     fontSize: "14px",
@@ -120,7 +120,7 @@ const overrides = {
       paddingRight: "32px",
       paddingLeft: "32px"
     },
-    sizeSmall: {},
+
     outlinedPrimary: {
       borderColor: "#FFFFFF",
       color: "#FFFFFF"
@@ -179,6 +179,11 @@ const responsiveTheme = {
         }
       }
     },
+    MuiTypography: {
+      paragraph: {
+        marginBottom: "35px"
+      }
+    },
     MuiButton: {
       text: {
         [breakpointsCalculated.down("sm")]: {
@@ -186,6 +191,28 @@ const responsiveTheme = {
           lineHeight: "22px",
           fontWeight: 600
         }
+      },
+      sizeLarge: {
+        borderColor: "#FFFFFF",
+        color: "#FFFFFF",
+        fontSize: "16px",
+        fontWeight: 600,
+        lineHeight: "35px",
+        paddingLeft: "48px",
+        paddingRight: "48px"
+      },
+      sizeSmall: {
+        fontSize: "12px",
+        fontWeight: 600,
+        lineHeight: "22px"
+      }
+    },
+    MuiDialog: {
+      paperScrollBody: {
+        backgroundColor: "red !important",
+        maxWidth: "100% !important",
+        width: "100% !important",
+        margin: "0 !important"
       }
     }
   }

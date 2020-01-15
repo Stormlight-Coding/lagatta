@@ -11,11 +11,11 @@ export default () => (
 
     <SectionCover bg={"secondary"} content={content.cover} />
 
-    <SectionHalf bg={"primary"} content={content.kitesurfing} reverse />
-    <SectionHalf bg={"primary"} content={content.scuba} />
-    <SectionHalf bg={"primary"} content={content.paddle} reverse />
-    <SectionHalf bg={"primary"} content={content.toys} />
-    <SectionHalf bg={"primary"} content={content.land} reverse />
+    <SectionHalf bg={"primary"} content={content.kitesurfing} />
+    <SectionHalf bg={"primary"} content={content.scuba} reverse />
+    <SectionHalf bg={"primary"} content={content.paddle} />
+    <SectionHalf bg={"primary"} content={content.toys} reverse />
+    <SectionHalf bg={"primary"} content={content.land} />
 
     <SectionCover
       hideSection={{ smDown: true }}
