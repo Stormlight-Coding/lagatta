@@ -48,7 +48,7 @@ export default withRouter(({ setMenu, menu, router, setSupport }) => {
             <IconButton
               color="inherit"
               style={{ padding: "4px" }}
-              onClick={() => setSupport(false)}
+              onClick={() => setMenu(false)}
             >
               <CloseIcon width="20px" />
             </IconButton>
@@ -84,9 +84,15 @@ export default withRouter(({ setMenu, menu, router, setSupport }) => {
         </List>
       </Box>
       <Footer
+        forceColor={"primary.main"}
         px={0}
+        py={0}
+        fontSize={{
+          fontSize: "8px",
+          lineHeight: "35px"
+        }}
         style={{
-          borderTop: "1px solid white",
+          borderTop: "1px solid #979797",
           position: "absolute",
           bottom: 0,
           textAlign: "center",

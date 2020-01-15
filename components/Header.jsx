@@ -1,6 +1,5 @@
-import { AppBar, Container, Grid, Hidden, IconButton, Link, Toolbar } from '@material-ui/core'
+import { AppBar, Box, Button, Container, Grid, Hidden, Link, useMediaQuery, withTheme } from '@material-ui/core'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
-import MenuIcon from '@material-ui/icons/Menu'
 import NextLink from 'next/Link'
 import { withRouter } from 'next/router'
 
@@ -11,66 +10,87 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
     threshold: 0,
     disableHysteresis: true
   });
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <AppBar
       position="sticky"
       color={"primary"}
-      inve
-      style={{
-        zIndex: 999
-      }}
+      style={{ height: !isMobile ? "45px" : "40px" }}
     >
-      <Toolbar>
-        <Container fixed>
-          <Grid
-            container
-            spacing={3}
-            alignItems="center"
-            justify="space-between"
-          >
-            <Hidden mdUp implementation="js">
-              <Grid item>
-                <IconButton
-                  edge="start"
-                  color="inherit"
-                  aria-label="menu"
-                  onClick={() => setMenu(true)}
-                >
-                  <MenuIcon />
-                </IconButton>
-              </Grid>
-              <Grid item>
-                <Link href="/">
-                  <img src={"/static/images/logo.svg"} alt="logo" height="16" />
-                </Link>
-              </Grid>
-              <Grid item>
-                <NextLink passHref href={"/book-charter"}>
-                  <Link
-                    style={{
-                      fontWeight: router.route === "/book-charter" ? 800 : 200,
-                      textTransform: "uppercase",
-                      letterSpacing: "1.5px",
-                      fontSize: "14px",
-                      lineHeight: "20px"
-                    }}
+      <Box
+        alignItems="center"
+        justifyItems="center"
+        style={{
+          zIndex: 999,
+          height: !isMobile ? "45px" : "40px"
+        }}
+      >
+        <Box>
+          <Container fixed style={{ marginTop: 0, marginBottom: 0 }}>
+            <Grid
+              container
+              style={{ marginTop: 0, marginBottom: 0 }}
+              spacing={3}
+              alignItems="center"
+              justify="space-between"
+            >
+              <Hidden mdUp implementation="js">
+                <Grid item>
+                  <Button
+                    variant="text"
+                    style={{ padding: 0, minWidth: "auto", lineHeight: "20px" }}
+                    edge="start"
                     color="inherit"
+                    aria-label="menu"
+                    onClick={() => setMenu(true)}
                   >
-                    BOOK
-                  </Link>
-                </NextLink>
-              </Grid>
-            </Hidden>
-            <Hidden smDown implementation="js">
-              <Grid item xs>
-                <TopMenu />
-              </Grid>
-            </Hidden>
-          </Grid>
-        </Container>
-      </Toolbar>
+                    <img src="/static/images/Menu.svg" width="20px" />
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <a
+                    href="/"
+                    style={{ lineHeight: "20px", verticalAlign: "center" }}
+                  >
+                    <img
+                      src={"/static/images/logo.svg"}
+                      alt="logo"
+                      height={isMobile ? "11px" : "18px"}
+                    />
+                  </a>
+                </Grid>
+                <Grid item>
+                  <NextLink passHref href={"/book-charter"}>
+                    <Link
+                      style={{
+                        fontWeight:
+                          router.route === "/book-charter" ? 800 : 200,
+                        textTransform: "uppercase",
+                        letterSpacing: "1.5px",
+                        fontSize: "14px",
+                        lineHeight: "20px",
+                        verticalAlign: "center"
+                      }}
+                      variant="caption"
+                      color="inherit"
+                    >
+                      BOOK
+                    </Link>
+                  </NextLink>
+                </Grid>
+              </Hidden>
+              <Hidden smDown implementation="js">
+                <Grid item xs>
+                  <TopMenu />
+                </Grid>
+              </Hidden>
+            </Grid>
+          </Container>
+        </Box>
+      </Box>
     </AppBar>
   );
 };
 
-export default withRouter(Header);
+export default withTheme(withRouter(Header));

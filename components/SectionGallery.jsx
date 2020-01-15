@@ -21,7 +21,7 @@ export default ({
 
   return (
     <Box style={customStyle} className="siema">
-      <Grid container>
+      <Grid container alignItems="center">
         {boxLeft && (
           <Grid item xs={12} md={4}>
             {boxLeft}

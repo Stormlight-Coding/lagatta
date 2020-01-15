@@ -1,4 +1,4 @@
-import { Box } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
 import { withRouter } from 'next/router'
 
 const getFooterColor = (router, theme, trigger) => {
@@ -12,8 +12,24 @@ const getFooterColor = (router, theme, trigger) => {
   return "primary";
 };
 
-export default withRouter(({ router, ...props }) => (
-  <Box align="center" bgcolor={getFooterColor(router)} py={3} {...props}>
-    Copyright © 2019 Lagatta US, Inc. All Rights Reserved.
-  </Box>
-));
+export default withRouter(
+  ({
+    router,
+    forceColor = false,
+    fontSize = {
+      fontSize: "13px",
+      lineHeight: "50px"
+    },
+    ...props
+  }) => (
+    <Box
+      align="center"
+      bgcolor={forceColor ? forceColor : getFooterColor(router)}
+      {...props}
+    >
+      <Typography variant="body1" style={{ ...fontSize }}>
+        Copyright © 2019 Lagatta US, Inc. All Rights Reserved.
+      </Typography>
+    </Box>
+  )
+);
