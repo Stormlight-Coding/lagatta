@@ -63,3 +63,16 @@ a:hover {
     background: transparent !important;
   }
 }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -45px;
+  visibility: hidden;
+}
+
+area {
+  map {
+    cursor: pointer !important;
+  }
+}

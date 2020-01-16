@@ -62,6 +62,7 @@ export default ({
                 <map name={areamap.name}>
                   {areamap.areas.map(a => (
                     <area
+                      href={`javascript:void(0)`}
                       style={{ cursor: "pointer" }}
                       coords={a.coords}
                       shape={a.shape}
@@ -109,6 +110,7 @@ export default ({
               >
                 {gallery.images.map(i => (
                   <Box>
+                    <a class="anchor" id={gallery.name}></a>
                     <Box
                       py={5}
                       pl={7}
