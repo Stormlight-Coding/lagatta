@@ -1,10 +1,12 @@
-import { Box, Grid, Typography } from '@material-ui/core'
+import { Box, Typography, useMediaQuery, useTheme } from '@material-ui/core'
 
 import ModalCrew from './ModalCrew'
 
 export default ({ member }) => {
   const [open, setOpen] = React.useState(false);
+  const theme = useTheme();
 
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -14,12 +16,15 @@ export default ({ member }) => {
   };
 
   return (
-    <Grid item md={6}>
+    <Box>
       <Box onClick={handleClickOpen}>
-        <Box mb={2}>
+        <Box mb={"35px"}>
           <img
             src={member.image.src}
-            style={{ borderRadius: "50%", maxWidth: "100%" }}
+            style={{
+              borderRadius: "50%",
+              maxWidth: isMobile ? "200px" : "280px"
+            }}
           />
         </Box>
         <Typography variant="subtitle1">
@@ -27,6 +32,6 @@ export default ({ member }) => {
         </Typography>
       </Box>
       <ModalCrew member={member.modal} open={open} handleClose={handleClose} />
-    </Grid>
+    </Box>
   );
 };

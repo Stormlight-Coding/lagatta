@@ -36,6 +36,11 @@ a:hover {
   &:before {
     border-right: 0 !important;
     content: url('/static/images/left.svg') !important;
+
+    @media (max-width:959.95px) {
+      transform: scale(.5);
+
+    }
   }
 }
 
@@ -46,5 +51,15 @@ a:hover {
     border-left: 0 !important;
     content: url('/static/images/right.svg') !important;
 
+    @media (max-width:959.95px) {
+      transform: scale(.5);
+
+    }
+  }
+}
+
+.crew-carousel {
+  .slide {
+    background: transparent !important;
   }
 }
