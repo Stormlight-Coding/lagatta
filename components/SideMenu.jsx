@@ -40,18 +40,26 @@ export default withRouter(({ setMenu, menu, router, setSupport }) => {
       <Box p={4}>
         <Grid container alignItems="center" justify="center">
           <Grid item xs={true}>
-            <Box align="center">
-              <img src="/static/images/logo.svg" alt="" height="16" />
+            <Box align="center" position="relative">
+              <img
+                onClick={() => setMenu(false)}
+                src="/static/images/logo.svg"
+                alt=""
+                height="16"
+              />
+              <IconButton
+                color="inherit"
+                style={{
+                  padding: "4px",
+                  position: "absolute",
+                  right: 0,
+                  top: "-4px"
+                }}
+                onClick={() => setMenu(false)}
+              >
+                <CloseIcon width="20px" />
+              </IconButton>
             </Box>
-          </Grid>
-          <Grid item>
-            <IconButton
-              color="inherit"
-              style={{ padding: "4px" }}
-              onClick={() => setMenu(false)}
-            >
-              <CloseIcon width="20px" />
-            </IconButton>
           </Grid>
         </Grid>
       </Box>

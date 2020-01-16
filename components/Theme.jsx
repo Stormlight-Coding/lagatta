@@ -175,15 +175,15 @@ const responsiveTheme = {
       h2: {
         [breakpointsCalculated.down("sm")]: {
           fontSize: "15px",
-          lineHeight: "19px"
+          lineHeight: "19px",
+          letterSpacing: "0.3px"
         }
-      }
-    },
-    MuiTypography: {
+      },
       paragraph: {
         marginBottom: "35px"
       }
     },
+
     MuiButton: {
       text: {
         [breakpointsCalculated.down("sm")]: {
@@ -209,10 +209,22 @@ const responsiveTheme = {
     },
     MuiDialog: {
       paperScrollBody: {
-        [breakpointsCalculated.down("sm")]: {
+        [breakpointsCalculated.only("xs")]: {
           maxWidth: "100% !important",
           width: "100% !important",
           margin: "0 !important"
+        },
+        [breakpointsCalculated.only("sm")]: {
+          maxWidth: "500px !important",
+          width: "100% !important"
+          // margin: "0 !important"
+        }
+      }
+    },
+    MuiContainer: {
+      root: {
+        [breakpointsCalculated.down("sm")]: {
+          padding: "0 25px"
         }
       }
     }

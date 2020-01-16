@@ -39,7 +39,13 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
                 <Grid item>
                   <Button
                     variant="text"
-                    style={{ padding: 0, minWidth: "auto", lineHeight: "20px" }}
+                    style={{
+                      padding: 0,
+                      minWidth: "auto",
+                      lineHeight: "16px",
+                      marginTop: "1px",
+                      verticalAlign: "middle"
+                    }}
                     edge="start"
                     color="inherit"
                     aria-label="menu"
@@ -51,7 +57,12 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
                 <Grid item>
                   <a
                     href="/"
-                    style={{ lineHeight: "20px", verticalAlign: "center" }}
+                    style={{
+                      lineHeight: "16px",
+                      verticalAlign: "middle",
+                      display: "inline-block",
+                      height: "20px"
+                    }}
                   >
                     <img
                       src={"/static/images/logo.svg"}
@@ -65,12 +76,14 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
                     <Link
                       style={{
                         fontWeight:
-                          router.route === "/book-charter" ? 800 : 200,
+                          router.route === "/book-charter" ? 800 : 400,
                         textTransform: "uppercase",
                         letterSpacing: "1.5px",
                         fontSize: "14px",
-                        lineHeight: "20px",
-                        verticalAlign: "center"
+                        lineHeight: "16px",
+                        display: "inline-block",
+                        marginTop: "0",
+                        verticalAlign: "middle"
                       }}
                       variant="caption"
                       color="inherit"

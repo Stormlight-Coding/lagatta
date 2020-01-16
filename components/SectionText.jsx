@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from '@material-ui/core'
+import { Box, Button, Container, Typography, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 
 import Link from './Link'
@@ -9,24 +9,30 @@ export default ({ content, bg, ...props }) => {
     backgroundColor: theme.palette[bg].main,
     color: theme.palette[bg].contrastText
   };
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box style={customStyle}>
-      <Box py={6} align="center" {...props}>
-        <Container fixed maxWidth={"lg"}>
+      <Box py={!isMobile ? 6 : "50px"} align="center" {...props}>
+        <Container fixed maxWidth={"md"}>
           {content.title && (
             <Typography variant="h2" paragraph>
               {content.title}
             </Typography>
           )}
           {content.body && (
-            <Typography variant="body1" paragraph>
+            <Typography
+              variant="body1"
+              paragraph={
+                (content.bodies && content.bodies.length) || content.link
+              }
+            >
               {content.body}
             </Typography>
           )}
           {content.bodies &&
             content.bodies.map(body => (
-              <Typography variant="body1" paragraph>
+              <Typography variant="body1" paragraph={content.link}>
                 {body}
               </Typography>
             ))}

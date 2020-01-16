@@ -1,4 +1,4 @@
-import { Box, Button, Container, Hidden, Typography } from '@material-ui/core'
+import { Box, Button, Container, Hidden, Typography, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 
 import Link from './Link'
@@ -9,6 +9,8 @@ export default ({ content, bg, children, hideSection, ...props }) => {
     backgroundColor: theme.palette[bg].main,
     color: theme.palette[bg].contrastText
   };
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Hidden {...hideSection}>
       <Box style={customStyle}>
@@ -25,21 +27,31 @@ export default ({ content, bg, children, hideSection, ...props }) => {
             </Box>
           )}
         </Box>
-        <Box py={6} align="center" {...props}>
-          <Container fixed maxWidth={"lg"}>
+        <Box py={!isMobile ? 6 : "50px"} align="center" {...props}>
+          <Container fixed maxWidth={"md"}>
             {content.title && (
               <Typography variant="h2" paragraph>
                 {content.title}
               </Typography>
             )}
             {content.body && (
-              <Typography variant="body1" paragraph>
+              <Typography
+                variant="body1"
+                paragraph={
+                  (content.bodies && content.bodies.length) ||
+                  content.link ||
+                  children
+                }
+              >
                 {content.body}
               </Typography>
             )}
             {content.bodies &&
               content.bodies.map(body => (
-                <Typography variant="body1" paragraph>
+                <Typography
+                  variant="body1"
+                  paragraph={content.link || children}
+                >
                   {body}
                 </Typography>
               ))}
