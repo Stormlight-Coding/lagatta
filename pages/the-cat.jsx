@@ -1,5 +1,6 @@
 import { Box, Grid, Typography, useMediaQuery, useTheme } from '@material-ui/core'
 
+import AccordionSpecs from '../components/AccordionSpecs'
 import CarouselCrew from '../components/CarouselCrew'
 import GridCrew from '../components/GridCrew'
 import MetaData from '../components/MetaData'
@@ -38,59 +39,68 @@ export default () => {
       <SectionCover bg={"secondary"} content={content.gattina} />
 
       <Section align="center" bg={"primary"}>
-        <Typography variant="h2" style={{ marginBottom: "85px" }}>
+        <Typography
+          variant="h2"
+          style={{ marginBottom: isMobile ? "35px" : "85px" }}
+        >
           {content.fully_equipped.title}
         </Typography>
-        <Grid container>
-          <Grid item xs={12} sm={6} md={3}>
-            <Box align="left" mb={5}>
-              <Typography variant="h3" paragraph>
-                {content.fully_equipped.equips[0].title}
-              </Typography>
-              {content.fully_equipped.equips[0].itens.map(e => (
-                <Typography>{e}</Typography>
-              ))}
-            </Box>
-            <Box align="left" mb={2}>
-              <Typography variant="h3" paragraph>
-                {content.fully_equipped.equips[1].title}
-              </Typography>
-              {content.fully_equipped.equips[1].itens.map(e => (
-                <Typography>{e}</Typography>
-              ))}
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <Box align="left" mb={2}>
-              <Typography variant="h3" paragraph>
-                {content.fully_equipped.equips[2].title}
-              </Typography>
-              {content.fully_equipped.equips[2].itens.map(e => (
-                <Typography>{e}</Typography>
-              ))}
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <Box align="left" mb={2}>
-              <Typography variant="h3" paragraph>
-                {content.fully_equipped.equips[3].title}
-              </Typography>
-              {content.fully_equipped.equips[3].itens.map(e => (
-                <Typography>{e}</Typography>
-              ))}
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <Box align="left" mb={2}>
-              <Typography variant="h3" paragraph>
-                {content.fully_equipped.equips[4].title}
-              </Typography>
-              {content.fully_equipped.equips[4].itens.map(e => (
-                <Typography>{e}</Typography>
-              ))}
-            </Box>
-          </Grid>
-        </Grid>
+        {!isMobile ? (
+          <React.Fragment>
+            <Grid container>
+              <Grid item xs={12} sm={6} md={3}>
+                <Box align="left" mb={5}>
+                  <Typography variant="h3" paragraph>
+                    {content.fully_equipped.equips[0].title}
+                  </Typography>
+                  {content.fully_equipped.equips[0].itens.map(e => (
+                    <Typography>{e}</Typography>
+                  ))}
+                </Box>
+                <Box align="left" mb={2}>
+                  <Typography variant="h3" paragraph>
+                    {content.fully_equipped.equips[1].title}
+                  </Typography>
+                  {content.fully_equipped.equips[1].itens.map(e => (
+                    <Typography>{e}</Typography>
+                  ))}
+                </Box>
+              </Grid>
+              <Grid item xs={12} sm={6} md={3}>
+                <Box align="left" mb={2}>
+                  <Typography variant="h3" paragraph>
+                    {content.fully_equipped.equips[2].title}
+                  </Typography>
+                  {content.fully_equipped.equips[2].itens.map(e => (
+                    <Typography>{e}</Typography>
+                  ))}
+                </Box>
+              </Grid>
+              <Grid item xs={12} sm={6} md={3}>
+                <Box align="left" mb={2}>
+                  <Typography variant="h3" paragraph>
+                    {content.fully_equipped.equips[3].title}
+                  </Typography>
+                  {content.fully_equipped.equips[3].itens.map(e => (
+                    <Typography>{e}</Typography>
+                  ))}
+                </Box>
+              </Grid>
+              <Grid item xs={12} sm={6} md={3}>
+                <Box align="left" mb={2}>
+                  <Typography variant="h3" paragraph>
+                    {content.fully_equipped.equips[4].title}
+                  </Typography>
+                  {content.fully_equipped.equips[4].itens.map(e => (
+                    <Typography variant="body1">{e}</Typography>
+                  ))}
+                </Box>
+              </Grid>
+            </Grid>
+          </React.Fragment>
+        ) : (
+          <AccordionSpecs equips={content.fully_equipped.equips} />
+        )}
       </Section>
     </React.Fragment>
   );
