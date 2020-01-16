@@ -1,12 +1,13 @@
-import { Box, Button, Grid } from '@material-ui/core'
+import { Box, Button, Grid, useMediaQuery, withTheme } from '@material-ui/core'
 import Dialog from '@material-ui/core/Dialog'
 import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
 import CloseIcon from '@material-ui/icons/Close'
 import React from 'react'
 
-export default function CustomizedDialogs({ content }) {
+export default withTheme(({ content, theme }) => {
   const [open, setOpen] = React.useState(false);
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -34,14 +35,19 @@ export default function CustomizedDialogs({ content }) {
         open={open}
       >
         <Box bgcolor="primary.main" style={{ position: "relative" }}>
-          <Box py={7} px={7} color="white" align="center">
+          <Box
+            py={!isMobile ? 7 : "60px"}
+            px={!isMobile ? 7 : "40px"}
+            color="white"
+            align="center"
+          >
             <IconButton
               color="inherit"
               aria-label="close"
               style={{
                 position: "absolute",
-                right: "12px",
-                top: "12px"
+                right: !isMobile ? "12px" : "6px",
+                top: !isMobile ? "12px" : "6px"
               }}
               onClick={handleClose}
             >
@@ -49,34 +55,49 @@ export default function CustomizedDialogs({ content }) {
             </IconButton>
 
             {content.songs_title && (
-              <Typography variant="h2" style={{ marginBottom: "60px" }}>
+              <Typography
+                variant="h2"
+                style={{ marginBottom: !isMobile ? "60px" : "35px" }}
+              >
                 {content.songs_title}
               </Typography>
             )}
-            <Grid container spacing={3}>
-              {content.songs &&
-                content.songs.map(song => (
-                  <React.Fragment>
-                    <Grid item xs={6}>
-                      <Typography align="right" variant="body1">
-                        {song.author}
-                      </Typography>
-                    </Grid>
-                    <Grid item xs={6}>
-                      <Typography
-                        style={{ fontWeight: 600, textTransform: "uppercase" }}
-                        align="left"
-                        variant="body1"
-                      >
-                        {song.title}
-                      </Typography>
-                    </Grid>
-                  </React.Fragment>
-                ))}
-            </Grid>
+            {!isMobile ? (
+              <Grid container spacing={3}>
+                {content.songs &&
+                  content.songs.map(song => (
+                    <React.Fragment>
+                      <Grid item xs={6}>
+                        <Typography align="right" variant="body1">
+                          {song.author}
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={6}>
+                        <Typography
+                          style={{
+                            fontWeight: 600,
+                            textTransform: "uppercase"
+                          }}
+                          align="left"
+                          variant="body1"
+                        >
+                          {song.title}
+                        </Typography>
+                      </Grid>
+                    </React.Fragment>
+                  ))}
+              </Grid>
+            ) : (
+              content.songs &&
+              content.songs.map(song => (
+                <Typography display="block" align="center" variant="body1">
+                  {song.author} - {song.title}
+                </Typography>
+              ))
+            )}
           </Box>
         </Box>
       </Dialog>
     </React.Fragment>
   );
-}
+});
