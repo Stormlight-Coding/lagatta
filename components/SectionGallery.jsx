@@ -1,6 +1,8 @@
-import { Box, Grid, Hidden, Typography } from '@material-ui/core'
+import { Box, Grid, Hidden, Typography, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 import { Carousel } from 'react-responsive-carousel'
+
+import ModalGallery from './ModalGallery'
 
 export default ({
   bg,
@@ -22,6 +24,7 @@ export default ({
     position: "relative"
   };
   const [current, setCurrent] = React.useState(0);
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const gallery = galleries[current];
 
@@ -29,15 +32,30 @@ export default ({
     ImageMap("img[usemap]");
   });
 
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Box style={customStyle}>
+      <ModalGallery
+        open={open && isMobile}
+        handleClose={handleClose}
+        gallery={gallery}
+      />
       <Grid container alignItems="center">
         {left && (
           <Grid item xs={12} md={4}>
             <Box align="center">
               <img
                 src={areamap.src}
-                usemap={`#${areamap.name}`}
+                useMap={`#${areamap.name}`}
                 style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
               />
               {areamap && (
@@ -47,10 +65,22 @@ export default ({
                       style={{ cursor: "pointer" }}
                       coords={a.coords}
                       shape={a.shape}
-                      onClick={() => {
-                        var index = galleries.findIndex(g => a.name === g.name);
-                        if (index >= 0) setCurrent(index);
-                      }}
+                      onClick={
+                        !isMobile
+                          ? () => {
+                              var index = galleries.findIndex(
+                                g => a.name === g.name
+                              );
+                              if (index >= 0) setCurrent(index);
+                            }
+                          : () => {
+                              var index = galleries.findIndex(
+                                g => a.name === g.name
+                              );
+                              if (index >= 0) setCurrent(index);
+                              setOpen(true);
+                            }
+                      }
                     />
                   ))}
                 </map>
@@ -58,6 +88,7 @@ export default ({
             </Box>
           </Grid>
         )}
+
         <Hidden smDown>
           <Grid item xs={8}>
             <Box>
@@ -106,7 +137,7 @@ export default ({
             <Box align="center">
               <img
                 src={areamap.src}
-                usemap={`#${areamap.name}`}
+                useMap={`#${areamap.name}`}
                 style={{ maxWidth: "480px", maxHeight: "720px", width: "95%" }}
               />
               {areamap && (
@@ -116,10 +147,22 @@ export default ({
                       style={{ cursor: "pointer" }}
                       coords={a.coords}
                       shape={a.shape}
-                      onClick={() => {
-                        var index = galleries.findIndex(g => a.name === g.name);
-                        if (index >= 0) setCurrent(index);
-                      }}
+                      onClick={
+                        !isMobile
+                          ? () => {
+                              var index = galleries.findIndex(
+                                g => a.name === g.name
+                              );
+                              if (index >= 0) setCurrent(index);
+                            }
+                          : () => {
+                              var index = galleries.findIndex(
+                                g => a.name === g.name
+                              );
+                              if (index >= 0) setCurrent(index);
+                              setOpen(true);
+                            }
+                      }
                     />
                   ))}
                 </map>

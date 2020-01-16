@@ -38,6 +38,10 @@
           "image": {
             "src": "/static/images/LG_CAPTAIN.jpg",
             "alt": ""
+          },
+          "image_mobile": {
+            "src": "/static/images/LG_CAPTAIN_SMALL.jpg",
+            "alt": ""
           }
         }
       },
@@ -54,6 +58,10 @@
           ],
           "image": {
             "src": "/static/images/LG_CHEF.jpg",
+            "alt": ""
+          },
+          "image_mobile": {
+            "src": "/static/images/LG_CHEF_SMALL.jpg",
             "alt": ""
           }
         }

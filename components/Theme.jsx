@@ -213,11 +213,6 @@ const responsiveTheme = {
           maxWidth: "100% !important",
           width: "100% !important",
           margin: "0 !important"
-        },
-        [breakpointsCalculated.only("sm")]: {
-          maxWidth: "500px !important",
-          width: "100% !important"
-          // margin: "0 !important"
         }
       }
     },
