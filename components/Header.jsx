@@ -58,7 +58,7 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
                   <a
                     href="/"
                     style={{
-                      lineHeight: "16px",
+                      lineHeight: "20px",
                       verticalAlign: "middle",
                       display: "inline-block",
                       height: "20px"

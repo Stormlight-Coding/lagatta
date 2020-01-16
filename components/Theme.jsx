@@ -199,7 +199,11 @@ const responsiveTheme = {
         fontWeight: 600,
         lineHeight: "35px",
         paddingLeft: "48px",
-        paddingRight: "48px"
+        paddingRight: "48px",
+        [breakpointsCalculated.down("sm")]: {
+          fontSize: "11px",
+          padding: "6px 32px"
+        }
       },
       sizeSmall: {
         fontSize: "12px",

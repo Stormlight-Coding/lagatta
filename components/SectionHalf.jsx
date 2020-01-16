@@ -17,14 +17,14 @@ const useStyles = makeStyles(theme => ({
     },
 
     [theme.breakpoints.only("sm")]: {
-      padding: `${theme.spacing(5)}px 8px !important`,
+      padding: `50px 8px !important`,
       maxWidth: "600px",
       margin: "0 auto",
       textAlign: "center"
     },
 
     [theme.breakpoints.only("xs")]: {
-      padding: `${theme.spacing(5)}px 8px !important`,
+      padding: `50px 25px !important`,
       textAlign: "center"
     }
   }
@@ -53,13 +53,23 @@ export default ({ content, bg, reverse, children, hideImage, ...props }) => {
               </Typography>
             )}
             {content.body && (
-              <Typography variant="body1" paragraph>
+              <Typography
+                variant="body1"
+                paragraph={
+                  (content.bodies && content.bodies.length) ||
+                  content.link ||
+                  children
+                }
+              >
                 {content.body}
               </Typography>
             )}
             {content.bodies &&
               content.bodies.map(body => (
-                <Typography variant="body1" paragraph>
+                <Typography
+                  variant="body1"
+                  paragraph={content.link || children}
+                >
                   {body}
                 </Typography>
               ))}
