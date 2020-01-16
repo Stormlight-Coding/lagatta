@@ -1,11 +1,19 @@
-import { Box, Drawer, Grid, IconButton, List, ListItem, ListItemText } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles'
-import CloseIcon from '@material-ui/icons/Close'
-import NextLink from 'next/Link'
-import { withRouter } from 'next/router'
+import {
+  Box,
+  Drawer,
+  Grid,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText
+} from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import CloseIcon from "@material-ui/icons/Close";
+import NextLink from "next/link";
+import { withRouter } from "next/router";
 
-import routes from '../routes'
-import Footer from './Footer'
+import routes from "../routes";
+import Footer from "./Footer";
 
 const useStyles = makeStyles(theme => {
   return {
