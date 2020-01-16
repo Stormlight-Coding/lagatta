@@ -1,10 +1,12 @@
-import { Box, Button } from '@material-ui/core'
+import { Box, Button, useMediaQuery, useTheme } from '@material-ui/core'
 import Dialog from '@material-ui/core/Dialog'
 import IconButton from '@material-ui/core/IconButton'
 import CloseIcon from '@material-ui/icons/Close'
 import React from 'react'
 
 export default function CustomizedDialogs({ content }) {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -33,34 +35,54 @@ export default function CustomizedDialogs({ content }) {
         open={open}
       >
         <Box bgcolor="primary.main" style={{ position: "relative" }}>
-          <Box py={7} px={7} color="white" align="center">
+          <Box
+            py={isMobile ? "40px" : 7}
+            px={isMobile ? 0 : 7}
+            color="white"
+            align="center"
+          >
             <IconButton
               color="inherit"
               aria-label="close"
               style={{
                 position: "absolute",
-                right: "12px",
-                top: "12px"
+                right: isMobile ? "12px" : "12px",
+                top: isMobile ? "-5px" : "12px"
               }}
               onClick={handleClose}
             >
               <CloseIcon />
             </IconButton>
 
-            <Box mb={6}>
-              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_1.png" />
+            <Box mb={isMobile ? "25px" : 6}>
+              <img
+                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_1.png"
+                style={{ maxWidth: "100%" }}
+              />
             </Box>
-            <Box mb={6}>
-              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_2.png" />
+            <Box mb={isMobile ? "25px" : 6}>
+              <img
+                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_2.png"
+                style={{ maxWidth: "100%" }}
+              />
             </Box>
-            <Box mb={6}>
-              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_3.png" />
+            <Box mb={isMobile ? "25px" : 6}>
+              <img
+                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_3.png"
+                style={{ maxWidth: "100%" }}
+              />
             </Box>
-            <Box mb={6}>
-              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_4.png" />
+            <Box mb={isMobile ? "25px" : 6}>
+              <img
+                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_4.png"
+                style={{ maxWidth: "100%" }}
+              />
             </Box>
-            <Box mb={6}>
-              <img src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_5.png" />
+            <Box mb={isMobile ? "25px" : 6}>
+              <img
+                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_5.png"
+                style={{ maxWidth: "100%" }}
+              />
             </Box>
           </Box>
         </Box>

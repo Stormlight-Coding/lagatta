@@ -1,4 +1,4 @@
-import { Box, Grid, makeStyles } from '@material-ui/core'
+import { Box, Grid, makeStyles, useMediaQuery, useTheme } from '@material-ui/core'
 import Dialog from '@material-ui/core/Dialog'
 import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
@@ -25,6 +25,8 @@ const useStyles = makeStyles(theme => ({
 
 export default function CustomizedDialogs({ open, handleClose, member }) {
   const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Dialog
       PaperProps={{
@@ -38,13 +40,32 @@ export default function CustomizedDialogs({ open, handleClose, member }) {
       onClose={handleClose}
       open={open}
     >
-      <Box bgcolor="primary.main" style={{ position: "relative" }}>
+      <Box
+        bgcolor="primary.main"
+        style={{ position: "relative" }}
+        align="center"
+      >
         <Grid container>
           <Grid item xs={12} md={5}>
-            <img src={member.image.src} style={{ maxWidth: "100%" }} />
+            {isMobile ? (
+              <img
+                src={member.image_mobile.src}
+                style={{
+                  maxWidth: "100%",
+                  borderRadius: "50%",
+                  marginTop: "40px"
+                }}
+              />
+            ) : (
+              <img src={member.image.src} style={{ maxWidth: "100%" }} />
+            )}
           </Grid>
           <Grid item xs={12} md={7}>
-            <Box className={classes.root} color="white">
+            <Box
+              className={classes.root}
+              color="white"
+              align={!isMobile ? "left" : "center"}
+            >
               <IconButton
                 color="inherit"
                 aria-label="close"
@@ -69,8 +90,8 @@ export default function CustomizedDialogs({ open, handleClose, member }) {
                   paragraph
                   style={{
                     fontWeight: 200,
-                    fontSize: "16px",
-                    lineHeight: "30px"
+                    fontSize: isMobile ? "11px" : "16px",
+                    lineHeight: isMobile ? "19px" : "30px"
                   }}
                 >
                   {member.body}
@@ -83,8 +104,8 @@ export default function CustomizedDialogs({ open, handleClose, member }) {
                     paragraph
                     style={{
                       fontWeight: 200,
-                      fontSize: "16px",
-                      lineHeight: "30px"
+                      fontSize: isMobile ? "11px" : "16px",
+                      lineHeight: isMobile ? "19px" : "30px"
                     }}
                   >
                     {body}
