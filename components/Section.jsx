@@ -1,4 +1,4 @@
-import { Box, Container } from '@material-ui/core'
+import { Box, Container, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 
 export default ({ bg, children, container = true, ...props }) => {
@@ -7,11 +7,12 @@ export default ({ bg, children, container = true, ...props }) => {
     backgroundColor: theme.palette[bg].main,
     color: theme.palette[bg].contrastText
   };
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box style={customStyle}>
       {children && (
-        <Box py={6} {...props}>
+        <Box py={!isMobile ? 6 : "50px"} {...props}>
           {container ? (
             <Container fixed maxWidth={false}>
               {children}
