@@ -1,9 +1,19 @@
-import { AppBar, Box, Button, Container, Grid, Hidden, Link, useMediaQuery, withTheme } from '@material-ui/core'
-import useScrollTrigger from '@material-ui/core/useScrollTrigger'
-import NextLink from 'next/Link'
-import { withRouter } from 'next/router'
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  Grid,
+  Hidden,
+  Link,
+  useMediaQuery,
+  withTheme
+} from "@material-ui/core";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import NextLink from "next/link";
+import { withRouter } from "next/router";
 
-import TopMenu from './TopMenu'
+import TopMenu from "./TopMenu";
 
 const Header = ({ setMenu, support, setSupport, router, theme }) => {
   const trigger = useScrollTrigger({
