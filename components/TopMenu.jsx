@@ -1,8 +1,8 @@
-import { Grid, Link } from '@material-ui/core'
-import NextLink from 'next/Link'
-import { withRouter } from 'next/router'
+import { Grid, Link } from "@material-ui/core";
+import NextLink from "next/link";
+import { withRouter } from "next/router";
 
-import routes from '../routes'
+import routes from "../routes";
 
 const Links = ({ route, router }) => (
   <Grid item>
