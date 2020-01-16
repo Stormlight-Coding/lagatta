@@ -26,7 +26,7 @@ export default ({ content, bg, children, hideSection, ...props }) => {
           )}
         </Box>
         <Box py={6} align="center" {...props}>
-          <Container fixed maxWidth={"lg"}>
+          <Container fixed maxWidth={"md"}>
             {content.title && (
               <Typography variant="h2" paragraph>
                 {content.title}

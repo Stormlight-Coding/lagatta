@@ -1,3 +1,5 @@
+import { Box } from '@material-ui/core'
+
 import MetaData from '../components/MetaData'
 import ModalCocktails from '../components/ModalCocktails'
 import ModalWines from '../components/ModalWines'
@@ -26,8 +28,12 @@ export default () => (
       bg={"primary"}
       content={content.sunset}
     >
-      <ModalCocktails />
-      <ModalWines />
+      <Box mb="30px">
+        <ModalWines />
+      </Box>
+      <Box>
+        <ModalCocktails />
+      </Box>
     </SectionHalf>
 
     <SectionCover bg={"primary"} py={0} content={content.swimdeck} />

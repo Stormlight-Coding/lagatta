@@ -18,7 +18,7 @@ export default function CustomizedDialogs({ content }) {
 
   return (
     <React.Fragment>
-      <Button onClick={handleClickOpen} variant="text">
+      <Button size="small" onClick={handleClickOpen} variant="text">
         {content.button.text}
       </Button>
 

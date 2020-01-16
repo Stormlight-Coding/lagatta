@@ -13,7 +13,7 @@ export default ({ content, bg, ...props }) => {
   return (
     <Box style={customStyle}>
       <Box py={6} align="center" {...props}>
-        <Container fixed maxWidth={"lg"}>
+        <Container fixed maxWidth={"md"}>
           {content.title && (
             <Typography variant="h2" paragraph>
               {content.title}
