@@ -1,5 +1,3 @@
-import { Box } from '@material-ui/core'
-
 import MetaData from '../components/MetaData'
 import SectionCover from '../components/SectionCover'
 import SectionGallery from '../components/SectionGallery'
@@ -18,14 +16,8 @@ export default () => (
       align="left"
       bg={"primary"}
       bgcolor={"#2E7379"}
-      boxLeft={
-        <Box align="center">
-          <img
-            src={content.cabins_galleries.image_map.src}
-            style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
-          />
-        </Box>
-      }
+      left
+      areamap={content.cabins_galleries.image_map}
       galleries={content.cabins_galleries.items}
     />
 
@@ -36,14 +28,8 @@ export default () => (
       align="left"
       bg={"primary"}
       bgcolor={"#2E7379"}
-      boxLeft={
-        <Box align="center">
-          <img
-            src={content.salons_galleries.image_map.src}
-            style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
-          />
-        </Box>
-      }
+      right
+      areamap={content.salons_galleries.image_map}
       galleries={content.salons_galleries.items}
     />
 
@@ -54,14 +40,8 @@ export default () => (
       align="left"
       bg={"primary"}
       bgcolor={"#2E7379"}
-      boxLeft={
-        <Box align="center">
-          <img
-            src={content.flybridge_galleries.image_map.src}
-            style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
-          />
-        </Box>
-      }
+      left
+      areamap={content.flybridge_galleries.image_map}
       galleries={content.flybridge_galleries.items}
     />
   </React.Fragment>

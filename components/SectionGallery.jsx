@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Hidden, Typography } from '@material-ui/core'
+import { Box, Grid, Hidden, Typography } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 import { Carousel } from 'react-responsive-carousel'
 
@@ -8,10 +8,11 @@ export default ({
   headerImage,
   footerImage,
   container = true,
-  boxLeft = false,
-  boxRight = false,
+  left = false,
+  right = false,
   galleries = [],
   images = [],
+  areamap,
   ...props
 }) => {
   const theme = useTheme();
@@ -24,32 +25,36 @@ export default ({
 
   const gallery = galleries[current];
 
+  React.useEffect(() => {
+    ImageMap("img[usemap]");
+  });
+
   return (
     <Box style={customStyle}>
       <Grid container alignItems="center">
-        {boxLeft && (
+        {left && (
           <Grid item xs={12} md={4}>
-            {boxLeft}
-
-            <Box
-              align="center"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0
-              }}
-            >
-              {galleries.map((g, i) => (
-                <Box>
-                  <Button
-                    size="small"
-                    variant="text"
-                    onClick={() => setCurrent(i)}
-                  >
-                    {g.title}
-                  </Button>
-                </Box>
-              ))}
+            <Box align="center">
+              <img
+                src={areamap.src}
+                usemap={`#${areamap.name}`}
+                style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
+              />
+              {areamap && (
+                <map name={areamap.name}>
+                  {areamap.areas.map(a => (
+                    <area
+                      style={{ cursor: "pointer" }}
+                      coords={a.coords}
+                      shape={a.shape}
+                      onClick={() => {
+                        var index = galleries.findIndex(g => a.name === g.name);
+                        if (index >= 0) setCurrent(index);
+                      }}
+                    />
+                  ))}
+                </map>
+              )}
             </Box>
           </Grid>
         )}
@@ -67,6 +72,9 @@ export default ({
                 autoPlay
                 stopOnHover
                 infiniteLoop
+                labels={{
+                  leftArrow: "here"
+                }}
               >
                 {gallery.images.map(i => (
                   <Box>
@@ -92,9 +100,31 @@ export default ({
             </Box>
           </Grid>
         </Hidden>
-        {boxRight && (
+
+        {right && (
           <Grid item xs={12} md={4}>
-            {boxRight}
+            <Box align="center">
+              <img
+                src={areamap.src}
+                usemap={`#${areamap.name}`}
+                style={{ maxWidth: "480px", maxHeight: "720px", width: "95%" }}
+              />
+              {areamap && (
+                <map name={areamap.name}>
+                  {areamap.areas.map(a => (
+                    <area
+                      style={{ cursor: "pointer" }}
+                      coords={a.coords}
+                      shape={a.shape}
+                      onClick={() => {
+                        var index = galleries.findIndex(g => a.name === g.name);
+                        if (index >= 0) setCurrent(index);
+                      }}
+                    />
+                  ))}
+                </map>
+              )}
+            </Box>
           </Grid>
         )}
       </Grid>

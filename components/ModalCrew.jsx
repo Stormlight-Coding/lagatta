@@ -44,7 +44,7 @@ export default function CustomizedDialogs({ open, handleClose, member }) {
             <img src={member.image.src} style={{ maxWidth: "100%" }} />
           </Grid>
           <Grid item xs={12} md={7}>
-            <Box className={classes} color="white">
+            <Box className={classes.root} color="white">
               <IconButton
                 color="inherit"
                 aria-label="close"

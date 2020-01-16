@@ -16,3 +16,35 @@ body,
 a:hover {
   text-decoration: none !important;
 }
+
+.control-arrow {
+  &:before {
+    display: inline-block;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+  }
+
+  &:hover {
+    background: none !important;
+  }
+}
+
+
+.control-prev {
+  left: 0;
+
+  &:before {
+    border-right: 0 !important;
+    content: url('/static/images/left.svg') !important;
+  }
+}
+
+.control-next {
+  right: 0;
+
+  &:before {
+    border-left: 0 !important;
+    content: url('/static/images/right.svg') !important;
+
+  }
+}

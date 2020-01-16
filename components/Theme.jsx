@@ -209,10 +209,11 @@ const responsiveTheme = {
     },
     MuiDialog: {
       paperScrollBody: {
-        backgroundColor: "red !important",
-        maxWidth: "100% !important",
-        width: "100% !important",
-        margin: "0 !important"
+        [breakpointsCalculated.down("sm")]: {
+          maxWidth: "100% !important",
+          width: "100% !important",
+          margin: "0 !important"
+        }
       }
     }
   }

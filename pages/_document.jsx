@@ -40,6 +40,7 @@ class MyDocument extends Document {
           />
           <meta name="theme-color" content="#ffffff" />
           <link rel="stylesheet" href="/static/styles/carousel.min.css" />
+          <script src="/static/scripts/mapresizer.js" />
         </Head>
         <body>
           <Main />
