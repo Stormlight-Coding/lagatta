@@ -44,13 +44,18 @@ export default ({
 
   return (
     <Box style={customStyle}>
+      <ModalGallery
+        open={open && isMobile}
+        handleClose={handleClose}
+        gallery={gallery}
+      />
       <Grid container alignItems="center">
         {left && (
           <Grid item xs={12} md={4}>
             <Box align="center">
               <img
                 src={areamap.src}
-                usemap={`#${areamap.name}`}
+                useMap={`#${areamap.name}`}
                 style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
               />
               {areamap && (
@@ -80,14 +85,10 @@ export default ({
                   ))}
                 </map>
               )}
-              <ModalGallery
-                open={open && isMobile}
-                handleClose={handleClose}
-                gallery={gallery}
-              />
             </Box>
           </Grid>
         )}
+
         <Hidden smDown>
           <Grid item xs={8}>
             <Box>
@@ -136,7 +137,7 @@ export default ({
             <Box align="center">
               <img
                 src={areamap.src}
-                usemap={`#${areamap.name}`}
+                useMap={`#${areamap.name}`}
                 style={{ maxWidth: "480px", maxHeight: "720px", width: "95%" }}
               />
               {areamap && (
@@ -146,10 +147,22 @@ export default ({
                       style={{ cursor: "pointer" }}
                       coords={a.coords}
                       shape={a.shape}
-                      onClick={() => {
-                        var index = galleries.findIndex(g => a.name === g.name);
-                        if (index >= 0) setCurrent(index);
-                      }}
+                      onClick={
+                        !isMobile
+                          ? () => {
+                              var index = galleries.findIndex(
+                                g => a.name === g.name
+                              );
+                              if (index >= 0) setCurrent(index);
+                            }
+                          : () => {
+                              var index = galleries.findIndex(
+                                g => a.name === g.name
+                              );
+                              if (index >= 0) setCurrent(index);
+                              setOpen(true);
+                            }
+                      }
                     />
                   ))}
                 </map>
