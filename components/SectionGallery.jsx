@@ -1,6 +1,8 @@
-import { Box, Grid, Hidden, Typography } from '@material-ui/core'
+import { Box, Grid, Hidden, Typography, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 import { Carousel } from 'react-responsive-carousel'
+
+import ModalGallery from './ModalGallery'
 
 export default ({
   bg,
@@ -22,12 +24,23 @@ export default ({
     position: "relative"
   };
   const [current, setCurrent] = React.useState(0);
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const gallery = galleries[current];
 
   React.useEffect(() => {
     ImageMap("img[usemap]");
   });
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <Box style={customStyle}>
@@ -47,14 +60,31 @@ export default ({
                       style={{ cursor: "pointer" }}
                       coords={a.coords}
                       shape={a.shape}
-                      onClick={() => {
-                        var index = galleries.findIndex(g => a.name === g.name);
-                        if (index >= 0) setCurrent(index);
-                      }}
+                      onClick={
+                        !isMobile
+                          ? () => {
+                              var index = galleries.findIndex(
+                                g => a.name === g.name
+                              );
+                              if (index >= 0) setCurrent(index);
+                            }
+                          : () => {
+                              var index = galleries.findIndex(
+                                g => a.name === g.name
+                              );
+                              if (index >= 0) setCurrent(index);
+                              setOpen(true);
+                            }
+                      }
                     />
                   ))}
                 </map>
               )}
+              <ModalGallery
+                open={open && isMobile}
+                handleClose={handleClose}
+                gallery={gallery}
+              />
             </Box>
           </Grid>
         )}
