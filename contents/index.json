@@ -13,8 +13,8 @@
 
   "destinations": {
     "title": "DESTINATIONS",
-    "body": "Each season, LA GATTA sails to a unique and vibrant destination. From the diverse Windwards to secluded anchorages in the Seychelles, the possibilities are limitless. Follow our itinerary and pick your spot!",
-    "link": { "href": "/destinations", "text": "SEE WHERE WE SAIL >" },
+    "body": "Each season, LA GATTA sails to a unique and vibrant destination. From the diverse Windwards to secluded anchorages in the South Pacific, the possibilities are limitless. Follow our itinerary and pick your spot!",
+    "link": { "href": "/destinations", "text": "SEE WHERE SHE WILL SAIL >" },
     "items": [
       {
         "title": "MONACO GP",

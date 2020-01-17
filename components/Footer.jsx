@@ -1,5 +1,5 @@
-import { Box, Typography } from '@material-ui/core'
-import { withRouter } from 'next/router'
+import { Box, Typography } from "@material-ui/core";
+import { withRouter } from "next/router";
 
 const getFooterColor = (router, theme, trigger) => {
   if (router.route === "/") return "secondary.main";
@@ -28,7 +28,7 @@ export default withRouter(
       {...props}
     >
       <Typography variant="body1" style={{ ...fontSize }}>
-        Copyright © 2019 Lagatta US, Inc. All Rights Reserved.
+        Copyright © 2020 Lagatta US, Inc. All Rights Reserved.
       </Typography>
     </Box>
   )

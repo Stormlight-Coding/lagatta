@@ -16,7 +16,7 @@
 
   "cabins": {
     "title": "CABINS",
-    "body": "LA GATTA features four elegantly designed guest cabins. Each of these are fitted with an island bed, desk, ample storage and individual bathroom. The spacious master Panther suite features a hydraulic platform which opens to create a private “beach” giving direct sea access and a special spot to sunbathe. The crew quarters and galley are configured as to facilitate the staff’s work on board. Two bunks in the forepeak are a fun spot for two kids. The Lynx bed can be configured as a queen or two twins."
+    "body": "LA GATTA features four elegantly designed guest cabins. Each of these are fitted with an island bed, ample storage, and private bathroom. The spacious master suite features a hydraulic platform which opens to create a private “beach” giving direct sea access and a special spot to sunbathe. The crew quarters and galley are configured as to facilitate the staff’s work on board. Two bunks in the forepeak are a fun spot for two kids. The LYNX bed can be configured as a queen or two twins."
   },
 
   "cabins_galleries": {
@@ -60,7 +60,7 @@
       {
         "color": "#1E3A57",
         "name": "panther",
-        "title": "PANTHER CABIN",
+        "title": "PANTHER",
         "images": [
           {
             "src": "/static/images/photos/LG_L_PANT_01.jpg",
@@ -95,7 +95,7 @@
 
       {
         "color": "#7898AD",
-        "title": "PUMA CABIN",
+        "title": "PUMA",
         "name": "puma",
         "images": [
           {
@@ -132,7 +132,7 @@
       {
         "name": "galley",
         "color": "#597B87",
-        "title": "GALLEY CABIN",
+        "title": "GALLEY",
         "images": [
           {
             "src": "/static/images/photos/LG_L_GALLEY_01.jpg",
@@ -168,7 +168,7 @@
       {
         "name": "ocelot",
         "color": "#55A5CF",
-        "title": "OCELOT CABIN",
+        "title": "OCELOT",
         "images": [
           {
             "src": "/static/images/photos/LG_L_OCELOT_01.jpg",
@@ -198,7 +198,7 @@
       {
         "name": "lynx",
         "color": "#2A4A77",
-        "title": "LYNX CABIN",
+        "title": "LYNX",
         "images": [
           {
             "src": "/static/images/photos/LG_L_LYNX_01.jpg",
@@ -222,7 +222,7 @@
       {
         "name": "forepeak",
         "color": "#3A678F",
-        "title": "FOREPEAK BUNKS CABIN",
+        "title": "FOREPEAK BUNKS",
         "images": [
           {
             "src": "/static/images/photos/LG_L_BUNK_01.jpg",
@@ -428,7 +428,7 @@
   },
 
   "living_space": {
-    "title": "FLYBRIDGE LIVING SPACE",
+    "title": "THE FLYBRIDGE",
     "body": "The spacious flybridge gives impressive additional space. Its breathtaking viewpoint is ideal for eating and relaxing during sea trips. LA GATTA is one of the only SEVENTY 7s with a Jacuzzi. The flybridge is also outfitted with a mounted projector and a high tech dual image screen that can be seen from both sides."
   },
 
@@ -455,7 +455,7 @@
           {
             "src": "/static/images/photos/LG_L_JACUZZI.jpg",
             "alt": "",
-            "body": "The only SEVENTY 7 with a hot tub on the flybridge.",
+            "body": "The only SEVENTY 7 with a Jacuzzi on the flybridge.",
             "title": "JACUZZI"
           },
           {
