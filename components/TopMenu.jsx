@@ -1,30 +1,48 @@
-import { Grid, Link } from '@material-ui/core'
+import { Grid, Link, makeStyles } from '@material-ui/core'
 import NextLink from 'next/link'
 import { withRouter } from 'next/router'
 
 import routes from '../routes'
 
-const Links = ({ route, router }) => (
-  <Grid item>
-    <NextLink passHref href={route}>
-      <Link
-        style={{
-          fontWeight: router.route == route ? 800 : 400,
-          textTransform: "uppercase",
-          letterSpacing: "1.5px",
-          fontSize: "12px",
-          lineHeight: "16px"
-        }}
-        color="inherit"
-      >
-        {routes[route].name}
-      </Link>
-    </NextLink>
-  </Grid>
-);
+const useStyles = makeStyles(theme => ({
+  link: {
+    textTransform: "uppercase",
+    letterSpacing: "1.5px",
+    fontSize: "12px",
+    lineHeight: "16px",
+    minWidth: "120px",
+    display: "inline-block",
+    textAlign: "center",
 
+    [theme.breakpoints.only("md")]: {
+      letterSpacing: "1px",
+      fontSize: "12px",
+      lineHeight: "16px",
+      minWidth: "30px"
+    }
+  }
+}));
+
+const Links = ({ route, router }) => {
+  const classes = useStyles();
+  return (
+    <Grid item>
+      <NextLink passHref href={route}>
+        <Link
+          className={classes.link}
+          style={{
+            fontWeight: router.route == route ? 800 : 400
+          }}
+          color="inherit"
+        >
+          {routes[route].name}
+        </Link>
+      </NextLink>
+    </Grid>
+  );
+};
 export default withRouter(({ children, router }) => (
-  <Grid container spacing={3} justify="space-between">
+  <Grid container spacing={0} justify="space-between">
     {Object.keys(routes)
       .filter(r => routes[r].position === "left")
       .map(route => (
