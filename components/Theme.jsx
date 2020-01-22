@@ -211,7 +211,11 @@ const responsiveTheme = {
         fontWeight: 600,
         lineHeight: "22px",
         padding: "8px 12px",
-        borderRadius: 0
+        borderRadius: 0,
+        [breakpointsCalculated.up("md")]: {
+          // background: "red !important",
+          marginLeft: "-8px"
+        }
       }
     },
     MuiDialog: {
