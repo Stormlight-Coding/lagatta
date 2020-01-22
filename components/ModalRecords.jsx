@@ -91,7 +91,19 @@ export default withTheme(({ content, theme }) => {
               content.songs &&
               content.songs.map(song => (
                 <Typography display="block" align="center" variant="body1">
-                  {song.author} - {song.title}
+                  <Typography variant="inherit" display="inline">
+                    {song.author}
+                  </Typography>
+                  <Typography variant="inherit" display="inline">
+                    {" - "}
+                  </Typography>
+                  <Typography
+                    variant="inherit"
+                    display="inline"
+                    style={{ fontWeight: 800 }}
+                  >
+                    {song.title}
+                  </Typography>
                 </Typography>
               ))
             )}

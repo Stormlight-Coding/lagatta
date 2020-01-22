@@ -91,7 +91,19 @@ export default withTheme(({ content, theme }) => {
               content.books &&
               content.books.map(book => (
                 <Typography display="block" align="center" variant="body1">
-                  {book.title} - {book.author}
+                  <Typography
+                    variant="inherit"
+                    display="inline"
+                    style={{ fontWeight: 800 }}
+                  >
+                    {book.title}
+                  </Typography>
+                  <Typography variant="inherit" display="inline">
+                    {" - "}
+                  </Typography>
+                  <Typography variant="inherit" display="inline">
+                    {book.author}
+                  </Typography>
                 </Typography>
               ))
             )}
