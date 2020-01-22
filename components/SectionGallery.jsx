@@ -57,7 +57,11 @@ export default ({
               <img
                 src={areamap.src}
                 useMap={`#${areamap.name}`}
-                style={{ maxWidth: "480px", maxHeight: "720px", width: "100%" }}
+                style={{
+                  maxWidth: "480px",
+                  maxHeight: "720px",
+                  width: "100%"
+                }}
               />
               {areamap && (
                 <map name={areamap.name}>
@@ -115,24 +119,44 @@ export default ({
                 }}
               >
                 {gallery.images.map(i => (
-                  <Box>
-                    <a class="anchor" id={gallery.name}></a>
-                    <Box
-                      py={5}
-                      pl={7}
-                      pr={5}
-                      bgcolor={gallery.color}
-                      align="left"
+                  <Box bgcolor="blue" style={{ height: "100%", width: "100%" }}>
+                    <Grid
+                      container
+                      direction="column"
+                      style={{ height: "100%", width: "100%" }}
                     >
-                      <Typography variant="h2" style={{ marginBottom: "15px" }}>
-                        {i.title}
-                      </Typography>
-                      <Typography variant="body1">{i.body}</Typography>
-                    </Box>
-
-                    <Box>
-                      <img src={i.src} style={{ width: "100%" }} />
-                    </Box>
+                      <Grid item style={{ display: "flex", width: "100%" }}>
+                        <Box
+                          style={{ height: "100%", width: "100%" }}
+                          py={5}
+                          pl={7}
+                          pr={5}
+                          bgcolor={gallery.color}
+                          align="left"
+                        >
+                          <Typography
+                            variant="h2"
+                            style={{ marginBottom: "15px" }}
+                          >
+                            {i.title}
+                          </Typography>
+                          <Typography variant="body1">{i.body}</Typography>
+                        </Box>
+                      </Grid>
+                      <Grid
+                        item
+                        style={{ flex: 1, display: "flex", width: "100%" }}
+                      >
+                        <img
+                          src={i.src}
+                          style={{
+                            width: "100%",
+                            objectFit: "cover",
+                            height: "100%"
+                          }}
+                        />
+                      </Grid>
+                    </Grid>
                   </Box>
                 ))}
               </Carousel>
