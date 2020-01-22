@@ -24,6 +24,7 @@ export default ({
     position: "relative"
   };
   const [current, setCurrent] = React.useState(0);
+  const [currentIndex, setCurrentIndex] = React.useState(0);
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const gallery = galleries[current];
@@ -69,12 +70,14 @@ export default ({
                       onClick={
                         !isMobile
                           ? () => {
+                              setCurrentIndex(0);
                               var index = galleries.findIndex(
                                 g => a.name === g.name
                               );
                               if (index >= 0) setCurrent(index);
                             }
                           : () => {
+                              setCurrentIndex(0);
                               var index = galleries.findIndex(
                                 g => a.name === g.name
                               );
@@ -98,9 +101,12 @@ export default ({
               )}
               <Carousel
                 showThumbs={false}
+                interval={6000}
                 showArrows={true}
                 showStatus={false}
                 showIndicators={false}
+                selectedItem={currentIndex}
+                onChange={setCurrentIndex}
                 autoPlay
                 stopOnHover
                 infiniteLoop
@@ -152,12 +158,14 @@ export default ({
                       onClick={
                         !isMobile
                           ? () => {
+                              setCurrentIndex(0);
                               var index = galleries.findIndex(
                                 g => a.name === g.name
                               );
                               if (index >= 0) setCurrent(index);
                             }
                           : () => {
+                              setCurrentIndex(0);
                               var index = galleries.findIndex(
                                 g => a.name === g.name
                               );

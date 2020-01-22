@@ -4,7 +4,7 @@ import CardDestination from './CardDestination'
 
 export default ({ items }) => (
   <Box align="center" bgcolor="white" overflow="hidden">
-    <Grid container spacing={1}>
+    <Grid container spacing={1} alignItems="stretch">
       {items.map(item => (
         <CardDestination item={item} />
       ))}
