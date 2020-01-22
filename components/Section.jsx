@@ -2,11 +2,11 @@ import { Box, Container, useMediaQuery } from '@material-ui/core'
 import { useTheme } from '@material-ui/core/styles'
 
 export default ({ bg, children, container = true, ...props }) => {
-  const theme = useTheme();
   const customStyle = {
     backgroundColor: theme.palette[bg].main,
     color: theme.palette[bg].contrastText
   };
+  const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (

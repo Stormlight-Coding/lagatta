@@ -28,7 +28,7 @@ export default withRouter(({ setMenu, menu, router, setSupport }) => {
   return (
     <Drawer
       variant="temporary"
-      open={menu || true}
+      open={menu}
       onClose={() => setMenu(false)}
       classes={{
         paper: classes.drawerPaper
