@@ -47,10 +47,14 @@ export default ({ content, bg, children, hideSection, ...props }) => {
               </Typography>
             )}
             {content.bodies &&
-              content.bodies.map(body => (
+              content.bodies.map((body, index) => (
                 <Typography
                   variant="body1"
-                  paragraph={content.link || children}
+                  paragraph={
+                    content.link ||
+                    children ||
+                    index !== content.bodies.length - 1
+                  }
                 >
                   {body}
                 </Typography>

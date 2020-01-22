@@ -31,8 +31,11 @@ export default ({ content, bg, ...props }) => {
             </Typography>
           )}
           {content.bodies &&
-            content.bodies.map(body => (
-              <Typography variant="body1" paragraph={content.link}>
+            content.bodies.map((body, index) => (
+              <Typography
+                variant="body1"
+                paragraph={content.link || index !== content.bodies.length - 1}
+              >
                 {body}
               </Typography>
             ))}
