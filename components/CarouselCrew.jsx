@@ -11,9 +11,6 @@ export default ({ members }) => (
       showStatus={false}
       showIndicators={false}
       stopOnHover
-      labels={{
-        leftArrow: "here"
-      }}
     >
       {members.map(member => (
         <CardCrew member={member} />
