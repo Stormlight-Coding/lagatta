@@ -23,9 +23,11 @@ export default ({ equips }) => {
             <Typography
               variant="h3"
               style={{
+                marginLeft: "24px",
                 fontSize: "10px",
                 lineHeight: "30px",
-                fontWeight: opened.includes(index) ? 200 : 600
+                fontWeight: 600,
+                marginBottom: opened.includes(index) ? "30px" : 0
               }}
             >
               {equip.title}
