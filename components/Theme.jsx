@@ -200,6 +200,7 @@ const responsiveTheme = {
         lineHeight: "35px",
         paddingLeft: "48px",
         paddingRight: "48px",
+        borderRadius: 0,
         [breakpointsCalculated.down("sm")]: {
           fontSize: "11px",
           padding: "6px 32px"
@@ -208,16 +209,17 @@ const responsiveTheme = {
       sizeSmall: {
         fontSize: "12px",
         fontWeight: 600,
-        lineHeight: "22px"
+        lineHeight: "22px",
+        padding: "8px 12px",
+        borderRadius: 0
       }
     },
     MuiDialog: {
       paperScrollBody: {
-        [breakpointsCalculated.only("xs")]: {
-          maxWidth: "100% !important",
-          width: "100% !important",
-          margin: "0 !important"
-        }
+        maxWidth: "100% !important",
+        width: "100% !important",
+        margin: "0 !important",
+        [breakpointsCalculated.only("xs")]: {}
       }
     },
     MuiContainer: {

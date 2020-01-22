@@ -1,15 +1,15 @@
-import { Grid, Link } from "@material-ui/core";
-import NextLink from "next/link";
-import { withRouter } from "next/router";
+import { Grid, Link } from '@material-ui/core'
+import NextLink from 'next/link'
+import { withRouter } from 'next/router'
 
-import routes from "../routes";
+import routes from '../routes'
 
 const Links = ({ route, router }) => (
   <Grid item>
     <NextLink passHref href={route}>
       <Link
         style={{
-          fontWeight: router.route == route ? 800 : 600,
+          fontWeight: router.route == route ? 800 : 400,
           textTransform: "uppercase",
           letterSpacing: "1.5px",
           fontSize: "12px",
