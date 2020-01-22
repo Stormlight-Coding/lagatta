@@ -83,8 +83,9 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
                           fontWeight:
                             router.route === "/book-charter" ? 800 : 400,
                           textTransform: "uppercase",
+                          textTransform: "uppercase",
                           letterSpacing: "1.5px",
-                          fontSize: "14px",
+                          fontSize: "12px",
                           lineHeight: "16px",
                           display: "inline-block",
                           marginTop: "0",
