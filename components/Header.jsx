@@ -1,19 +1,9 @@
-import {
-  AppBar,
-  Box,
-  Button,
-  Container,
-  Grid,
-  Hidden,
-  Link,
-  useMediaQuery,
-  withTheme
-} from "@material-ui/core";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import NextLink from "next/link";
-import { withRouter } from "next/router";
+import { AppBar, Box, Button, Container, Grid, Hidden, Link, useMediaQuery, withTheme } from '@material-ui/core'
+import useScrollTrigger from '@material-ui/core/useScrollTrigger'
+import NextLink from 'next/link'
+import { withRouter } from 'next/router'
 
-import TopMenu from "./TopMenu";
+import TopMenu from './TopMenu'
 
 const Header = ({ setMenu, support, setSupport, router, theme }) => {
   const trigger = useScrollTrigger({
@@ -46,61 +36,67 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
               justify="space-between"
             >
               <Hidden mdUp implementation="js">
-                <Grid item>
-                  <Button
-                    variant="text"
-                    style={{
-                      padding: 0,
-                      minWidth: "auto",
-                      lineHeight: "16px",
-                      marginTop: "1px",
-                      verticalAlign: "middle"
-                    }}
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    onClick={() => setMenu(true)}
-                  >
-                    <img src="/static/images/Menu.svg" width="20px" />
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <a
-                    href="/"
-                    style={{
-                      lineHeight: "20px",
-                      verticalAlign: "middle",
-                      display: "inline-block",
-                      height: "20px"
-                    }}
-                  >
-                    <img
-                      src={"/static/images/logo.svg"}
-                      alt="logo"
-                      height={isMobile ? "11px" : "18px"}
-                    />
-                  </a>
-                </Grid>
-                <Grid item>
-                  <NextLink passHref href={"/book-charter"}>
-                    <Link
+                <Grid item xs={3}>
+                  <Box align="left">
+                    <Button
+                      variant="text"
                       style={{
-                        fontWeight:
-                          router.route === "/book-charter" ? 800 : 400,
-                        textTransform: "uppercase",
-                        letterSpacing: "1.5px",
-                        fontSize: "14px",
+                        padding: 0,
+                        minWidth: "auto",
                         lineHeight: "16px",
-                        display: "inline-block",
-                        marginTop: "0",
+                        marginTop: "1px",
                         verticalAlign: "middle"
                       }}
-                      variant="caption"
+                      edge="start"
                       color="inherit"
+                      aria-label="menu"
+                      onClick={() => setMenu(true)}
                     >
-                      BOOK
-                    </Link>
-                  </NextLink>
+                      <img src="/static/images/Menu.svg" width="20px" />
+                    </Button>
+                  </Box>
+                </Grid>
+                <Grid item xs={6}>
+                  <Box align="center">
+                    <a
+                      href="/"
+                      style={{
+                        lineHeight: "20px",
+                        verticalAlign: "middle",
+                        display: "inline-block",
+                        height: "20px"
+                      }}
+                    >
+                      <img
+                        src={"/static/images/logo.svg"}
+                        alt="logo"
+                        height={isMobile ? "11px" : "18px"}
+                      />
+                    </a>
+                  </Box>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box align="right">
+                    <NextLink passHref href={"/book-charter"}>
+                      <Link
+                        style={{
+                          fontWeight:
+                            router.route === "/book-charter" ? 800 : 400,
+                          textTransform: "uppercase",
+                          letterSpacing: "1.5px",
+                          fontSize: "14px",
+                          lineHeight: "16px",
+                          display: "inline-block",
+                          marginTop: "0",
+                          verticalAlign: "middle"
+                        }}
+                        variant="caption"
+                        color="inherit"
+                      >
+                        BOOK
+                      </Link>
+                    </NextLink>
+                  </Box>
                 </Grid>
               </Hidden>
               <Hidden smDown implementation="js">
