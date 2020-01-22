@@ -1,19 +1,11 @@
-import {
-  Box,
-  Drawer,
-  Grid,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText
-} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import CloseIcon from "@material-ui/icons/Close";
-import NextLink from "next/link";
-import { withRouter } from "next/router";
+import { Box, Drawer, Grid, IconButton, List, ListItem, ListItemText } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
+import CloseIcon from '@material-ui/icons/Close'
+import NextLink from 'next/link'
+import { withRouter } from 'next/router'
 
-import routes from "../routes";
-import Footer from "./Footer";
+import routes from '../routes'
+import Footer from './Footer'
 
 const useStyles = makeStyles(theme => {
   return {
@@ -36,7 +28,7 @@ export default withRouter(({ setMenu, menu, router, setSupport }) => {
   return (
     <Drawer
       variant="temporary"
-      open={menu}
+      open={menu || true}
       onClose={() => setMenu(false)}
       classes={{
         paper: classes.drawerPaper
@@ -71,8 +63,10 @@ export default withRouter(({ setMenu, menu, router, setSupport }) => {
           </Grid>
         </Grid>
       </Box>
-      <Box mb={2}>
-        <List>
+      <Box
+        style={{ display: "flex", height: "calc(100% - 95px)", width: "100%" }}
+      >
+        <List style={{ width: "100%", alignSelf: "center" }}>
           {Object.keys(routes)
             .filter(r => routes[r].page !== "/")
             .map(route => (
@@ -108,7 +102,6 @@ export default withRouter(({ setMenu, menu, router, setSupport }) => {
           lineHeight: "35px"
         }}
         style={{
-          borderTop: "1px solid #979797",
           position: "absolute",
           bottom: 0,
           textAlign: "center",
