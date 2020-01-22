@@ -1,10 +1,12 @@
-import { Box, Button } from '@material-ui/core'
+import { Box, Button, useMediaQuery, useTheme } from '@material-ui/core'
 import Dialog from '@material-ui/core/Dialog'
 import IconButton from '@material-ui/core/IconButton'
 import CloseIcon from '@material-ui/icons/Close'
 import React from 'react'
 
 export default function CustomizedDialogs({ content }) {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -46,7 +48,18 @@ export default function CustomizedDialogs({ content }) {
             >
               <CloseIcon />
             </IconButton>
-            WINE'S MENU
+            <Box mb={isMobile ? "25px" : 6}>
+              <img
+                src="/static/images/LA_GATTA_WINE_MENU_1.png"
+                style={{ maxWidth: "100%" }}
+              />
+            </Box>
+            <Box mb={isMobile ? "25px" : 6}>
+              <img
+                src="/static/images/LA_GATTA_WINE_MENU_2.png"
+                style={{ maxWidth: "100%" }}
+              />
+            </Box>
           </Box>
         </Box>
       </Dialog>

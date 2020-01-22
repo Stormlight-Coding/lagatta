@@ -56,31 +56,31 @@ export default function CustomizedDialogs({ content }) {
 
             <Box mb={isMobile ? "25px" : 6}>
               <img
-                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_1.png"
+                src="/static/images/LA_GATTA_DRINK_MENU_1.png"
                 style={{ maxWidth: "100%" }}
               />
             </Box>
             <Box mb={isMobile ? "25px" : 6}>
               <img
-                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_2.png"
+                src="/static/images/LA_GATTA_DRINK_MENU_2.png"
                 style={{ maxWidth: "100%" }}
               />
             </Box>
             <Box mb={isMobile ? "25px" : 6}>
               <img
-                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_3.png"
+                src="/static/images/LA_GATTA_DRINK_MENU_3.png"
                 style={{ maxWidth: "100%" }}
               />
             </Box>
             <Box mb={isMobile ? "25px" : 6}>
               <img
-                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_4.png"
+                src="/static/images/LA_GATTA_DRINK_MENU_4.png"
                 style={{ maxWidth: "100%" }}
               />
             </Box>
             <Box mb={isMobile ? "25px" : 6}>
               <img
-                src="/static/images/LA_GATTA_DRINK_MENU_121119_Page_5.png"
+                src="/static/images/LA_GATTA_DRINK_MENU_5.png"
                 style={{ maxWidth: "100%" }}
               />
             </Box>
