@@ -1,4 +1,4 @@
-import { Grid, Link, makeStyles } from '@material-ui/core'
+import { Box, Grid, Link, makeStyles } from '@material-ui/core'
 import NextLink from 'next/link'
 import { withRouter } from 'next/router'
 
@@ -10,15 +10,13 @@ const useStyles = makeStyles(theme => ({
     letterSpacing: "1.5px",
     fontSize: "12px",
     lineHeight: "16px",
-    minWidth: "120px",
     display: "inline-block",
     textAlign: "center",
 
     [theme.breakpoints.only("md")]: {
       letterSpacing: "1px",
       fontSize: "12px",
-      lineHeight: "16px",
-      minWidth: "30px"
+      lineHeight: "16px"
     }
   }
 }));
@@ -43,22 +41,33 @@ const Links = ({ route, router }) => {
 };
 export default withRouter(({ children, router }) => (
   <Grid container spacing={0} justify="space-between">
-    {Object.keys(routes)
-      .filter(r => routes[r].position === "left")
-      .map(route => (
-        <Links router={router} route={route} />
-      ))}
+    <Grid item>
+      <Box minWidth="320px">
+        <Grid container spacing={5} justify="space-between">
+          {Object.keys(routes)
+            .filter(r => routes[r].position === "left")
+            .map(route => (
+              <Links router={router} route={route} />
+            ))}
+        </Grid>
+      </Box>
+    </Grid>
 
     <Grid item>
       <Link href="/" style={{ verticalAlign: "center", lineHeight: "20px" }}>
         <img src={"/static/images/logo.svg"} alt="logo" height="18px" />
       </Link>
     </Grid>
-
-    {Object.keys(routes)
-      .filter(r => routes[r].position === "right")
-      .map(route => (
-        <Links router={router} route={route} />
-      ))}
+    <Grid item>
+      <Box minWidth="320px">
+        <Grid container spacing={5} justify="space-between">
+          {Object.keys(routes)
+            .filter(r => routes[r].position === "right")
+            .map(route => (
+              <Links router={router} route={route} />
+            ))}
+        </Grid>
+      </Box>
+    </Grid>
   </Grid>
 ));

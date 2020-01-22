@@ -28,7 +28,7 @@ export default () => (
       bg={"primary"}
       content={content.sunset}
     >
-      <Box mb="30px">
+      <Box mb="15px">
         <ModalWines />
       </Box>
       <Box>

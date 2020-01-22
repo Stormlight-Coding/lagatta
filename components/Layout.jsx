@@ -42,6 +42,8 @@ const Layout = ({ children, setMenu, menu, setSupport, support }) => {
           <Page>{children}</Page>
         </main>
 
+        <div className="line" />
+
         <footer className={classes.footer}>
           <Footer />
         </footer>

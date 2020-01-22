@@ -43,9 +43,9 @@ export default ({ content, bg, reverse, children, hideImage, ...props }) => {
       <Grid
         container
         direction={reverse && smUp ? "row-reverse" : "row"}
-        alignItems="center"
+        alignItems="stretch"
       >
-        <Grid item xs={12} sm={12} md={6}>
+        <Grid item xs={12} sm={12} md={6} style={{ display: "flex" }}>
           <Box className={classes.root} {...props}>
             {content.title && (
               <Typography variant="h2" paragraph>
@@ -92,12 +92,23 @@ export default ({ content, bg, reverse, children, hideImage, ...props }) => {
           </Box>
         </Grid>
 
-        <Grid item xs={12} sm={12} md={6}>
-          <Hidden {...hideImage}>
-            {content.image && (
-              <img src={content.image.src} style={{ width: "100%" }} />
-            )}
-          </Hidden>
+        <Grid item xs={12} sm={12} md={6} style={{ display: "flex" }}>
+          <Box
+            style={{
+              backgroundColor: "blue",
+              height: "100%",
+              width: "100%"
+            }}
+          >
+            <Hidden {...hideImage}>
+              {content.image && (
+                <img
+                  src={content.image.src}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              )}
+            </Hidden>
+          </Box>
         </Grid>
       </Grid>
     </Box>
