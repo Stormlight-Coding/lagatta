@@ -17,7 +17,7 @@ export default ({ member }) => {
 
   return (
     <Box>
-      <Box onClick={handleClickOpen}>
+      <Box onClick={handleClickOpen} style={{ cursor: "pointer" }}>
         <Box mb={"35px"}>
           <img
             src={member.image.src}
