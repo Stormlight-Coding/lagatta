@@ -27,7 +27,10 @@ export default ({ member }) => {
             }}
           />
         </Box>
-        <Typography variant="subtitle1">
+        <Typography
+          variant="subtitle1"
+          style={{ fontSize: "12px", fontWeight: 600 }}
+        >
           {member.title} - {member.name}
         </Typography>
       </Box>

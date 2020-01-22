@@ -66,6 +66,18 @@ a:hover {
   .slide {
     background: transparent !important;
   }
+
+  .control-next,
+  .control-prev {
+    &:before {
+      transform: translateY(0);
+
+      @media (max-width:959.95px) {
+        transform: scale(.5) translateY(-45px);
+
+      }
+    }
+  }
 }
 
 a.anchor {
