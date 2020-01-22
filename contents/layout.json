@@ -27,32 +27,32 @@
         {
           "name": "galley",
           "shape": "poly",
-          "coords": "645,2714,913,2728,991,3159,1415,3148,1419,2060,1143,2049,942,2035,691,2042,666,2332"
+          "coords": "182,489,174,650,231,652,252,715,253,760,359,758,355,491,287,491,260,491"
         },
         {
           "name": "ocelot",
           "shape": "poly",
-          "coords": "1433,3784,624,3784,641,2763,875,2742,970,3191,1440,3194,1422,3647"
+          "coords": "164,783,173,658,229,658,246,715,245,765,358,767,359,903,165,908"
         },
         {
           "name": "lynx",
           "shape": "poly",
-          "coords": "627,3830,1429,3813,1422,4735,641,4739"
+          "coords": "166,918,361,917,360,1135,173,1138"
         },
         {
           "name": "forepeak",
           "shape": "poly",
-          "coords": "3062,753,3164,1523,2620,1530,2712,816,2885,346"
+          "coords": "706,96,683,164,654,332,651,363,745,360,773,364,745,167,726,104,708,92"
         },
         {
           "name": "panther",
           "shape": "poly",
-          "coords": "2617,1555,2567,1830,2461,1892,2465,2217,2472,3051,2475,3546,3277,3553,3263,2894,3613,2848,3588,2435,3263,2445,3143,1544"
+          "coords": "610,452,614,853,803,854,803,693,886,687,875,581,793,585,782,455,779,413,774,373,652,374,641,419,644,443,629,452"
         },
         {
           "name": "puma",
           "shape": "poly",
-          "coords": "2472,3583,3277,3594,3246,4749,2489,4753"
+          "coords": "614,862,616,1136,799,1137,805,862"
         }
       ]
     },
@@ -88,7 +88,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_PANTHER.png",
           "alt": ""
         }
       },
@@ -124,7 +124,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_PUMA.png",
           "alt": ""
         }
       },
@@ -160,7 +160,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_GALLEY.png",
           "alt": ""
         }
       },
@@ -190,7 +190,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_OCELOT.png",
           "alt": ""
         }
       },
@@ -214,7 +214,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_LYNX.png",
           "alt": ""
         }
       },
@@ -238,7 +238,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_CABINS.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_FOREPEAK.png",
           "alt": ""
         }
       }
@@ -259,22 +259,22 @@
         {
           "name": "aftcockpit",
           "shape": "poly",
-          "coords": "1048,4233,2952,4244,2977,4908,2719,5247,1284,5240,1019,4887"
+          "coords": "253,1017,244,1175,307,1260,653,1259,715,1177,711,1015"
         },
         {
           "name": "salon",
           "shape": "poly",
-          "coords": "1320,2353,1044,2555,1037,4191,2984,4205,2970,2555,2687,2350"
+          "coords": "257,612,255,1003,711,1006,710,625,651,570,480,549,339,562,289,582"
         },
         {
           "name": "swimdeck",
           "shape": "poly",
-          "coords": "1306,5293,2698,5297,2740,5661,1263,5664"
+          "coords": "321,1280,309,1357,655,1359,643,1280"
         },
         {
           "name": "forward",
           "shape": "poly",
-          "coords": "1302,1795,2719,1788,2680,2297,1327,2322"
+          "coords": "319,438,324,553,643,556,646,436"
         }
       ]
     },
@@ -310,7 +310,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_SALON.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_AFTCOCKPIT.png",
           "alt": ""
         }
       },
@@ -347,7 +347,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_SALON.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_SALON.png",
           "alt": ""
         }
       },
@@ -384,7 +384,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_SALON.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_SWIMDECK.png",
           "alt": ""
         }
       },
@@ -420,7 +420,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_SALON.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_FORWARDC.png",
           "alt": ""
         }
       }
@@ -441,8 +441,8 @@
       "areas": [
         {
           "name": "jacuzzi",
-          "shape": "poly",
-          "coords": ""
+          "shape": "circle",
+          "coords": "479,1183,67"
         }
       ]
     },
@@ -476,7 +476,11 @@
             "body": "Plancha cabinet with ample storage and bar cabinet with sink, fridge and ice-maker.",
             "title": "FLYBRIDGE LIVING SPACE"
           }
-        ]
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_HOVER_JACUZZI.png",
+          "alt": ""
+        }
       }
     ]
   }

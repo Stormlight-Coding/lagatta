@@ -23,11 +23,13 @@ export default ({
     color: theme.palette[bg].contrastText,
     position: "relative"
   };
+  const [hover, setHover] = React.useState(-1);
   const [current, setCurrent] = React.useState(0);
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const gallery = galleries[current];
+  const galleryHover = hover > -1 ? galleries[hover] : false;
 
   React.useEffect(() => {
     ImageMap("img[usemap]");
@@ -55,7 +57,11 @@ export default ({
           <Grid item xs={12} md={4}>
             <Box align="center">
               <img
-                src={areamap.src}
+                src={
+                  galleryHover
+                    ? galleryHover.image_side.src
+                    : gallery.image_side.src
+                }
                 useMap={`#${areamap.name}`}
                 style={{
                   maxWidth: "480px",
@@ -71,6 +77,14 @@ export default ({
                       style={{ cursor: "pointer" }}
                       coords={a.coords}
                       shape={a.shape}
+                      onMouseOut={() => {
+                        setHover(-1);
+                      }}
+                      onMouseOver={() => {
+                        var index = galleries.findIndex(g => a.name === g.name);
+                        if (index >= 0) setHover(index);
+                        console.log("hover" + index);
+                      }}
                       onClick={
                         !isMobile
                           ? () => {
@@ -168,7 +182,11 @@ export default ({
           <Grid item xs={12} md={4}>
             <Box align="center">
               <img
-                src={areamap.src}
+                src={
+                  galleryHover
+                    ? galleryHover.image_side.src
+                    : gallery.image_side.src
+                }
                 useMap={`#${areamap.name}`}
                 style={{ maxWidth: "480px", maxHeight: "720px", width: "95%" }}
               />
@@ -179,6 +197,14 @@ export default ({
                       style={{ cursor: "pointer" }}
                       coords={a.coords}
                       shape={a.shape}
+                      onMouseOut={() => {
+                        setHover(-1);
+                      }}
+                      onMouseOver={() => {
+                        var index = galleries.findIndex(g => a.name === g.name);
+                        if (index >= 0) setHover(index);
+                        console.log("hover" + index);
+                      }}
                       onClick={
                         !isMobile
                           ? () => {
