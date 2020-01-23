@@ -1,8 +1,8 @@
-import { Box, Button, useMediaQuery, useTheme } from '@material-ui/core'
-import Dialog from '@material-ui/core/Dialog'
-import IconButton from '@material-ui/core/IconButton'
-import CloseIcon from '@material-ui/icons/Close'
-import React from 'react'
+import { Box, Button, useMediaQuery, useTheme } from "@material-ui/core";
+import Dialog from "@material-ui/core/Dialog";
+import IconButton from "@material-ui/core/IconButton";
+import CloseIcon from "@material-ui/icons/Close";
+import React from "react";
 
 export default function CustomizedDialogs({ content }) {
   const theme = useTheme();
@@ -35,14 +35,19 @@ export default function CustomizedDialogs({ content }) {
         open={open}
       >
         <Box bgcolor="primary.main" style={{ position: "relative" }}>
-          <Box py={7} px={7} color="white" align="center">
+          <Box
+            py={isMobile ? "40px" : 7}
+            px={isMobile ? 0 : 7}
+            color="white"
+            align="center"
+          >
             <IconButton
               color="inherit"
               aria-label="close"
               style={{
                 position: "absolute",
-                right: "12px",
-                top: "12px"
+                right: isMobile ? "12px" : "12px",
+                top: isMobile ? "-5px" : "12px"
               }}
               onClick={handleClose}
             >
