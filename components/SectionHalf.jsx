@@ -1,7 +1,15 @@
-import { Box, Button, Grid, Hidden, makeStyles, Typography, useMediaQuery } from '@material-ui/core'
-import { useTheme } from '@material-ui/core/styles'
+import {
+  Box,
+  Button,
+  Grid,
+  Hidden,
+  makeStyles,
+  Typography,
+  useMediaQuery
+} from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
 
-import Link from './Link'
+import Link from "./Link";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -13,7 +21,10 @@ const useStyles = makeStyles(theme => ({
     },
 
     [theme.breakpoints.only("md")]: {
-      padding: theme.spacing(5)
+      paddingTop: theme.spacing(6),
+      paddingBottom: theme.spacing(6),
+      paddingLeft: theme.spacing(5),
+      paddingRight: theme.spacing(5)
     },
 
     [theme.breakpoints.only("sm")]: {
@@ -95,7 +106,7 @@ export default ({ content, bg, reverse, children, hideImage, ...props }) => {
         <Grid item xs={12} sm={12} md={6} style={{ display: "flex" }}>
           <Box
             style={{
-              backgroundColor: "blue",
+              backgroundColor: "white",
               height: "100%",
               width: "100%"
             }}

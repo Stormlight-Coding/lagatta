@@ -1,8 +1,8 @@
-import { Box, Button, useMediaQuery, useTheme } from '@material-ui/core'
-import Dialog from '@material-ui/core/Dialog'
-import IconButton from '@material-ui/core/IconButton'
-import CloseIcon from '@material-ui/icons/Close'
-import React from 'react'
+import { Box, Button, useMediaQuery, useTheme } from "@material-ui/core";
+import Dialog from "@material-ui/core/Dialog";
+import IconButton from "@material-ui/core/IconButton";
+import CloseIcon from "@material-ui/icons/Close";
+import React from "react";
 
 export default function CustomizedDialogs({ content }) {
   const theme = useTheme();
@@ -29,7 +29,7 @@ export default function CustomizedDialogs({ content }) {
             backgroundColor: "transparent"
           }
         }}
-        maxWidth={"lg"}
+        maxWidth={"md"}
         scroll="body"
         onClose={handleClose}
         open={open}
@@ -57,31 +57,31 @@ export default function CustomizedDialogs({ content }) {
             <Box mb={isMobile ? "25px" : 6}>
               <img
                 src="/static/images/LA_GATTA_DRINK_MENU_1.png"
-                style={{ maxWidth: "100%" }}
+                style={{ maxWidth: "800px", width: "100%" }}
               />
             </Box>
             <Box mb={isMobile ? "25px" : 6}>
               <img
                 src="/static/images/LA_GATTA_DRINK_MENU_2.png"
-                style={{ maxWidth: "100%" }}
+                style={{ maxWidth: "800px", width: "100%" }}
               />
             </Box>
             <Box mb={isMobile ? "25px" : 6}>
               <img
                 src="/static/images/LA_GATTA_DRINK_MENU_3.png"
-                style={{ maxWidth: "100%" }}
+                style={{ maxWidth: "800px", width: "100%" }}
               />
             </Box>
             <Box mb={isMobile ? "25px" : 6}>
               <img
                 src="/static/images/LA_GATTA_DRINK_MENU_4.png"
-                style={{ maxWidth: "100%" }}
+                style={{ maxWidth: "800px", width: "100%" }}
               />
             </Box>
             <Box mb={isMobile ? "25px" : 6}>
               <img
                 src="/static/images/LA_GATTA_DRINK_MENU_5.png"
-                style={{ maxWidth: "100%" }}
+                style={{ maxWidth: "800px", width: "100%" }}
               />
             </Box>
           </Box>
