@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     [theme.breakpoints.up("lg")]: {
       paddingTop: theme.spacing(6),
-      paddintBottom: theme.spacing(6),
+      paddingBottom: theme.spacing(6),
       paddingLeft: theme.spacing(7),
       paddingRight: theme.spacing(7)
     },
