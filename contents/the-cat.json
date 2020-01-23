@@ -9,7 +9,10 @@
     "image": { "src": "/static/images/LG_SAIL.jpg", "alt": "" },
     "title": "LAGOON SEVENTY 7",
     "body": "More than 23-metre (77 foot) yacht marks an important step for Lagoon towards a world in which elegance and refinement are the watchwords. Lagoon brought together an illustrious team for the design of its flagship: VPLP, Patrick Le Quément and Nauta Design. All have strived to produce a catamaran where harmony reigns between the interior and exterior living spaces, where compromise does not exist, where innovation enhances comfort and life at sea.",
-    "link": { "href": "/", "text": "VISIT LAGOON’S SITE >" }
+    "link": {
+      "href": "http://www.seventy7.fr",
+      "text": "VISIT LAGOON’S SITE >"
+    }
   },
 
   "our_philosophy": {
