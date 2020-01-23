@@ -37,6 +37,7 @@ export default function CustomizedDialogs({ open, handleClose, member }) {
       maxWidth={"lg"}
       scroll="body"
       fullWidth
+      fullScreen
       onClose={handleClose}
       open={open}
     >
