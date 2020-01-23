@@ -443,6 +443,11 @@
           "name": "jacuzzi",
           "shape": "circle",
           "coords": "479,1183,67"
+        },
+        {
+          "name": "flybridge",
+          "shape": "poly",
+          "coords": "389,908,390,888,589,886,594,910,661,910,663,977,641,1251,519,1253,553,1208,549,1112,473,1093,408,1119,405,1203,452,1251,396,1246,333,1240,324,1100,319,980,327,911,348,914,370,914"
         }
       ]
     },
@@ -457,7 +462,18 @@
             "alt": "",
             "body": "The only SEVENTY 7 with a Jacuzzi on the flybridge.",
             "title": "JACUZZI"
-          },
+          }
+        ],
+        "image_side": {
+          "src": "/static/images/LAGATTA_PLANS_HOVER_JACUZZI.png",
+          "alt": ""
+        }
+      },
+      {
+        "color": "#0B446B",
+        "title": "FLYBRIDGE",
+        "name": "flybridge",
+        "images": [
           {
             "src": "/static/images/photos/LG_L_FLYBRIDGE_01.jpg",
             "alt": "",
@@ -478,7 +494,7 @@
           }
         ],
         "image_side": {
-          "src": "/static/images/LAGATTA_PLANS_HOVER_JACUZZI.png",
+          "src": "/static/images/LAGATTA_PLANS_HOVER_FLYBRIDGE.png",
           "alt": ""
         }
       }

@@ -51,13 +51,13 @@ export default function CustomizedDialogs({ content }) {
             <Box mb={isMobile ? "25px" : 6}>
               <img
                 src="/static/images/LA_GATTA_WINE_MENU_1.png"
-                style={{ maxWidth: "100%" }}
+                style={{ maxWidth: "800px", width: "100%" }}
               />
             </Box>
             <Box mb={isMobile ? "25px" : 6}>
               <img
                 src="/static/images/LA_GATTA_WINE_MENU_2.png"
-                style={{ maxWidth: "100%" }}
+                style={{ maxWidth: "800px", width: "100%" }}
               />
             </Box>
           </Box>

@@ -6,8 +6,8 @@ import Link from './Link'
 const useStyles = makeStyles(theme => ({
   root: {
     [theme.breakpoints.up("lg")]: {
-      paddingTop: theme.spacing(5),
-      paddintBottom: theme.spacing(5),
+      paddingTop: theme.spacing(6),
+      paddintBottom: theme.spacing(6),
       paddingLeft: theme.spacing(7),
       paddingRight: theme.spacing(7)
     },

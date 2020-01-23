@@ -213,8 +213,7 @@ const responsiveTheme = {
         padding: "8px 12px",
         borderRadius: 0,
         [breakpointsCalculated.up("md")]: {
-          // background: "red !important",
-          marginLeft: "-8px"
+          marginLeft: "-12px"
         }
       }
     },

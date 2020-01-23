@@ -80,8 +80,7 @@ const Header = ({ setMenu, support, setSupport, router, theme }) => {
                     <NextLink passHref href={"/book-charter"}>
                       <Link
                         style={{
-                          fontWeight:
-                            router.route === "/book-charter" ? 800 : 400,
+                          fontWeight: 400,
                           textTransform: "uppercase",
                           textTransform: "uppercase",
                           letterSpacing: "1.5px",
