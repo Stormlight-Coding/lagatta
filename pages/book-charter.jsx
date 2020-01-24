@@ -1,8 +1,8 @@
-import { Box, Button, useMediaQuery, useTheme } from '@material-ui/core'
+import { Box, Button, useMediaQuery, useTheme } from "@material-ui/core";
 
-import MetaData from '../components/MetaData'
-import SectionCover from '../components/SectionCover'
-import content from '../contents/book-charter.json'
+import MetaData from "../components/MetaData";
+import SectionCover from "../components/SectionCover";
+import content from "../contents/book-charter.json";
 
 export default () => {
   const theme = useTheme();

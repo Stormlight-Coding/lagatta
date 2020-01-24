@@ -9,7 +9,10 @@
     "image": { "src": "/static/images/LG_EXP_HERO.jpg", "alt": "" },
     "title": "ON THE WATER EXPERIENCES",
     "body": "Nothing could be more fun than an electric hydrofoil surfboard! Take the Lift eFoil out for a ride, the first one of its kind to hit the market. The eFoil uses an advanced lithium-ion battery to power a silent electric motor that’s mounted on an all-carbon fiber hydrofoil, all controlled with a Bluetooth hand controller. Riders can fly for over an hour at speeds of up to 25 mph.",
-    "link": { "href": "/", "text": "LEARN MORE ABOUT THE EFOIL >" }
+    "link": {
+      "href": "https://liftfoils.com",
+      "text": "LEARN MORE ABOUT THE EFOIL >"
+    }
   },
 
   "kitesurfing": {
@@ -55,7 +58,10 @@
     "image": { "src": "/static/images/LG_DRONE.jpg", "alt": "" },
     "title": "DRONE",
     "body": "Explore surrounding coves and capture striking footage with our powerful drone. The Mavic 2 Pro offers iconic Hasselblad image quality and 31 minutes of flight time. It is truly a game changer.",
-    "link": { "text": "SEE DRONE FOOTAGE >", "href": "/" }
+    "link": {
+      "text": "SEE DRONE FOOTAGE >",
+      "href": "https://vimeo.com/382784647"
+    }
   },
 
   "fishing": {
