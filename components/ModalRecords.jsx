@@ -100,7 +100,7 @@ export default withTheme(({ content, theme }) => {
                   <Typography
                     variant="inherit"
                     display="inline"
-                    style={{ fontWeight: 800 }}
+                    style={{ fontWeight: 800, textTransform: "uppercase" }}
                   >
                     {song.title}
                   </Typography>
