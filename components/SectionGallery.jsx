@@ -133,7 +133,7 @@ export default ({
                 }}
               >
                 {gallery.images.map(i => (
-                  <Box bgcolor="blue" style={{ height: "100%", width: "100%" }}>
+                  <Box style={{ height: "100%", width: "100%" }}>
                     <Grid
                       container
                       direction="column"
