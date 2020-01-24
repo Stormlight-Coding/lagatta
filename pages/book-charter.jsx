@@ -12,9 +12,11 @@ export default () => {
       <MetaData meta={content.meta} />
       <SectionCover bg={"primary"} content={content.booking_la_gatta}>
         <Box mt={isMobile ? "85px" : "85px"}>
-          <Button variant="outlined" size="large">
-            {content.booking_la_gatta.button.text}
-          </Button>
+          <a target="_blank" href={content.booking_la_gatta.button.href}>
+            <Button variant="outlined" size="large">
+              {content.booking_la_gatta.button.text}
+            </Button>
+          </a>
         </Box>
       </SectionCover>
     </React.Fragment>
