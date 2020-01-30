@@ -8,6 +8,7 @@ import React from 'react'
 export default withTheme(({ content, theme }) => {
   const [open, setOpen] = React.useState(false);
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -19,7 +20,12 @@ export default withTheme(({ content, theme }) => {
 
   return (
     <React.Fragment>
-      <Button size="small" onClick={handleClickOpen} variant="text">
+      <Button
+        size="small"
+        onClick={handleClickOpen}
+        variant="text"
+        style={{ marginLeft: isDesktop ? "-12px" : "0" }}
+      >
         {content.button.text}
       </Button>
 
