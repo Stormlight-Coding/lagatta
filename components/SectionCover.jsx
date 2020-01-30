@@ -1,7 +1,14 @@
-import { Box, Button, Container, Hidden, Typography, useMediaQuery } from '@material-ui/core'
-import { useTheme } from '@material-ui/core/styles'
+import {
+  Box,
+  Button,
+  Container,
+  Hidden,
+  Typography,
+  useMediaQuery
+} from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
 
-import Link from './Link'
+import Link from "./Link";
 
 export default ({ content, bg, children, hideSection, ...props }) => {
   const theme = useTheme();

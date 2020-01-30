@@ -1,8 +1,10 @@
-import MetaData from '../components/MetaData'
-import SectionCover from '../components/SectionCover'
-import SectionGallery from '../components/SectionGallery'
-import SectionText from '../components/SectionText'
-import content from '../contents/layout.json'
+import { Box, Typography } from "@material-ui/core";
+
+import MetaData from "../components/MetaData";
+import SectionCover from "../components/SectionCover";
+import SectionGallery from "../components/SectionGallery";
+import SectionText from "../components/SectionText";
+import content from "../contents/layout.json";
 
 export default () => (
   <React.Fragment>
@@ -10,7 +12,16 @@ export default () => (
 
     <SectionCover bg={"primary"} py={0} content={content.cover} />
     <SectionText bg={"primary"} content={content.spacious_design} />
-    <SectionText bg={"secondary"} content={content.cabins} />
+    <SectionText bg={"secondary"} content={content.cabins}>
+      <Typography variant="h2" paragraph style={{ paddingTop: "50px" }}>
+        {content.cabin_amenities.title}
+      </Typography>
+      <Box align="center" mb={2}>
+        {content.cabin_amenities.specs.map(s => (
+          <Typography>{s}</Typography>
+        ))}
+      </Box>
+    </SectionText>
 
     <SectionGallery
       align="left"

@@ -1,13 +1,19 @@
-import { Box, Grid, Typography, useMediaQuery, useTheme } from '@material-ui/core'
+import {
+  Box,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme
+} from "@material-ui/core";
 
-import AccordionSpecs from '../components/AccordionSpecs'
-import CarouselCrew from '../components/CarouselCrew'
-import GridCrew from '../components/GridCrew'
-import MetaData from '../components/MetaData'
-import Section from '../components/Section'
-import SectionCover from '../components/SectionCover'
-import SectionText from '../components/SectionText'
-import content from '../contents/the-cat.json'
+import AccordionSpecs from "../components/AccordionSpecs";
+import CarouselCrew from "../components/CarouselCrew";
+import GridCrew from "../components/GridCrew";
+import MetaData from "../components/MetaData";
+import Section from "../components/Section";
+import SectionCover from "../components/SectionCover";
+import SectionText from "../components/SectionText";
+import content from "../contents/the-cat.json";
 
 export default () => {
   const theme = useTheme();

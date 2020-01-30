@@ -1,9 +1,15 @@
-import { Box, Button, Container, Typography, useMediaQuery } from '@material-ui/core'
-import { useTheme } from '@material-ui/core/styles'
+import {
+  Box,
+  Button,
+  Container,
+  Typography,
+  useMediaQuery
+} from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
 
-import Link from './Link'
+import Link from "./Link";
 
-export default ({ content, bg, ...props }) => {
+export default ({ content, children, bg, ...props }) => {
   const theme = useTheme();
   const customStyle = {
     backgroundColor: theme.palette[bg].main,
@@ -58,6 +64,7 @@ export default ({ content, bg, ...props }) => {
               />
             </Box>
           )}
+          {children}
         </Container>
       </Box>
     </Box>

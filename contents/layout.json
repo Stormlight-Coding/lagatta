@@ -19,6 +19,25 @@
     "body": "LA GATTA features four elegantly designed guest cabins. Each of these are fitted with an island bed, ample storage, and private bathroom. The spacious master suite features a hydraulic platform which opens to create a private “beach” giving direct sea access and a special spot to sunbathe. The crew quarters and galley are configured as to facilitate the staff’s work on board. Two bunks in the forepeak allow for two additional guests. The LYNX bed can be configured as a queen or two twins."
   },
 
+  "cabin_amenities": {
+    "title": "CABIN AMENITIES",
+    "specs": [
+      "Opening hatches and portholes if you prefer the natural sea breeze",
+      "500 thread count Egyptian luxury cotton sheets",
+      "Pillow Menu – Down & feather in both soft and medium as well as Tempur-Pedic®",
+      "GioBaganara Collection luxury leather valet accessories",
+      "Aesop toiletries & coral reef safe, biodegradable sunblock",
+      "Dyson Supersonic™ hair dryer",
+      "Individual luxury Boca Terry® bathrobes",
+      "Heated towel rails in all bathrooms",
+      "Integrated lay-flat charging pads beside all beds",
+      "International power sockets with integrated USB plug",
+      "Wireless internet access throughout",
+      "Cabins fully serviced daily including nightly turn down service",
+      "Plush carpeting throughout"
+    ]
+  },
+
   "cabins_galleries": {
     "image_map": {
       "src": "/static/images/LAGATTA_PLANS_CABINS.png",
