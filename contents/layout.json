@@ -16,7 +16,7 @@
 
   "cabins": {
     "title": "CABINS",
-    "body": "LA GATTA features four elegantly designed guest cabins. Each of these are fitted with an island bed, ample storage, and private bathroom. The spacious master suite features a hydraulic platform which opens to create a private “beach” giving direct sea access and a special spot to sunbathe. The crew quarters and galley are configured as to facilitate the staff’s work on board. Two bunks in the forepeak are a fun spot for two kids. The LYNX bed can be configured as a queen or two twins."
+    "body": "LA GATTA features four elegantly designed guest cabins. Each of these are fitted with an island bed, ample storage, and private bathroom. The spacious master suite features a hydraulic platform which opens to create a private “beach” giving direct sea access and a special spot to sunbathe. The crew quarters and galley are configured as to facilitate the staff’s work on board. Two bunks in the forepeak allow for two additional guests. The LYNX bed can be configured as a queen or two twins."
   },
 
   "cabins_galleries": {
@@ -336,7 +336,7 @@
           {
             "src": "/static/images/photos/LG_L_SALON_03.jpg",
             "alt": "",
-            "body": "The dinning table is flanked by sofas for an elegant yet relaxed dining experience. ",
+            "body": "The dining table is flanked by sofas for an elegant yet relaxed dining experience. ",
             "title": "SALON"
           },
           {

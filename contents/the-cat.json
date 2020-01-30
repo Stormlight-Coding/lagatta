@@ -17,7 +17,7 @@
 
   "our_philosophy": {
     "title": "OUR PHILOSOPHY",
-    "body": " Mission of our boat - ability to disconnect and move at the speed of wind while being served the finest foods meticulously presented. LA GATTA’s water filtration system allows us to minimize plastics; a gray water system allows us to leave as small a footprint as possible; While internet is available, there is the option to shut it off for periods of the day - or for the entire trip.  "
+    "body": "Mission of our boat - ability to disconnect and move at the speed of wind while being served the finest foods meticulously presented. While internet is available, there is the option to shut it off for periods of the day - or for the entire trip.  "
   },
 
   "the_crew": {
@@ -101,47 +101,43 @@
     "equips": [
       {
         "title": "NAVIGATION",
-        "itens": [
-          "Autopilot",
-          "Generator",
-          "Radar",
-          "GPS Plotter",
-          "Inverter",
-          "VHF"
-        ]
+        "itens": ["Autopilot", "Radar", "GPS Plotter", "VHF"]
       },
       {
         "title": "DECK EQUIPMENT",
-        "itens": ["Swim Deck", "Barbecue", "Bimini", "Sun Awning"]
+        "itens": [
+          "Swim Deck",
+          "Barbecue",
+          "Bimini",
+          "Sun Awning",
+          "GATTINA Tender",
+          "Jacuzzi",
+          "Deck Shower"
+        ]
       },
       {
-        "title": "ELETRONICS",
+        "title": "ELECTRONICS",
         "itens": [
           "Drone DJI Pro",
           "Outdoor Projector + Dual Image Screen",
           "iPod Connection",
           "Wi-Fi",
-          "Dishwasher",
           "Air Conditioning",
           "Turntable + Salon Sound System",
           "Maritime Library Kindles",
-          "Madboy 200 Prop Karaoke Machine"
+          "Madboy 200 Prop Karaoke Machine",
+          "Generator",
+          "Inverter"
         ]
       },
       {
         "title": "OTHER EQUIPMENT",
         "itens": [
-          "GATTINA Tender",
-          "Jacuzzi",
-          "Deck Shower",
           "Water Filtration System",
-          "Freezer",
-          "Eletronics Fridge",
-          "Gas Cooking",
           "Oven",
           "Icebox",
-          "4 Eletric Gocucle Bikes",
-          "3 Eletric Scooters"
+          "4 Electric Gocucle Bikes",
+          "3 Electric Scooters"
         ]
       },
       {

@@ -1,9 +1,9 @@
-import GridDestination from '../components/GridDestination'
-import MetaData from '../components/MetaData'
-import Section from '../components/Section'
-import SectionCover from '../components/SectionCover'
-import SectionText from '../components/SectionText'
-import content from '../contents/index.json'
+import GridDestination from "../components/GridDestination";
+import MetaData from "../components/MetaData";
+import Section from "../components/Section";
+import SectionCover from "../components/SectionCover";
+import SectionText from "../components/SectionText";
+import content from "../contents/index.json";
 
 export default () => (
   <React.Fragment>
@@ -14,7 +14,7 @@ export default () => (
       <GridDestination items={content.destinations.items} />
     </Section>
     <SectionText bg="primary" content={content.seventy_layout} />
-    <SectionText bg="secondary" content={content.dinning} />
+    <SectionText bg="secondary" content={content.dining} />
     <SectionCover bg="primary" content={content.experiences} />
     <SectionCover bg="secondary" content={content.the_cat} />
     <SectionCover bg="primary" py={0} content={content.cat_front} />

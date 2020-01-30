@@ -12,10 +12,10 @@ module.exports = {
     name: "Layout",
     position: "left"
   },
-  "/dinning": {
-    page: "/dinning",
+  "/dining": {
+    page: "/dining",
     changefreq: "daily",
-    name: "Dinning",
+    name: "Dining",
     position: "left"
   },
   "/experiences": {

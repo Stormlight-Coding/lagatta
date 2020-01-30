@@ -18,7 +18,7 @@
   "kitesurfing": {
     "image": { "src": "/static/images/LG_KITE.jpg", "alt": "" },
     "title": "KITESURFING",
-    "body": "Harness the power of the wind. Whether it is perfecting your technique or taking your first lesson, we’ve got a range of kiteboards and kites. Our skilled captain will gladly teach you the surf basics and help you understand how wind and kites work together to generate speed. "
+    "body": "Harness the power of the wind! LA GATTA has a range of kiteboards and kites. Our captain will gladly assist proficient riders. If you’d like to learn the surf basics, we can recommend a reputable local kite school."
   },
 
   "scuba": {
@@ -158,7 +158,7 @@
   "record": {
     "image": { "src": "/static/images/LG_RECORD_U.jpg", "alt": "" },
     "title": "RECORD COLLECTION",
-    "body": "Peruse the selection of over 80 vinyl albums, take in the cover art, pick a favorite song, and sink into a comfortable spot. LA GATTA’s custom fitted turntable is seamlessly integrated into the yacht’s sound system.",
+    "body": "Peruse the selection of over 80 vinyl albums, take in the cover art, pick a favorite song, and sink into a comfortable spot. LA GATTA’s custom fitted turntable is seamlessly integrated into the yacht’s sound system. You can also sync music from your own devices via Bluetooth.",
     "button": { "text": "SEE THE CATALOG >" },
     "songs_title": "LA GATTA RECORD COLLECTION",
     "songs": [
@@ -263,6 +263,6 @@
   "cinema": {
     "image": { "src": "/static/images/LG_FILM.jpg", "alt": "" },
     "title": "OUTDOOR CINEMA",
-    "body": "There’s no better way to end an action filled day in the sun than with a relaxing movie night under the stars. The flybridge is outfitted with mounted projector and a high tech dual image screen that can be seen from both sides. One can even watch from the Jacuzzi."
+    "body": "There’s no better way to end an action filled day in the sun than with a relaxing movie night under the stars. The flybridge is outfitted with mounted projector and a high tech dual image screen that can be seen from both sides. Guests can play films from their own devices or choose from LA GATTA’s extensive movie collection. One can even watch from the Jacuzzi."
   }
 }

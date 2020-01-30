@@ -1,11 +1,11 @@
-import { Box } from '@material-ui/core'
+import { Box } from "@material-ui/core";
 
-import MetaData from '../components/MetaData'
-import ModalCocktails from '../components/ModalCocktails'
-import ModalWines from '../components/ModalWines'
-import SectionCover from '../components/SectionCover'
-import SectionHalf from '../components/SectionHalf'
-import content from '../contents/dinning.json'
+import MetaData from "../components/MetaData";
+import ModalCocktails from "../components/ModalCocktails";
+import ModalWines from "../components/ModalWines";
+import SectionCover from "../components/SectionCover";
+import SectionHalf from "../components/SectionHalf";
+import content from "../contents/dining.json";
 
 export default () => (
   <React.Fragment>

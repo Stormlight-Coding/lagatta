@@ -1,5 +1,5 @@
-import { Box, Typography, useMediaQuery, useTheme } from '@material-ui/core'
-import { withRouter } from 'next/router'
+import { Box, Typography, useMediaQuery, useTheme } from "@material-ui/core";
+import { withRouter } from "next/router";
 
 const getFooterColor = (router, theme, trigger) => {
   if (router.route === "/") return "secondary.main";
@@ -8,7 +8,7 @@ const getFooterColor = (router, theme, trigger) => {
   if (router.route === "/experiences") return "secondary.main";
   if (router.route === "/book-charter") return "secondary.main";
   if (router.route === "/the-cat") return "secondary.main";
-  if (router.route === "/dinning") return "secondary.main";
+  if (router.route === "/dining") return "secondary.main";
   return "primary";
 };
 

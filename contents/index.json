@@ -41,10 +41,10 @@
     "image": { "src": "/static/images/LAGATTA_PLANS_CABINS.png", "alt": "" }
   },
 
-  "dinning": {
-    "title": "DINNING",
-    "body": "Our chef shops the local markets to prepare beautiful meals cooked to your specifications. Whether it be light restorative afternoon snacks or exquisite dinners al fresco, each dish is prepared with skillfulness and love. Vegetarian and vegan options are robust and flavorful. LA GATTA has a curated wine offering and an artisanal cocktail menu.",
-    "link": { "href": "/dinning", "text": "LEARN MORE >" }
+  "dining": {
+    "title": "DINING",
+    "body": "Our chef shops the local markets to prepare beautiful meals cooked to your specifications. Whether it be light restorative afternoon snacks or exquisite dinners al fresco, each dish is prepared with skillfulness and love. Vegetarian options are robust and flavorful. LA GATTA has a curated wine offering and an artisanal cocktail menu.",
+    "link": { "href": "/dining", "text": "LEARN MORE >" }
   },
 
   "experiences": {

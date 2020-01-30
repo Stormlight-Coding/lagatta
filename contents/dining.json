@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Dinning",
-    "description": "dinning description",
-    "keywords": "dinning keyword"
+    "title": "Dining",
+    "description": "dining description",
+    "keywords": "dining keyword"
   },
 
   "cover": {
     "image": { "src": "/static/images/LG_SCALLOP.jpg", "alt": "" },
     "title": "DINING ON LA GATTA",
-    "body": "Whether it be light, restorative afternoon snacks or exquisite dinners alfresco, each dish is prepared with skillfulness and love. Our chef shops the local markets to prepare beautiful meals cooked to your specifications. She enjoys incorporating indigenous styles and recipes into her meals. Vegetarian and vegan options are robust and flavorful. "
+    "body": "Whether it be light, restorative afternoon snacks or exquisite dinners alfresco, each dish is prepared with skillfulness and love. Our chef shops the local markets to prepare beautiful meals cooked to your specifications. She enjoys incorporating indigenous styles and recipes into her meals. Vegetarian options are robust and flavorful."
   },
 
   "breakfast": {
@@ -18,7 +18,7 @@
   "sunrise": {
     "title": "SUNRISE",
     "bodies": [
-      "Start each day with a delicious cup of coffee or tea complimented by fresh juices, assorted local pastries, eggs any style, and yogurts. Some perennial favorites include sliced market fruits, salmon eggs Benedict, avocado toasts, and crêpes suzette. Breakfast can be enjoyed anywhere, including on the aft deck or in your cabin.",
+      "Start each day with a delicious cup of coffee or tea complimented by fresh juices, assorted local pastries, eggs any style, and yogurts. Some perennial favorites include sliced market fruits, salmon eggs Benedict, avocado toasts, and crêpes suzette. Breakfast can be enjoyed outside on the aft deck or flybridge.",
       "Our chef bakes every day – maybe muffins for breakfast, a special rustic loaf for dinner – or a decadent dessert of your desiring."
     ],
     "image": { "src": "/static/images/LG_COFFEE.jpg", "alt": "" }
