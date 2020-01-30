@@ -1,15 +1,7 @@
-import {
-  Box,
-  Button,
-  Grid,
-  Hidden,
-  makeStyles,
-  Typography,
-  useMediaQuery
-} from "@material-ui/core";
-import { useTheme } from "@material-ui/core/styles";
+import { Box, Button, Grid, Hidden, makeStyles, Typography, useMediaQuery } from '@material-ui/core'
+import { useTheme } from '@material-ui/core/styles'
 
-import Link from "./Link";
+import Link from './Link'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -48,6 +40,7 @@ export default ({ content, bg, reverse, children, hideImage, ...props }) => {
     color: theme.palette[bg].contrastText
   };
   const smUp = useMediaQuery(theme.breakpoints.up("sm"));
+  const mdUp = useMediaQuery(theme.breakpoints.up("md"));
   const classes = useStyles();
   return (
     <Box style={customStyle}>
@@ -92,7 +85,11 @@ export default ({ content, bg, reverse, children, hideImage, ...props }) => {
             {content.link && (
               <Box>
                 <Link href={content.link.href}>
-                  <Button size="small" variant="text">
+                  <Button
+                    size="small"
+                    variant="text"
+                    style={{ marginLeft: mdUp ? "-12px" : "0" }}
+                  >
                     {content.link.text}
                   </Button>
                 </Link>

@@ -1,12 +1,13 @@
-import { Box, Button, useMediaQuery, useTheme } from "@material-ui/core";
-import Dialog from "@material-ui/core/Dialog";
-import IconButton from "@material-ui/core/IconButton";
-import CloseIcon from "@material-ui/icons/Close";
-import React from "react";
+import { Box, Button, useMediaQuery, useTheme } from '@material-ui/core'
+import Dialog from '@material-ui/core/Dialog'
+import IconButton from '@material-ui/core/IconButton'
+import CloseIcon from '@material-ui/icons/Close'
+import React from 'react'
 
 export default function CustomizedDialogs({ content }) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -19,7 +20,12 @@ export default function CustomizedDialogs({ content }) {
 
   return (
     <Box>
-      <Button size="small" onClick={handleClickOpen} variant="text">
+      <Button
+        size="small"
+        onClick={handleClickOpen}
+        variant="text"
+        style={{ marginLeft: isDesktop ? "-12px" : "0" }}
+      >
         {"WINES >"}
       </Button>
 
