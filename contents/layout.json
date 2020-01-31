@@ -31,9 +31,9 @@
       "Individual luxury Boca Terry® bathrobes",
       "Heated towel rails in all bathrooms",
       "Integrated lay-flat charging pads beside all beds",
-      "International power sockets with integrated USB plug",
+      "120 volt international power sockets with integrated USB plug",
       "Wireless internet access throughout",
-      "Cabins fully serviced daily including nightly turn down service",
+      "Cabins fully serviced daily, including nightly turn down service",
       "Plush carpeting throughout"
     ]
   },
@@ -84,7 +84,7 @@
           {
             "src": "/static/images/photos/LG_L_PANT_01.jpg",
             "alt": "",
-            "body": "King size bed, library, desk, sofa, walk-in closet, bathroom with sea view. Private beach platform.",
+            "body": "Island bed, library, desk, sofa, walk-in closet, bathroom with sea view. Private beach platform.",
             "title": "PANTHER"
           },
           {
@@ -120,7 +120,7 @@
           {
             "src": "/static/images/photos/LG_L_PUMA_01.jpg",
             "alt": "",
-            "body": "Island bed with the sea view are found in each guest cabin.",
+            "body": "Island bed with sea view.",
             "title": "PUMA"
           },
           {
@@ -132,13 +132,13 @@
           {
             "src": "/static/images/photos/LG_L_PUMA_03.jpg",
             "alt": "",
-            "body": "Its own en suite bathroom.",
+            "body": "Private en suite bathroom.",
             "title": "PUMA"
           },
           {
             "src": "/static/images/photos/LG_L_PUMA_04.jpg",
             "alt": "",
-            "body": "This is a VIP area of more than 16 m² will entirely fulfill the role of owner’s cabin.",
+            "body": "This is a VIP area of more than 16 m² and can entirely fulfill the role of the owner’s cabin.",
             "title": "PUMA"
           }
         ],
@@ -156,13 +156,13 @@
           {
             "src": "/static/images/photos/LG_L_GALLEY_01.jpg",
             "alt": "",
-            "body": "Large kitchen with professional equipments.",
+            "body": "Large kitchen with professional equipment.",
             "title": "GALLEY"
           },
           {
             "src": "/static/images/photos/LG_L_GALLEY_02.jpg",
             "alt": "",
-            "body": " The compartmentalized and easy-to-access storage and the wide choice of optional electrical.",
+            "body": "Easy-access storage and ample prep space.",
             "title": "GALLEY"
           },
           {
@@ -192,19 +192,19 @@
           {
             "src": "/static/images/photos/LG_L_OCELOT_01.jpg",
             "alt": "",
-            "body": "Matress made of high resistant honeycomb foam. Airspace 3D technology.",
+            "body": "Sea view and ample storage space.",
             "title": "OCELOT"
           },
           {
             "src": "/static/images/photos/LG_L_OCELOT_02.jpg",
             "alt": "",
-            "body": "Two bedside tables with a coy tray and two drawers below.",
+            "body": "Two bedside tables with a coin tray and two drawers below.",
             "title": "OCELOT"
           },
           {
             "src": "/static/images/photos/LG_L_OCELOT_03.jpg",
             "alt": "",
-            "body": "Blackout roller courtins.",
+            "body": "Mattress made of high resistant honeycomb foam. Airspace 3D technology.",
             "title": "OCELOT"
           }
         ],
@@ -228,7 +228,7 @@
           {
             "src": "/static/images/photos/LG_L_LYNX_02.jpg",
             "alt": "",
-            "body": "One drawer under each bed for storage, one hanging locker one storage locker and one storage locker.",
+            "body": "One drawer under each bed, one hanging locker, and one storage locker.",
             "title": "LYNX"
           }
         ],
@@ -312,7 +312,7 @@
           {
             "src": "/static/images/photos/LG_L_AFT_02.jpg",
             "alt": "",
-            "body": "Dive into a book while keep in an eye on your paddle boarding or kite surfing companions.",
+            "body": "Dive into a book while keeping an eye on your paddle boarding or kite surfing companions.",
             "title": "AFT COCKPIT"
           },
           {
@@ -349,7 +349,7 @@
           {
             "src": "/static/images/photos/LG_L_SALON_02.jpg",
             "alt": "",
-            "body": "The spacious salon, with it’s oak floors and sumptuous fabrics is bathed in light.",
+            "body": "The spacious salon, with its oak floors and sumptuous fabrics, is bathed in light.",
             "title": "SALON"
           },
           {
@@ -380,7 +380,7 @@
           {
             "src": "/static/images/photos/LG_L_SWIM_01.jpg",
             "alt": "",
-            "body": "A versatile platform: beach club, relaxation area and tender lift all at in one.",
+            "body": "A versatile platform: beach club, relaxation area and tender lift all-in-one.",
             "title": "SWIM DECK"
           },
           {
@@ -392,7 +392,7 @@
           {
             "src": "/static/images/photos/LG_L_SWIM_03.jpg",
             "alt": "",
-            "body": "Accessible stowage areas beneath the seats and the deck.",
+            "body": "Accessible storage areas beneath the seats and the deck.",
             "title": "SWIM DECK"
           },
           {
@@ -422,19 +422,19 @@
           {
             "src": "/static/images/photos/LG_L_FORWARD_02.jpg",
             "alt": "",
-            "body": "The forward cockpit layout allows to enjoy the yacht in all privacy with sofas and day beds.",
+            "body": "The layout allows for fluid movement.",
             "title": "FORWARD COCKPIT"
           },
           {
             "src": "/static/images/photos/LG_L_FORWARD_03.jpg",
             "alt": "",
-            "body": "Lunch table, seats and fluid movements.",
+            "body": "Two large trampolines.",
             "title": "FORWARD COCKPIT"
           },
           {
             "src": "/static/images/photos/LG_L_FORWARD_04.jpg",
             "alt": "",
-            "body": "Lunch table, seats and fluid movements.",
+            "body": "Enjoy the yacht in privacy with comfortable sofas and day beds.",
             "title": "FORWARD COCKPIT"
           }
         ],
@@ -448,7 +448,7 @@
 
   "living_space": {
     "title": "THE FLYBRIDGE",
-    "body": "The spacious flybridge gives impressive additional space. Its breathtaking viewpoint is ideal for eating and relaxing during sea trips. LA GATTA is one of the only SEVENTY 7s with a Jacuzzi. The flybridge is also outfitted with a mounted projector and a high tech dual image screen that can be seen from both sides."
+    "body": "The spacious flybridge gives impressive additional space. Its breathtaking viewpoint is ideal for eating and relaxing during sea trips. LA GATTA is the only SEVENTY 7 with a Jacuzzi. The flybridge is also outfitted with a mounted projector and a high tech dual image screen that can be seen from both sides."
   },
 
   "flybridge_galleries": {

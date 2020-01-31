@@ -55,19 +55,11 @@ export default () => {
           <React.Fragment>
             <Grid container>
               <Grid item xs={12} sm={6} md={3}>
-                <Box align="left" mb={5}>
+                <Box align="left" mb={2}>
                   <Typography variant="h3" paragraph>
                     {content.fully_equipped.equips[0].title}
                   </Typography>
                   {content.fully_equipped.equips[0].itens.map(e => (
-                    <Typography>{e}</Typography>
-                  ))}
-                </Box>
-                <Box align="left" mb={2}>
-                  <Typography variant="h3" paragraph>
-                    {content.fully_equipped.equips[1].title}
-                  </Typography>
-                  {content.fully_equipped.equips[1].itens.map(e => (
                     <Typography>{e}</Typography>
                   ))}
                 </Box>
@@ -83,11 +75,19 @@ export default () => {
                 </Box>
               </Grid>
               <Grid item xs={12} sm={6} md={3}>
-                <Box align="left" mb={2}>
+                <Box align="left" mb={5}>
                   <Typography variant="h3" paragraph>
                     {content.fully_equipped.equips[3].title}
                   </Typography>
                   {content.fully_equipped.equips[3].itens.map(e => (
+                    <Typography>{e}</Typography>
+                  ))}
+                </Box>
+                <Box align="left" mb={2}>
+                  <Typography variant="h3" paragraph>
+                    {content.fully_equipped.equips[1].title}
+                  </Typography>
+                  {content.fully_equipped.equips[1].itens.map(e => (
                     <Typography>{e}</Typography>
                   ))}
                 </Box>
