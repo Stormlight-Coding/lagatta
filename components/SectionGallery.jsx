@@ -139,7 +139,7 @@ export default ({
                       direction="column"
                       style={{ height: "100%", width: "100%" }}
                     >
-                      <Grid item style={{ display: "flex", width: "100%" }}>
+                      <Grid item>
                         <Box
                           style={{ height: "100%", width: "100%" }}
                           py={5}
@@ -159,7 +159,9 @@ export default ({
                       </Grid>
                       <Grid
                         item
-                        style={{ flex: 1, display: "flex", width: "100%" }}
+                        style={{
+                          flex: "1 1 auto"
+                        }}
                       >
                         <img
                           src={i.src}
