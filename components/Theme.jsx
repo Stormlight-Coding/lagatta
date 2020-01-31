@@ -1,7 +1,7 @@
-import { colors } from '@material-ui/core'
-import { createMuiTheme } from '@material-ui/core/styles'
-import { ThemeProvider } from '@material-ui/styles'
-import React from 'react'
+import { colors } from "@material-ui/core";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
+import React from "react";
 
 const spacing = factor => [0, 3, 8, 15, 20, 30, 85, 90][factor];
 

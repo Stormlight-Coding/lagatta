@@ -1,8 +1,14 @@
-import { Box, Grid, Hidden, Typography, useMediaQuery } from '@material-ui/core'
-import { useTheme } from '@material-ui/core/styles'
-import { Carousel } from 'react-responsive-carousel'
+import {
+  Box,
+  Grid,
+  Hidden,
+  Typography,
+  useMediaQuery
+} from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
+import { Carousel } from "react-responsive-carousel";
 
-import ModalGallery from './ModalGallery'
+import ModalGallery from "./ModalGallery";
 
 export default ({
   bg,
