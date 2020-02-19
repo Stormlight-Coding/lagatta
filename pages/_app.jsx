@@ -1,9 +1,10 @@
-import '../styles/index.scss'
+import "../styles/index.scss";
 
-import App, { Container } from 'next/app'
-import React from 'react'
+import App, { Container } from "next/app";
+import React from "react";
+import ReactGA from "react-ga";
 
-import Layout from '../components/Layout'
+import Layout from "../components/Layout";
 
 class MyApp extends App {
   constructor(props) {
@@ -32,6 +33,9 @@ class MyApp extends App {
     }
 
     ImageMap("img[usemap]");
+
+    ReactGA.initialize("UA-158715925-1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }
 
   setMenu(menu) {
